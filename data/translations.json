@@ -1,0 +1,156 @@
+{
+  "site_name": {
+    "uk": "Vintage Jam",
+    "en": "Vintage Jam"
+  },
+
+
+  "catalog": {
+    "uk": "Каталог",
+    "en": "Catalog"
+  },
+
+
+  "search": {
+    "uk": "Пошук",
+    "en": "Search"
+  },
+
+
+  "categories": {
+    "uk": "Категорії",
+    "en": "Categories"
+  },
+
+
+  "new_arrivals": {
+    "uk": "Нові надходження",
+    "en": "New Arrivals"
+  },
+
+
+  "all_products": {
+    "uk": "Всі предмети",
+    "en": "All Items"
+  },
+
+
+  "sold": {
+    "uk": "Продано",
+    "en": "Sold"
+  },
+
+
+  "available": {
+    "uk": "В наявності",
+    "en": "Available"
+  },
+
+
+  "reserved": {
+    "uk": "Резерв",
+    "en": "Reserved"
+  },
+
+
+  "price_on_request": {
+    "uk": "Ціна за запитом",
+    "en": "Price on Request"
+  },
+
+
+  "contact_seller": {
+    "uk": "💬 Зв'язатися",
+    "en": "💬 Contact Seller"
+  },
+
+
+  "video_review": {
+    "uk": "▶️ Відеоогляд",
+    "en": "▶️ Video Review"
+  },
+
+
+  "shorts": {
+    "uk": "🎬 Shorts",
+    "en": "🎬 Shorts"
+  },
+
+
+  "details": {
+    "uk": "Детальніше",
+    "en": "Details"
+  },
+
+
+  "description": {
+    "uk": "Опис",
+    "en": "Description"
+  },
+
+
+  "characteristics": {
+    "uk": "Характеристики",
+    "en": "Specifications"
+  },
+
+
+  "history": {
+    "uk": "Історія предмета",
+    "en": "Item History"
+  },
+
+
+  "documents": {
+    "uk": "Документи",
+    "en": "Documents"
+  },
+
+
+  "language": {
+    "uk": "Мова",
+    "en": "Language"
+  },
+
+
+  "back": {
+    "uk": "Назад",
+    "en": "Back"
+  },
+
+
+  "telegram": {
+    "uk": "Telegram",
+    "en": "Telegram"
+  },
+
+
+  "whatsapp": {
+    "uk": "WhatsApp",
+    "en": "WhatsApp"
+  },
+
+
+  "viber": {
+    "uk": "Viber",
+    "en": "Viber"
+  },
+
+
+  "phone": {
+    "uk": "Телефон",
+    "en": "Phone"
+  },
+
+
+  "email": {
+    "uk": "Email",
+    "en": "Email"
+  },
+
+
+  "no_results": {
+    "uk": "Нічого не знайдено",
+    "en": "Nothing found"
+  }
+}
