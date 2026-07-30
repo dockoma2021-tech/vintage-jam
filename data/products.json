@@ -1,0 +1,94 @@
+[
+  {
+    "id": "vj-000001",
+
+    "publication_status": "published",
+
+    "sale_status": "available",
+
+    "date_added": "2026-07-31",
+
+    "category": "watches",
+
+
+    "title": {
+      "uk": "Годинник Seiko Vintage Solar",
+      "en": "Seiko Vintage Solar Watch"
+    },
+
+
+    "short_description": {
+      "uk": "Колекційний японський годинник Seiko.",
+      "en": "Collectible Japanese Seiko vintage watch."
+    },
+
+
+    "description": {
+      "uk": "Оригінальний годинник Seiko з вінтажним дизайном. Предмет для колекціонерів та поціновувачів японської техніки.",
+      "en": "Original Seiko watch with vintage design. A collectible item for enthusiasts of Japanese watches."
+    },
+
+
+    "price": {
+      "type": "fixed",
+      "value": 4000,
+      "currency": "UAH"
+    },
+
+
+    "media": {
+
+      "images": [
+        "images/products/vj-000001/01.webp",
+        "images/products/vj-000001/02.webp",
+        "images/products/vj-000001/03.webp"
+      ],
+
+      "youtube": "",
+
+      "shorts": ""
+
+    },
+
+
+    "attributes": {
+
+      "brand": {
+        "uk": "Seiko",
+        "en": "Seiko"
+      },
+
+      "model": {
+        "uk": "Vintage Solar",
+        "en": "Vintage Solar"
+      },
+
+      "year": "1980",
+
+      "country": {
+        "uk": "Японія",
+        "en": "Japan"
+      },
+
+      "movement": {
+        "uk": "Кварцовий",
+        "en": "Quartz"
+      }
+
+    },
+
+
+    "story": {
+
+      "uk": "",
+
+      "en": ""
+
+    },
+
+
+    "documents": []
+
+
+  }
+]
