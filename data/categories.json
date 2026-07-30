@@ -1,0 +1,198 @@
+[
+  {
+    "id": "paintings",
+
+    "slug": "paintings",
+
+    "title": {
+      "uk": "Картини",
+      "en": "Paintings"
+    },
+
+    "subcategories": []
+  },
+
+
+  {
+    "id": "art_objects",
+
+    "slug": "art-objects",
+
+    "title": {
+      "uk": "Артоб'єкти",
+      "en": "Art Objects"
+    },
+
+    "subcategories": []
+  },
+
+
+  {
+    "id": "icons",
+
+    "slug": "icons",
+
+    "title": {
+      "uk": "Ікони",
+      "en": "Icons"
+    },
+
+    "subcategories": []
+  },
+
+
+  {
+    "id": "watches",
+
+    "slug": "watches",
+
+    "title": {
+      "uk": "Годинники",
+      "en": "Watches"
+    },
+
+    "subcategories": [
+      {
+        "id": "mechanical",
+        "title": {
+          "uk": "Механічні",
+          "en": "Mechanical"
+        }
+      },
+
+      {
+        "id": "quartz",
+        "title": {
+          "uk": "Кварцові",
+          "en": "Quartz"
+        }
+      }
+    ]
+  },
+
+
+  {
+    "id": "knives",
+
+    "slug": "knives",
+
+    "title": {
+      "uk": "Ножі",
+      "en": "Knives"
+    },
+
+    "subcategories": []
+  },
+
+
+  {
+    "id": "daggers",
+
+    "slug": "daggers",
+
+    "title": {
+      "uk": "Кортики",
+      "en": "Daggers"
+    },
+
+    "subcategories": []
+  },
+
+
+  {
+    "id": "orders_medals",
+
+    "slug": "orders-medals",
+
+    "title": {
+      "uk": "Фалеристика",
+      "en": "Orders & Medals"
+    },
+
+    "subcategories": []
+  },
+
+
+  {
+    "id": "silver",
+
+    "slug": "silver",
+
+    "title": {
+      "uk": "Срібло",
+      "en": "Silver"
+    },
+
+    "subcategories": []
+  },
+
+
+  {
+    "id": "coins",
+
+    "slug": "coins",
+
+    "title": {
+      "uk": "Монети",
+      "en": "Coins"
+    },
+
+    "subcategories": []
+  },
+
+
+  {
+    "id": "books",
+
+    "slug": "books",
+
+    "title": {
+      "uk": "Книги",
+      "en": "Books"
+    },
+
+    "subcategories": []
+  },
+
+
+  {
+    "id": "porcelain",
+
+    "slug": "porcelain",
+
+    "title": {
+      "uk": "Порцеляна",
+      "en": "Porcelain"
+    },
+
+    "subcategories": []
+  },
+
+
+  {
+    "id": "electronics",
+
+    "slug": "electronics",
+
+    "title": {
+      "uk": "Електроніка",
+      "en": "Electronics"
+    },
+
+    "subcategories": []
+  },
+
+
+  {
+    "id": "miscellaneous",
+
+    "slug": "miscellaneous",
+
+    "title": {
+      "uk": "Різне",
+      "en": "Miscellaneous"
+    },
+
+    "subcategories": []
+  }
+]
