@@ -1,42 +1,175 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="uk">
+
 <head>
-<meta charset="UTF-8">
-<title>Vintage Jam</title>
-<style>
-body{
-    font-family:Arial;
-    background:#111;
-    color:white;
-    margin:40px;
-}
-.card{
-    width:300px;
-    border-radius:12px;
-    overflow:hidden;
-    background:#222;
-}
-img{
-    width:100%;
-}
-h2{
-    padding:10px;
-}
-p{
-    padding:0 10px 15px;
-}
-</style>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Vintage Jam — Vintage & Antique Collection</title>
+
+    <meta 
+        name="description"
+        content="Vintage Jam — каталог винтажних та антикварних предметів."
+    >
+
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
+
 
 <body>
 
-<h1>Vintage Jam</h1>
 
-<div class="card">
-<img src="https://picsum.photos/400/300">
-<h2>Картина XIX века</h2>
-<p>250$</p>
-</div>
+<header class="header">
+
+    <div class="logo">
+        Vintage Jam
+    </div>
+
+
+    <div class="header-actions">
+
+        <button id="languageSwitcher">
+            UA
+        </button>
+
+    </div>
+
+</header>
+
+
+
+<main>
+
+
+<section class="search-section">
+
+    <input 
+        id="searchInput"
+        type="search"
+        placeholder="Пошук..."
+    >
+
+</section>
+
+
+
+
+<section class="categories-section">
+
+    <h2>
+        Категорії
+    </h2>
+
+
+    <div 
+        id="categories"
+        class="categories-list">
+    </div>
+
+</section>
+
+
+
+
+
+<section class="new-arrivals-section">
+
+    <h2>
+        Нові надходження
+    </h2>
+
+
+    <div 
+        id="newArrivals"
+        class="products-grid">
+    </div>
+
+
+</section>
+
+
+
+
+
+
+<section class="catalog-section">
+
+    <h2>
+        Каталог
+    </h2>
+
+
+    <div 
+        id="catalog"
+        class="products-grid">
+    </div>
+
+
+</section>
+
+
+
+
+<section class="sold-section">
+
+    <h2>
+        Продано
+    </h2>
+
+
+    <div 
+        id="soldProducts"
+        class="products-grid">
+    </div>
+
+
+</section>
+
+
+</main>
+
+
+
+
+
+
+<nav class="mobile-navigation">
+
+
+<button>
+    🏠
+    <span>
+        Каталог
+    </span>
+</button>
+
+
+<button>
+    🔍
+    <span>
+        Пошук
+    </span>
+</button>
+
+
+<button>
+    ☰
+    <span>
+        Меню
+    </span>
+</button>
+
+
+</nav>
+
+
+
+
+
+<script type="module" src="assets/js/app.js"></script>
+
 
 </body>
+
 </html>
