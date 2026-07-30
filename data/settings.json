@@ -1,0 +1,53 @@
+{
+  "site": {
+
+    "name": "Vintage Jam",
+
+    "default_language": "uk"
+
+  },
+
+
+  "contacts": {
+
+    "telegram": "https://t.me/NikolayKorolkov",
+
+    "whatsapp": "",
+
+    "viber": "",
+
+    "phone": "+380983219801",
+
+    "email": "vintagejam@email.com"
+
+  },
+
+
+  "social": {
+
+    "youtube": "https://youtube.com/@Vintage_Jam",
+
+    "instagram": "",
+
+    "facebook": "",
+
+    "tiktok": ""
+
+  },
+
+
+  "shipping": {
+
+    "countries": [
+
+      "Ukraine",
+
+      "USA",
+
+      "Europe"
+
+    ]
+
+  }
+
+}
