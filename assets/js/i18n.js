@@ -4,24 +4,83 @@ let currentLanguage = "uk";
 
 
 
-export async function loadTranslations(language) {
+export async function initLanguage() {
 
 
-    currentLanguage = language;
+    const savedLanguage =
+        localStorage.getItem(
+            "language"
+        );
 
 
-    const response = await fetch(
-        "data/translations.json"
-    );
+    if (savedLanguage) {
+
+
+        currentLanguage =
+            savedLanguage;
+
+
+    } else {
+
+
+        const browserLanguage =
+            navigator.language
+            .substring(0,2);
+
+
+
+        currentLanguage =
+            browserLanguage === "en"
+            ? "en"
+            : "uk";
+
+
+    }
+
+
+
+    await loadTranslations();
+
+
+}
+
+
+
+
+
+async function loadTranslations() {
+
+
+    const response =
+        await fetch(
+            "data/translations.json"
+        );
 
 
     translations =
         await response.json();
 
 
+}
+
+
+
+
+
+export function changeLanguage(language) {
+
+
+    currentLanguage =
+        language;
+
+
+    localStorage.setItem(
+        "language",
+        language
+    );
+
 
     translatePage();
-
 
 }
 
@@ -50,19 +109,19 @@ export function translatePage() {
 
             if (
                 translations[key]
-                &&
-                translations[key][currentLanguage]
             ) {
 
 
                 element.textContent =
-                    translations[key][currentLanguage];
+                translations[key][currentLanguage];
+
 
             }
 
 
         }
     );
+
 
 }
 
@@ -73,18 +132,10 @@ export function translatePage() {
 export function t(key) {
 
 
-    if (
-        translations[key]
-        &&
-        translations[key][currentLanguage]
-    ) {
+    return translations[key]
+    ? translations[key][currentLanguage]
+    : key;
 
-        return translations[key][currentLanguage];
-
-    }
-
-
-    return key;
 
 }
 
@@ -94,6 +145,8 @@ export function t(key) {
 
 export function getLanguage() {
 
+
     return currentLanguage;
+
 
 }
