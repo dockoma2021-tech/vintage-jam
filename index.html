@@ -7,6 +7,7 @@
     <meta name="description" content="Vintage Jam — каталог вінтажних та антикварних предметів.">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/payment-methods.css">
+    <link rel="stylesheet" href="assets/css/shipping-info.css">
 </head>
 <body>
 <header class="header">
@@ -50,6 +51,19 @@
         <div id="soldProducts" class="products-grid"></div>
     </section>
 
+    <section class="shipping-section" data-shipping-section hidden>
+        <h2 data-shipping-title>Доставка та умови покупки</h2>
+        <p class="shipping-intro" data-shipping-intro></p>
+        <div class="shipping-grid">
+            <article class="shipping-card"><span class="shipping-icon" aria-hidden="true">📍</span><div><h3 data-shipping-location-title></h3><p data-shipping-location-text></p></div></article>
+            <article class="shipping-card"><span class="shipping-icon" aria-hidden="true">🚚</span><div><h3 data-shipping-carriers-title></h3><p data-shipping-carriers-text></p></div></article>
+            <article class="shipping-card"><span class="shipping-icon" aria-hidden="true">🧾</span><div><h3 data-shipping-calculation-title></h3><p data-shipping-calculation-text></p></div></article>
+            <article class="shipping-card"><span class="shipping-icon" aria-hidden="true">📦</span><div><h3 data-shipping-packing-title></h3><p data-shipping-packing-text></p></div></article>
+            <article class="shipping-card"><span class="shipping-icon" aria-hidden="true">📷</span><div><h3 data-shipping-photo-title></h3><p data-shipping-photo-text></p></div></article>
+        </div>
+        <p class="shipping-note" data-shipping-note></p>
+    </section>
+
     <section class="payment-section" data-payment-section hidden>
         <h2 data-payment-title>Способи оплати</h2>
         <p class="payment-section-description" data-payment-description></p>
@@ -59,21 +73,13 @@
 </main>
 
 <nav class="mobile-navigation" aria-label="Мобільна навігація">
-    <button id="mobileCatalogButton" type="button" aria-label="Перейти до каталогу">
-        <span aria-hidden="true">🏠</span>
-        <span id="mobileCatalogLabel">Каталог</span>
-    </button>
-    <button id="mobileSearchButton" type="button" aria-label="Відкрити пошук">
-        <span aria-hidden="true">🔍</span>
-        <span id="mobileSearchLabel">Пошук</span>
-    </button>
-    <a id="mobileContactButton" href="tel:+380983219801" aria-label="Зв’язатися з Vintage Jam">
-        <span aria-hidden="true">💬</span>
-        <span id="mobileContactLabel">Зв’язок</span>
-    </a>
+    <button id="mobileCatalogButton" type="button" aria-label="Перейти до каталогу"><span aria-hidden="true">🏠</span><span id="mobileCatalogLabel">Каталог</span></button>
+    <button id="mobileSearchButton" type="button" aria-label="Відкрити пошук"><span aria-hidden="true">🔍</span><span id="mobileSearchLabel">Пошук</span></button>
+    <a id="mobileContactButton" href="tel:+380983219801" aria-label="Зв’язатися з Vintage Jam"><span aria-hidden="true">💬</span><span id="mobileContactLabel">Зв’язок</span></a>
 </nav>
 
 <script type="module" src="assets/js/app.js"></script>
+<script type="module" src="assets/js/shipping-info.js"></script>
 <script type="module" src="assets/js/payment-methods.js"></script>
 </body>
 </html>

@@ -1,0 +1,82 @@
+.shipping-section {
+    margin: 24px 16px 0;
+    border-radius: 22px;
+    background: #f5f5f7;
+    padding: 22px;
+}
+
+.shipping-section h2 {
+    margin-bottom: 8px;
+}
+
+.shipping-intro {
+    margin-bottom: 18px;
+    color: #6e6e73;
+}
+
+.shipping-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 12px;
+}
+
+.shipping-card {
+    display: grid;
+    grid-template-columns: 42px 1fr;
+    gap: 12px;
+    align-items: start;
+    border-radius: 16px;
+    background: #ffffff;
+    padding: 15px;
+}
+
+.shipping-icon {
+    display: flex;
+    width: 42px;
+    height: 42px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 13px;
+    background: #eef5ff;
+    font-size: 21px;
+}
+
+.shipping-card h3 {
+    margin: 0 0 4px;
+    font-size: 16px;
+}
+
+.shipping-card p {
+    margin: 0;
+    color: #6e6e73;
+    font-size: 14px;
+}
+
+.shipping-note {
+    margin: 16px 0 0;
+    border-top: 1px solid #e5e5e7;
+    padding-top: 14px;
+    color: #6e6e73;
+    font-size: 13px;
+}
+
+#mainContent > .shipping-section {
+    margin-bottom: 32px;
+}
+
+@media (min-width: 700px) {
+    .shipping-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .shipping-section {
+        padding: 28px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .shipping-section {
+        margin-right: 32px;
+        margin-left: 32px;
+    }
+}
