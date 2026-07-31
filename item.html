@@ -6,6 +6,7 @@
     <meta name="description" content="Vintage Jam — картка вінтажного товару">
     <title>Vintage Jam — Товар</title>
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/gallery-enhancements.css">
 </head>
 <body>
     <header class="header">
@@ -23,6 +24,9 @@
                 <div class="product-main-image-wrap">
                     <img id="mainProductImage" class="product-main-image" src="assets/images/no-image.webp" alt="" decoding="async">
                     <span id="productStatus" class="product-status" hidden></span>
+                    <button id="galleryPrevious" class="gallery-arrow previous" type="button" aria-label="Попереднє зображення">‹</button>
+                    <button id="galleryNext" class="gallery-arrow next" type="button" aria-label="Наступне зображення">›</button>
+                    <span id="galleryCounter" class="gallery-counter" aria-live="polite"></span>
                 </div>
                 <div id="galleryThumbnails" class="gallery-thumbnails" aria-label="Мініатюри зображень"></div>
             </section>
