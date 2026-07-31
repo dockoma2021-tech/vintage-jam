@@ -10,7 +10,17 @@ let activeCategory = null;
 
 let currentSort = "new";
 
+const catalogState = {
 
+    category: null,
+
+    search: "",
+
+    sort: "new",
+
+    saleStatus: "available"
+
+};
 
 export async function initCatalog(language = "uk") {
 
@@ -134,7 +144,86 @@ function sortProducts(items){
 }
 
 
+function updateCatalog() {
 
+    let result = [...products];
+
+
+
+    // Только опубликованные
+
+    result = result.filter(product =>
+        product.publication_status === "published"
+    );
+
+
+
+    // Статус продажи
+
+    if (catalogState.saleStatus) {
+
+        result = result.filter(product =>
+            product.sale_status === catalogState.saleStatus
+        );
+
+    }
+
+
+
+    // Категория
+
+    if (catalogState.category) {
+
+        result = result.filter(product =>
+            product.category === catalogState.category
+        );
+
+    }
+
+
+
+    // Поиск
+
+    if (catalogState.search) {
+
+        const query =
+            catalogState.search.toLowerCase();
+
+        result = result.filter(product => {
+
+            const title =
+                product.title[currentLanguage]
+                ?.toLowerCase() || "";
+
+            const description =
+                product.description[currentLanguage]
+                ?.toLowerCase() || "";
+
+            return (
+
+                title.includes(query)
+
+                ||
+
+                description.includes(query)
+
+            );
+
+        });
+
+    }
+
+
+
+    // Сортировка
+
+    result = sortProducts(result);
+
+
+
+    renderCatalog(result);
+
+}
 
 
 function isNew(date){
