@@ -11,7 +11,8 @@
     return;
   }
   const state = { language: storage.get('vjLanguage', data.site?.defaultLanguage || 'uk') === 'en' ? 'en' : 'uk', category: 'all', search: '', sort: 'new', favoritesOnly: false };
-  const favorites = new Set(JSON.parse(storage.get('vjFavorites', '[]') || '[]'));
+  function readFavorites() { try { const parsed = JSON.parse(storage.get('vjFavorites', '[]') || '[]'); return new Set(Array.isArray(parsed) ? parsed.filter(Boolean) : []); } catch { return new Set(); } }
+  const favorites = readFavorites();
   const localize = value => value && typeof value === 'object' ? (value[state.language] || value.uk || value.en || '') : (value ?? '');
   const categoryTitle = id => localize(data.categories.find(item => item.id === id)?.title) || id || '';
   const dateValue = product => Number.isFinite(Date.parse(product.date_added)) ? Date.parse(product.date_added) : 0;
