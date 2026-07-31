@@ -469,14 +469,6 @@ function createProductCard(product) {
 
 
 
-    return card;
-
-
-}
-
-
-
-
 
 function formatPrice(product) {
 
