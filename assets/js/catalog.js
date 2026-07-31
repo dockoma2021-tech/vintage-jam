@@ -242,22 +242,67 @@ function createProductCard(product) {
 
 
     const card =
-        document.createElement(
-            "article"
-        );
+        document.createElement("article");
 
 
     card.className =
         "product-card";
 
 
+    let badge = "";
+
+
+
+    if(product.sale_status === "sold"){
+
+
+        badge = `
+        <span class="badge sold">
+        SOLD
+        </span>`;
+
+    }
+
+    else if(product.sale_status === "reserved"){
+
+
+        badge = `
+        <span class="badge reserved">
+        RESERVED
+        </span>`;
+
+    }
+
+    else if(isNew(product.date_added)){
+
+
+        badge = `
+        <span class="badge new">
+        NEW
+        </span>`;
+
+    }
+
+
 
     card.innerHTML = `
 
-        <img 
+
+        <div class="product-image">
+
+
+            ${badge}
+
+
+            <img
             src="${product.media.images[0]}"
             alt="${product.title[currentLanguage]}"
-        >
+            >
+
+
+        </div>
+
+
 
 
         <div class="product-info">
@@ -265,7 +310,7 @@ function createProductCard(product) {
 
             <div class="product-title">
 
-                ${product.title[currentLanguage]}
+            ${product.title[currentLanguage]}
 
             </div>
 
@@ -273,7 +318,7 @@ function createProductCard(product) {
 
             <div class="product-category">
 
-                ${product.category}
+            ${product.category}
 
             </div>
 
@@ -281,12 +326,13 @@ function createProductCard(product) {
 
             <div class="product-price">
 
-                ${formatPrice(product)}
+            ${formatPrice(product)}
 
             </div>
 
 
         </div>
+
 
     `;
 
@@ -301,6 +347,12 @@ function createProductCard(product) {
 
     };
 
+
+
+    return card;
+
+
+}
 
 
     return card;
