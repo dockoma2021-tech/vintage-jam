@@ -1,53 +1,53 @@
 {
   "site": {
-
     "name": "Vintage Jam",
-
     "default_language": "uk"
-
   },
-
-
   "contacts": {
-
     "telegram": "https://t.me/NikolayKorolkov",
-
     "whatsapp": "",
-
     "viber": "",
-
     "phone": "+380983219801",
-
     "email": "vintagejam@email.com"
-
   },
-
-
+  "payments": [
+    {
+      "id": "privat24",
+      "label": "PrivatBank 24",
+      "enabled": true
+    },
+    {
+      "id": "paypal",
+      "label": "PayPal",
+      "enabled": true
+    },
+    {
+      "id": "payoneer",
+      "label": "Payoneer",
+      "enabled": true
+    },
+    {
+      "id": "skrill",
+      "label": "Skrill",
+      "enabled": true
+    },
+    {
+      "id": "usdt",
+      "label": "USDT",
+      "enabled": true
+    }
+  ],
   "social": {
-
     "youtube": "https://youtube.com/@Vintage_Jam",
-
     "instagram": "",
-
     "facebook": "",
-
     "tiktok": ""
-
   },
-
-
   "shipping": {
-
     "countries": [
-
       "Ukraine",
-
       "USA",
-
       "Europe"
-
     ]
-
   }
-
 }
