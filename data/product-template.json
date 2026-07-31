@@ -1,0 +1,59 @@
+{
+  "id": "vj-000002",
+  "publication_status": "published",
+  "sale_status": "available",
+  "date_added": "2026-07-31",
+  "category": "paintings",
+  "subcategory": "",
+  "title": {
+    "uk": "Назва товару українською",
+    "en": "Product title in English"
+  },
+  "short_description": {
+    "uk": "Короткий опис товару українською.",
+    "en": "Short product description in English."
+  },
+  "description": {
+    "uk": "Повний опис товару українською.",
+    "en": "Full product description in English."
+  },
+  "price": {
+    "type": "fixed",
+    "value": 0,
+    "currency": "UAH"
+  },
+  "media": {
+    "images": [
+      "images/products/vj-000002/01.webp"
+    ],
+    "youtube": "",
+    "shorts": ""
+  },
+  "attributes": {
+    "author": {
+      "uk": "",
+      "en": ""
+    },
+    "year": "",
+    "country": {
+      "uk": "",
+      "en": ""
+    },
+    "material": {
+      "uk": "",
+      "en": ""
+    },
+    "dimensions": "",
+    "weight": "",
+    "condition": {
+      "uk": "",
+      "en": ""
+    }
+  },
+  "story": {
+    "uk": "",
+    "en": ""
+  },
+  "documents": [],
+  "tags": []
+}
