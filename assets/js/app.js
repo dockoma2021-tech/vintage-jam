@@ -11,6 +11,8 @@ import {
 } from "./catalog.js";
 
 async function startApp() {
+    setStartupState("loading");
+
     try {
         await initLanguage();
         await initCatalog(getLanguage());
@@ -21,9 +23,46 @@ async function startApp() {
         setupMobileNavigation();
         await setupContactLink();
         updateStaticLabels(getLanguage());
+        setStartupState("ready");
     } catch (error) {
         console.error("Ошибка запуска приложения:", error);
+        setStartupState("error", error);
     }
+}
+
+function setStartupState(state, error = null) {
+    let element = document.getElementById("startupState");
+
+    if (!element) {
+        element = document.createElement("section");
+        element.id = "startupState";
+        element.setAttribute("aria-live", "polite");
+        element.style.cssText = "margin:16px;padding:16px;border-radius:14px;background:#f5f5f7;text-align:center";
+        document.getElementById("mainContent")?.prepend(element);
+    }
+
+    if (state === "ready") {
+        element.remove();
+        return;
+    }
+
+    if (state === "loading") {
+        element.textContent = "Завантаження каталогу…";
+        return;
+    }
+
+    element.replaceChildren();
+    const message = document.createElement("p");
+    message.textContent = "Не вдалося завантажити каталог. Перевірте з’єднання та спробуйте ще раз.";
+    message.style.margin = "0 0 12px";
+
+    const retry = document.createElement("button");
+    retry.type = "button";
+    retry.textContent = "Повторити";
+    retry.addEventListener("click", () => window.location.reload());
+
+    element.append(message, retry);
+    if (error) element.dataset.error = String(error.message || error);
 }
 
 function setupSearch() {
@@ -82,8 +121,14 @@ async function setupContactLink() {
     const contactButton = document.getElementById("mobileContactButton");
     if (!contactButton) return;
 
+    const controller = new AbortController();
+    const timeout = window.setTimeout(() => controller.abort(), 8000);
+
     try {
-        const response = await fetch("data/settings.json");
+        const response = await fetch("data/settings.json", {
+            cache: "no-store",
+            signal: controller.signal
+        });
         if (!response.ok) throw new Error(`HTTP ${response.status}`);
 
         const settings = await response.json();
@@ -102,6 +147,8 @@ async function setupContactLink() {
         }
     } catch (error) {
         console.warn("Не удалось загрузить контакты:", error);
+    } finally {
+        window.clearTimeout(timeout);
     }
 }
 
