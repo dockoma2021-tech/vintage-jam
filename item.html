@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="assets/css/gallery-enhancements.css">
     <link rel="stylesheet" href="assets/css/gallery-lightbox.css">
     <link rel="stylesheet" href="assets/css/contact-actions.css">
+    <link rel="stylesheet" href="assets/css/payment-methods.css">
 </head>
 <body>
     <header class="header">
@@ -60,6 +61,13 @@
         <section id="storySection" class="product-content-card" hidden>
             <h2 id="storyHeading">Історія предмета</h2>
             <p id="productStory"></p>
+        </section>
+
+        <section class="payment-section" data-payment-section hidden>
+            <h2 data-payment-title>Способи оплати</h2>
+            <p class="payment-section-description" data-payment-description></p>
+            <div class="payment-methods" data-payment-list></div>
+            <p class="payment-note" data-payment-note></p>
         </section>
     </main>
 
@@ -113,5 +121,6 @@
     <script type="module" src="assets/js/gallery-swipe.js"></script>
     <script type="module" src="assets/js/gallery-lightbox.js"></script>
     <script type="module" src="assets/js/contact-actions.js"></script>
+    <script type="module" src="assets/js/payment-methods.js"></script>
 </body>
 </html>
