@@ -125,5 +125,72 @@
       "en": "The title of the work is written on the reverse."
     },
     "documents": []
+  },
+  {
+    "id": "vj-000003",
+    "publication_status": "draft",
+    "sale_status": "available",
+    "date_added": "2026-07-31",
+    "category": "knives",
+    "title": {
+      "uk": "Складний ніж District 9 Marauder, сталь M390, титан (2023)",
+      "en": "District 9 Marauder Folding Knife, M390 Steel, Titanium (2023)"
+    },
+    "short_description": {
+      "uk": "Колекційний складний ніж District 9 Marauder 2023 року з клинком зі стали M390 та титановим руків'ям.",
+      "en": "Collector's folding knife District 9 Marauder (2023) featuring an M390 steel blade and titanium handle."
+    },
+    "description": {
+      "uk": "Технологічний складний ніж District 9 Marauder. Клинок форми Modified Tanto виготовлений із високопродуктивної порошкової стали M390 з долом та фінішем Stonewash. Руків'я виконано із титанового сплаву зі складною ЧПУ-фрезеровкою, оснащено замком Frame-Lock із запобіжником, кліпсою та стеклобоєм. Випущений у 2023 році.",
+      "en": "High-tech folding knife District 9 Marauder. The Modified Tanto blade is made of high-performance M390 powder steel with a fuller and Stonewash finish. The handle is crafted from titanium alloy with complex CNC milling, equipped with a Frame-Lock mechanism with a safety stop, pocket clip, and glass breaker. Manufactured in 2023."
+    },
+    "price": {
+      "type": "fixed",
+      "value": 16500,
+      "currency": "UAH"
+    },
+    "media": {
+      "images": [
+        "images/products/vj-000003/01.webp",
+        "images/products/vj-000003/02.webp",
+        "images/products/vj-000003/03.webp",
+        "images/products/vj-000003/04.webp",
+        "images/products/vj-000003/05.webp",
+        "images/products/vj-000003/06.webp",
+        "images/products/vj-000003/07.webp",
+        "images/products/vj-000003/08.webp",
+        "images/products/vj-000003/09.webp"
+      ],
+      "youtube": "https://youtube.com/shorts/lc9aO78igC8?si=c_pBYWOorp5rWlrf",
+      "shorts": ""
+    },
+    "attributes": {
+      "lock_type": "Frame-Lock",
+      "finish": "Dark Stonewash",
+      "blade_shape": "Tanto",
+      "set": "knife only",
+      "model": {
+        "uk": "Marauder",
+        "en": "Marauder"
+      },
+      "year": "2023",
+      "country": {
+        "uk": "Китай",
+        "en": "China"
+      },
+      "material": {
+        "uk": "Сталь M390, титановий сплав",
+        "en": "M390 steel, titanium alloy"
+      },
+      "brand": {
+        "uk": "District 9",
+        "en": "District 9"
+      }
+    },
+    "story": {
+      "uk": "Модель Marauder від компанії District 9 — зразок сучасного інженерного дизайну в сегменті кастомних та технологічних складних ножів 2020-х років.",
+      "en": "The Marauder model by District 9 is an example of modern engineering design in the custom and high-tech folding knife segment of the 2020s."
+    },
+    "documents": []
   }
 ]
