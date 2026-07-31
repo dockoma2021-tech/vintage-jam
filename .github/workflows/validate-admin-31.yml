@@ -1,0 +1,31 @@
+name: Validate Admin 3.1
+
+on:
+  pull_request:
+    branches: [main]
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  validate-admin:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Validate site data and files
+        run: python tools/validate_site.py
+      - name: Check active JavaScript syntax
+        run: |
+          node --check assets/js/admin-v3.js
+          node --check assets/js/admin-media-v31.js
+          node --check assets/js/catalog-v3.js
+          node --check assets/js/product-v3.js
+          node --check data/catalog-data.js
