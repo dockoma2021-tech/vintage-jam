@@ -19,7 +19,7 @@
     },
     "price": {
       "type": "fixed",
-      "value": 4000,
+      "value": 4500,
       "currency": "UAH"
     },
     "media": {
@@ -39,10 +39,6 @@
       "shorts": ""
     },
     "attributes": {
-      "brand": {
-        "uk": "Seiko",
-        "en": "Seiko"
-      },
       "model": {
         "uk": "Vintage Solar",
         "en": "Vintage Solar"
@@ -55,6 +51,10 @@
       "movement": {
         "uk": "Кварцовий",
         "en": "Quartz"
+      },
+      "brand": {
+        "uk": "Seiko",
+        "en": "Seiko"
       }
     },
     "story": {
