@@ -9,7 +9,7 @@
 </head>
 <body>
 <header class="admin-header">
-  <div><strong>Vintage Jam</strong><span>Admin MVP 1.0</span></div>
+  <div><strong>Vintage Jam</strong><span>Admin MVP 1.1</span></div>
   <a href="index.html">Перейти до каталогу</a>
 </header>
 
@@ -18,10 +18,14 @@
     <div>
       <p class="eyebrow">Управління каталогом</p>
       <h1>Товари, Excel та products.json</h1>
-      <p>Дані обробляються тільки у вашому браузері. Ця версія не публікує зміни в GitHub автоматично.</p>
+      <p>Дані обробляються у вашому браузері. Локальна резервна копія захищає зміни від випадкової втрати.</p>
+      <p id="draftStatus" class="admin-draft-status">Перевірка локальної чернетки…</p>
     </div>
     <div class="admin-toolbar">
       <button id="loadCurrentButton" type="button">Завантажити поточний каталог</button>
+      <button id="saveDraftButton" type="button" class="secondary">Зберегти чернетку</button>
+      <button id="restoreDraftButton" type="button" class="secondary">Відновити чернетку</button>
+      <button id="clearDraftButton" type="button" class="danger">Очистити копію</button>
       <button id="downloadTemplateButton" type="button" class="secondary">Шаблон Excel</button>
       <label class="file-button">Імпорт Excel<input id="excelInput" type="file" accept=".xlsx,.xls"></label>
       <label class="file-button secondary">Імпорт JSON<input id="jsonInput" type="file" accept="application/json,.json"></label>
