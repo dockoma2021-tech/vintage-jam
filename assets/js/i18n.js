@@ -3,7 +3,7 @@ let currentLanguage = "uk";
 
 const FALLBACK_TRANSLATIONS = {};
 
-export async function initLanguage() {
+export function initLanguage() {
     const savedLanguage = localStorage.getItem("language");
 
     if (savedLanguage === "uk" || savedLanguage === "en") {
@@ -13,27 +13,24 @@ export async function initLanguage() {
         currentLanguage = browserLanguage === "en" ? "en" : "uk";
     }
 
-    await loadTranslations();
+    // Translations are optional. Never block product rendering while this file loads.
+    loadTranslations().then(translatePage).catch(() => {});
 }
 
 async function loadTranslations() {
     const controller = new AbortController();
-    const timeout = window.setTimeout(() => controller.abort(), 8000);
+    const timeout = window.setTimeout(() => controller.abort(), 5000);
 
     try {
-        const response = await fetch("data/translations.json", {
+        const response = await fetch(`data/translations.json?v=1.2.3`, {
             cache: "no-store",
             signal: controller.signal
         });
 
-        if (!response.ok) {
-            throw new Error(`translations.json: HTTP ${response.status}`);
-        }
+        if (!response.ok) throw new Error(`translations.json: HTTP ${response.status}`);
 
         const data = await response.json();
-        translations = data && typeof data === "object"
-            ? data
-            : FALLBACK_TRANSLATIONS;
+        translations = data && typeof data === "object" ? data : FALLBACK_TRANSLATIONS;
     } catch (error) {
         console.warn("Translations unavailable; using built-in labels:", error);
         translations = FALLBACK_TRANSLATIONS;
