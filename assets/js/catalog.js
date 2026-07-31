@@ -58,6 +58,10 @@ async function loadData() {
 
 }
 
+
+
+
+
 function sortProducts(items){
 
 
@@ -119,7 +123,6 @@ function sortProducts(items){
 
             break;
 
-
     }
 
 
@@ -127,6 +130,37 @@ function sortProducts(items){
     return sorted;
 
 }
+
+
+
+
+
+function isNew(date){
+
+
+    if(!date) return false;
+
+
+    const added =
+    new Date(date);
+
+
+    const now =
+    new Date();
+
+
+    const days =
+    (now - added)
+    /
+    (1000 * 60 * 60 * 24);
+
+
+
+    return days <= 30;
+
+}
+
+
 
 
 
@@ -167,11 +201,14 @@ function renderCategories() {
 
         button.onclick = () => {
 
+
             filterByCategory(
                 category.id
             );
 
+
         };
+
 
 
         container.appendChild(button);
@@ -203,10 +240,12 @@ function renderCatalog(items = products) {
 
 
 
-    items
+    sortProducts(items)
+
         .filter(product =>
             product.publication_status === "published"
         )
+
         .forEach(product => {
 
 
@@ -241,7 +280,7 @@ function renderNewArrivals() {
 
 
 
-    products
+    sortProducts(products)
 
         .filter(product =>
             product.publication_status === "published"
@@ -317,8 +356,10 @@ function createProductCard(product) {
         document.createElement("article");
 
 
+
     card.className =
         "product-card";
+
 
 
     let badge = "";
@@ -333,6 +374,7 @@ function createProductCard(product) {
         SOLD
         </span>`;
 
+
     }
 
     else if(product.sale_status === "reserved"){
@@ -342,6 +384,7 @@ function createProductCard(product) {
         <span class="badge reserved">
         RESERVED
         </span>`;
+
 
     }
 
@@ -355,26 +398,7 @@ function createProductCard(product) {
 
     }
 
-    function isNew(date){
 
-
-    const added =
-    new Date(date);
-
-
-    const now =
-    new Date();
-
-
-    const days =
-    (now - added)
-    /
-    (1000 * 60 * 60 * 24);
-
-
-    return days <= 30;
-
-}
 
 
 
@@ -388,8 +412,11 @@ function createProductCard(product) {
 
 
             <img
+
             src="${product.media.images[0]}"
+
             alt="${product.title[currentLanguage]}"
+
             >
 
 
@@ -403,7 +430,7 @@ function createProductCard(product) {
 
             <div class="product-title">
 
-            ${product.title[currentLanguage]}
+                ${product.title[currentLanguage]}
 
             </div>
 
@@ -411,7 +438,7 @@ function createProductCard(product) {
 
             <div class="product-category">
 
-            ${product.category}
+                ${product.category}
 
             </div>
 
@@ -419,7 +446,7 @@ function createProductCard(product) {
 
             <div class="product-price">
 
-            ${formatPrice(product)}
+                ${formatPrice(product)}
 
             </div>
 
@@ -448,25 +475,22 @@ function createProductCard(product) {
 }
 
 
-    return card;
-
-
-}
-
-
 
 
 
 function formatPrice(product) {
 
 
-    if (
+    if(
         product.price.type === "request"
-    ) {
+    ){
 
         return currentLanguage === "uk"
+
         ? "Ціна за запитом"
+
         : "Price on Request";
+
 
     }
 
@@ -483,15 +507,29 @@ function formatPrice(product) {
 function filterByCategory(categoryId) {
 
 
+    activeCategory =
+    categoryId;
+
+
+
     const filtered =
         products.filter(product =>
+
             product.category === categoryId
+
         );
+
 
 
     renderCatalog(filtered);
 
+
 }
+
+
+
+
+
 export function searchProducts(query) {
 
 
@@ -502,9 +540,12 @@ export function searchProducts(query) {
 
     if(!query){
 
+
         renderCatalog(products);
 
+
         return;
+
 
     }
 
@@ -516,19 +557,19 @@ export function searchProducts(query) {
 
         const title =
         product.title[currentLanguage]
-        .toLowerCase();
+        ?.toLowerCase() || "";
 
 
 
         const description =
         product.description[currentLanguage]
-        .toLowerCase();
+        ?.toLowerCase() || "";
 
 
 
         const category =
         product.category
-        .toLowerCase();
+        ?.toLowerCase() || "";
 
 
 
@@ -552,6 +593,22 @@ export function searchProducts(query) {
 
 
     renderCatalog(result);
+
+
+}
+
+
+
+
+
+export function setSort(value){
+
+
+    currentSort =
+    value;
+
+
+    renderCatalog();
 
 
 }
