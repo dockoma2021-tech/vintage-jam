@@ -19,7 +19,7 @@
     },
     "price": {
       "type": "fixed",
-      "value": 4650,
+      "value": 4700,
       "currency": "UAH"
     },
     "media": {
