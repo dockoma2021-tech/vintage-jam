@@ -17,13 +17,11 @@
 
 <main id="mainContent">
     <section class="search-section" id="searchSection">
-        <label class="visually-hidden" for="searchInput" id="searchLabel">Пошук товарів</label>
-        <input id="searchInput" type="search" placeholder="Пошук..." autocomplete="off" enterkeyhint="search">
+        <input id="searchInput" type="search" placeholder="Пошук..." aria-label="Пошук товарів" autocomplete="off" enterkeyhint="search">
     </section>
 
     <section class="sort-section">
-        <label class="visually-hidden" for="sortSelect" id="sortLabel">Сортування</label>
-        <select id="sortSelect">
+        <select id="sortSelect" aria-label="Сортування">
             <option value="new">Нові спочатку</option>
             <option value="old">Старі спочатку</option>
             <option value="price_up">Ціна: від нижчої</option>
