@@ -1,4 +1,5 @@
 import { getLanguage } from "./i18n.js";
+import "./item-integrity.js";
 
 const copy = {
     uk: {
