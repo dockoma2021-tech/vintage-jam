@@ -162,7 +162,19 @@ function isNew(date){
 
 }
 
+function getMainImage(product) {
 
+    if (
+        product.media &&
+        Array.isArray(product.media.images) &&
+        product.media.images.length > 0 &&
+        product.media.images[0]
+    ) {
+        return product.media.images[0];
+    }
+
+    return "assets/images/no-image.webp";
+}
 
 
 
@@ -414,12 +426,11 @@ function createProductCard(product) {
 
 
             <img
-
-            src="${product.media.images[0]}"
-
-            alt="${product.title[currentLanguage]}"
-
-            >
+    src="${getMainImage(product)}"
+    alt="${product.title[currentLanguage]}"
+    loading="lazy"
+    onerror="this.onerror=null; this.src='assets/images/no-image.webp';"
+>
 
 
         </div>
