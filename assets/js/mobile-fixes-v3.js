@@ -22,18 +22,24 @@
         margin-bottom: 16px;
       }
 
+      .product-gallery,
       .gallery-main {
-        aspect-ratio: auto;
-        height: min(68svh, 610px);
-        min-height: 390px;
-        max-height: 610px;
+        width: 100%;
+        min-width: 0;
+      }
+
+      .gallery-main {
+        aspect-ratio: 1 / 1;
+        height: auto;
+        min-height: 0;
+        max-height: none;
       }
 
       .gallery-main img {
         width: 100%;
         height: 100%;
         object-fit: contain;
-        object-position: center;
+        object-position: 50% 50%;
       }
 
       .thumbnails {
@@ -59,11 +65,6 @@
     @media (max-width: 390px) {
       .product-page .container {
         padding-inline: 14px;
-      }
-
-      .gallery-main {
-        height: min(62svh, 520px);
-        min-height: 350px;
       }
     }
   `;
