@@ -44,10 +44,20 @@
     "tiktok": ""
   },
   "shipping": {
+    "enabled": true,
+    "origin": "Odesa, Ukraine",
     "countries": [
       "Ukraine",
       "USA",
       "Europe"
-    ]
+    ],
+    "carriers": [
+      "Nova Poshta",
+      "Ukrposhta",
+      "International postal services"
+    ],
+    "cost_calculated_separately": true,
+    "secure_packaging": true,
+    "exact_item_from_photos": true
   }
 }
