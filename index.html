@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/payment-methods.css">
     <link rel="stylesheet" href="assets/css/shipping-info.css">
+    <link rel="stylesheet" href="assets/css/favorites.css">
 </head>
 <body>
 <header class="header">
@@ -75,11 +76,13 @@
 <nav class="mobile-navigation" aria-label="Мобільна навігація">
     <button id="mobileCatalogButton" type="button" aria-label="Перейти до каталогу"><span aria-hidden="true">🏠</span><span id="mobileCatalogLabel">Каталог</span></button>
     <button id="mobileSearchButton" type="button" aria-label="Відкрити пошук"><span aria-hidden="true">🔍</span><span id="mobileSearchLabel">Пошук</span></button>
+    <button id="favoritesToggle" class="favorites-toggle" type="button" aria-pressed="false" aria-label="Обране"><span aria-hidden="true">♥</span><span id="favoritesLabel">Обране</span><span id="favoritesCount" class="favorites-count" hidden>0</span></button>
     <a id="mobileContactButton" href="tel:+380983219801" aria-label="Зв’язатися з Vintage Jam"><span aria-hidden="true">💬</span><span id="mobileContactLabel">Зв’язок</span></a>
 </nav>
 
 <script type="module" src="assets/js/app.js"></script>
 <script type="module" src="assets/js/shipping-info.js"></script>
 <script type="module" src="assets/js/payment-methods.js"></script>
+<script type="module" src="assets/js/favorites.js"></script>
 </body>
 </html>
