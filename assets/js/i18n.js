@@ -1,152 +1,64 @@
 let translations = {};
-
 let currentLanguage = "uk";
 
-
+const FALLBACK_TRANSLATIONS = {};
 
 export async function initLanguage() {
+    const savedLanguage = localStorage.getItem("language");
 
-
-    const savedLanguage =
-        localStorage.getItem(
-            "language"
-        );
-
-
-    if (savedLanguage) {
-
-
-        currentLanguage =
-            savedLanguage;
-
-
+    if (savedLanguage === "uk" || savedLanguage === "en") {
+        currentLanguage = savedLanguage;
     } else {
-
-
-        const browserLanguage =
-            navigator.language
-            .substring(0,2);
-
-
-
-        currentLanguage =
-            browserLanguage === "en"
-            ? "en"
-            : "uk";
-
-
+        const browserLanguage = navigator.language?.substring(0, 2);
+        currentLanguage = browserLanguage === "en" ? "en" : "uk";
     }
 
-
-
     await loadTranslations();
-
-
 }
-
-
-
-
 
 async function loadTranslations() {
+    const controller = new AbortController();
+    const timeout = window.setTimeout(() => controller.abort(), 8000);
 
+    try {
+        const response = await fetch("data/translations.json", {
+            cache: "no-store",
+            signal: controller.signal
+        });
 
-    const response =
-        await fetch(
-            "data/translations.json"
-        );
+        if (!response.ok) {
+            throw new Error(`translations.json: HTTP ${response.status}`);
+        }
 
-
-    translations =
-        await response.json();
-
-
+        const data = await response.json();
+        translations = data && typeof data === "object"
+            ? data
+            : FALLBACK_TRANSLATIONS;
+    } catch (error) {
+        console.warn("Translations unavailable; using built-in labels:", error);
+        translations = FALLBACK_TRANSLATIONS;
+    } finally {
+        window.clearTimeout(timeout);
+    }
 }
-
-
-
-
 
 export function changeLanguage(language) {
-
-
-    currentLanguage =
-        language;
-
-
-    localStorage.setItem(
-        "language",
-        language
-    );
-
-
+    currentLanguage = language === "en" ? "en" : "uk";
+    localStorage.setItem("language", currentLanguage);
     translatePage();
-
 }
-
-
-
-
 
 export function translatePage() {
-
-
-    const elements =
-        document.querySelectorAll(
-            "[data-i18n]"
-        );
-
-
-
-    elements.forEach(
-        element => {
-
-
-            const key =
-                element.dataset.i18n;
-
-
-
-            if (
-                translations[key]
-            ) {
-
-
-                element.textContent =
-                translations[key][currentLanguage];
-
-
-            }
-
-
-        }
-    );
-
-
+    document.querySelectorAll("[data-i18n]").forEach(element => {
+        const value = translations[element.dataset.i18n]?.[currentLanguage];
+        if (value) element.textContent = value;
+    });
 }
-
-
-
-
 
 export function t(key) {
-
-
-    return translations[key]
-    ? translations[key][currentLanguage]
-    : key;
-
-
+    return translations[key]?.[currentLanguage] || key;
 }
 
-
-
-
-
 export function getLanguage() {
-
-
     return currentLanguage;
-
-
 }
