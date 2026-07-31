@@ -6,6 +6,7 @@
     <title>Vintage Jam — Vintage & Antique Collection</title>
     <meta name="description" content="Vintage Jam — каталог вінтажних та антикварних предметів.">
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/payment-methods.css">
 </head>
 <body>
 <header class="header">
@@ -48,6 +49,13 @@
         <h2 id="soldHeading">Продано</h2>
         <div id="soldProducts" class="products-grid"></div>
     </section>
+
+    <section class="payment-section" data-payment-section hidden>
+        <h2 data-payment-title>Способи оплати</h2>
+        <p class="payment-section-description" data-payment-description></p>
+        <div class="payment-methods" data-payment-list></div>
+        <p class="payment-note" data-payment-note></p>
+    </section>
 </main>
 
 <nav class="mobile-navigation" aria-label="Мобільна навігація">
@@ -66,5 +74,6 @@
 </nav>
 
 <script type="module" src="assets/js/app.js"></script>
+<script type="module" src="assets/js/payment-methods.js"></script>
 </body>
 </html>
