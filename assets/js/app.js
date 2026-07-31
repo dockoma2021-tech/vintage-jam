@@ -18,6 +18,9 @@ async function startApp() {
         setupLanguageSwitcher();
         setupSearch();
         setupSort();
+        setupMobileNavigation();
+        await setupContactLink();
+        updateStaticLabels(getLanguage());
     } catch (error) {
         console.error("Ошибка запуска приложения:", error);
     }
@@ -53,24 +56,112 @@ function setupLanguageSwitcher() {
         changeLanguage(newLanguage);
         await initCatalog(newLanguage);
         updateLanguageButton(button);
-        updateSearchPlaceholder(newLanguage);
-        updateSortLabels(newLanguage);
+        updateStaticLabels(newLanguage);
     });
 }
 
+function setupMobileNavigation() {
+    const catalogButton = document.getElementById("mobileCatalogButton");
+    const searchButton = document.getElementById("mobileSearchButton");
+
+    catalogButton?.addEventListener("click", () => {
+        document.getElementById("catalogSection")?.scrollIntoView({
+            behavior: "smooth",
+            block: "start"
+        });
+    });
+
+    searchButton?.addEventListener("click", () => {
+        const input = document.getElementById("searchInput");
+        input?.scrollIntoView({ behavior: "smooth", block: "center" });
+        window.setTimeout(() => input?.focus(), 300);
+    });
+}
+
+async function setupContactLink() {
+    const contactButton = document.getElementById("mobileContactButton");
+    if (!contactButton) return;
+
+    try {
+        const response = await fetch("data/settings.json");
+        if (!response.ok) throw new Error(`HTTP ${response.status}`);
+
+        const settings = await response.json();
+        const telegram = settings?.contacts?.telegram?.trim();
+        const phone = settings?.contacts?.phone?.trim();
+
+        if (telegram) {
+            contactButton.href = telegram;
+            contactButton.target = "_blank";
+            contactButton.rel = "noopener noreferrer";
+            return;
+        }
+
+        if (phone) {
+            contactButton.href = `tel:${phone.replace(/[^+\d]/g, "")}`;
+        }
+    } catch (error) {
+        console.warn("Не удалось загрузить контакты:", error);
+    }
+}
+
 function updateLanguageButton(button) {
-    button.textContent = getLanguage().toUpperCase();
+    const language = getLanguage();
+    button.textContent = language.toUpperCase();
     button.setAttribute(
         "aria-label",
-        getLanguage() === "uk" ? "Переключити мову" : "Switch language"
+        language === "uk" ? "Переключити мову" : "Switch language"
+    );
+    document.documentElement.lang = language;
+}
+
+function updateStaticLabels(language) {
+    const uk = language === "uk";
+    const labels = {
+        searchPlaceholder: uk ? "Пошук..." : "Search...",
+        searchLabel: uk ? "Пошук товарів" : "Search products",
+        sortLabel: uk ? "Сортування" : "Sorting",
+        categories: uk ? "Категорії" : "Categories",
+        arrivals: uk ? "Нові надходження" : "New arrivals",
+        catalog: uk ? "Каталог" : "Catalog",
+        sold: uk ? "Продано" : "Sold",
+        mobileCatalog: uk ? "Каталог" : "Catalog",
+        mobileSearch: uk ? "Пошук" : "Search",
+        mobileContact: uk ? "Зв’язок" : "Contact"
+    };
+
+    const input = document.getElementById("searchInput");
+    if (input) input.placeholder = labels.searchPlaceholder;
+
+    setText("searchLabel", labels.searchLabel);
+    setText("sortLabel", labels.sortLabel);
+    setText("categoriesHeading", labels.categories);
+    setText("newArrivalsHeading", labels.arrivals);
+    setText("catalogHeading", labels.catalog);
+    setText("soldHeading", labels.sold);
+    setText("mobileCatalogLabel", labels.mobileCatalog);
+    setText("mobileSearchLabel", labels.mobileSearch);
+    setText("mobileContactLabel", labels.mobileContact);
+
+    updateSortLabels(language);
+
+    document.getElementById("mobileCatalogButton")?.setAttribute(
+        "aria-label",
+        uk ? "Перейти до каталогу" : "Go to catalog"
+    );
+    document.getElementById("mobileSearchButton")?.setAttribute(
+        "aria-label",
+        uk ? "Відкрити пошук" : "Open search"
+    );
+    document.getElementById("mobileContactButton")?.setAttribute(
+        "aria-label",
+        uk ? "Зв’язатися з Vintage Jam" : "Contact Vintage Jam"
     );
 }
 
-function updateSearchPlaceholder(language) {
-    const input = document.getElementById("searchInput");
-    if (!input) return;
-
-    input.placeholder = language === "uk" ? "Пошук..." : "Search...";
+function setText(id, value) {
+    const element = document.getElementById(id);
+    if (element) element.textContent = value;
 }
 
 function updateSortLabels(language) {
@@ -92,9 +183,7 @@ function updateSortLabels(language) {
         };
 
     Array.from(select.options).forEach(option => {
-        if (labels[option.value]) {
-            option.textContent = labels[option.value];
-        }
+        if (labels[option.value]) option.textContent = labels[option.value];
     });
 }
 
