@@ -1,0 +1,34 @@
+name: Validate static site
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Validate catalog, assets and synchronization
+        run: python tools/validate_site.py
+      - name: Check JavaScript syntax
+        run: |
+          node --check data/catalog-data.js
+          node --check assets/js/catalog-v3.js
+          node --check assets/js/product-v3.js
+          node --check assets/js/admin-v3.js
+          node --check assets/js/publish-v3.js
