@@ -1,6 +1,6 @@
 window.VINTAGE_JAM_DATA = {
   "version": "3.3.0",
-  "generatedAt": "2026-07-31T23:19:51.425Z",
+  "generatedAt": "2026-07-31T23:20:30.433Z",
   "site": {
     "name": "Vintage Jam",
     "defaultLanguage": "uk"
@@ -266,8 +266,8 @@ window.VINTAGE_JAM_DATA = {
       "date_added": "2026-07-31",
       "category": "paintings",
       "title": {
-        "uk": "Картина «Рибальські човни» (2020 р.)",
-        "en": "Painting “Fishing Boats” (2020)"
+        "uk": "«Рибальські човни»",
+        "en": "“Fishing Boats”"
       },
       "short_description": {
         "uk": "Потеряйко В. С. Полотно, олія. 60 × 70 см.",
@@ -294,10 +294,6 @@ window.VINTAGE_JAM_DATA = {
         "shorts": ""
       },
       "attributes": {
-        "artist": {
-          "uk": "Потеряйко В. С. (нар. 1940 р.)",
-          "en": "V. S. Poteryaiko (b. 1940)"
-        },
         "year": "2020",
         "material": {
           "uk": "Полотно, олія",
@@ -314,6 +310,10 @@ window.VINTAGE_JAM_DATA = {
         "signature": {
           "uk": "Підпис автора у правому нижньому куті",
           "en": "Signed by the artist in the lower right corner"
+        },
+        "artist": {
+          "uk": "Потеряйко В. С. (нар. 1940 р.)",
+          "en": "V. S. Poteryaiko (b. 1940)"
         }
       },
       "story": {
@@ -396,8 +396,8 @@ window.VINTAGE_JAM_DATA = {
       "date_added": "2026-07-31",
       "category": "paintings",
       "title": {
-        "uk": "«Мандаринки»",
-        "en": "\"Mandarin Ducks\""
+        "uk": "Картина «Мандаринки»",
+        "en": "Painting \"Mandarin Ducks\""
       },
       "short_description": {
         "uk": "Яскрава авторська картина Ігора Яновського «Мандаринки» (2011 р.), виконана на полотні акрилом у стилі примітивізм.",
