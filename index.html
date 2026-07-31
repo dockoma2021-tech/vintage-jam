@@ -5,84 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
     <title>Vintage Jam — Vintage & Antique Collection</title>
     <meta name="description" content="Vintage Jam — каталог вінтажних та антикварних предметів.">
-    <link rel="stylesheet" href="assets/css/style.css?v=1.2.3">
-    <link rel="stylesheet" href="assets/css/payment-methods.css?v=1.2.3">
-    <link rel="stylesheet" href="assets/css/shipping-info.css?v=1.2.3">
-    <link rel="stylesheet" href="assets/css/favorites.css?v=1.2.3">
+    <link rel="stylesheet" href="assets/css/style.css?v=1.2.4">
+    <link rel="stylesheet" href="assets/css/payment-methods.css?v=1.2.4">
+    <link rel="stylesheet" href="assets/css/shipping-info.css?v=1.2.4">
+    <link rel="stylesheet" href="assets/css/favorites.css?v=1.2.4">
 </head>
 <body>
 <header class="header">
     <a class="logo" href="index.html" aria-label="Vintage Jam — каталог">Vintage Jam</a>
-    <div class="header-actions">
-        <button id="languageSwitcher" type="button" aria-label="Переключити мову">UA</button>
-    </div>
+    <div class="header-actions"><button id="languageSwitcher" type="button" aria-label="Переключити мову">UA</button></div>
 </header>
-
 <main id="mainContent">
-    <section class="search-section" id="searchSection">
-        <input id="searchInput" type="search" placeholder="Пошук..." aria-label="Пошук товарів" autocomplete="off" enterkeyhint="search">
-    </section>
-
-    <section class="sort-section">
-        <select id="sortSelect" aria-label="Сортування">
-            <option value="new">Нові спочатку</option>
-            <option value="old">Старі спочатку</option>
-            <option value="price_up">Ціна: від нижчої</option>
-            <option value="price_down">Ціна: від вищої</option>
-        </select>
-    </section>
-
-    <section class="categories-section" id="categoriesSection">
-        <h2 id="categoriesHeading">Категорії</h2>
-        <div id="categories" class="categories-list"></div>
-    </section>
-
-    <section class="new-arrivals-section" id="newArrivalsSection">
-        <h2 id="newArrivalsHeading">Нові надходження</h2>
-        <div id="newArrivals" class="products-grid"></div>
-    </section>
-
-    <section class="catalog-section" id="catalogSection">
-        <h2 id="catalogHeading">Каталог</h2>
-        <div id="catalog" class="products-grid"></div>
-    </section>
-
-    <section class="sold-section" id="soldSection">
-        <h2 id="soldHeading">Продано</h2>
-        <div id="soldProducts" class="products-grid"></div>
-    </section>
-
-    <section class="shipping-section" data-shipping-section hidden>
-        <h2 data-shipping-title>Доставка та умови покупки</h2>
-        <p class="shipping-intro" data-shipping-intro></p>
-        <div class="shipping-grid">
-            <article class="shipping-card"><span class="shipping-icon" aria-hidden="true">📍</span><div><h3 data-shipping-location-title></h3><p data-shipping-location-text></p></div></article>
-            <article class="shipping-card"><span class="shipping-icon" aria-hidden="true">🚚</span><div><h3 data-shipping-carriers-title></h3><p data-shipping-carriers-text></p></div></article>
-            <article class="shipping-card"><span class="shipping-icon" aria-hidden="true">🧾</span><div><h3 data-shipping-calculation-title></h3><p data-shipping-calculation-text></p></div></article>
-            <article class="shipping-card"><span class="shipping-icon" aria-hidden="true">📦</span><div><h3 data-shipping-packing-title></h3><p data-shipping-packing-text></p></div></article>
-            <article class="shipping-card"><span class="shipping-icon" aria-hidden="true">📷</span><div><h3 data-shipping-photo-title></h3><p data-shipping-photo-text></p></div></article>
-        </div>
-        <p class="shipping-note" data-shipping-note></p>
-    </section>
-
-    <section class="payment-section" data-payment-section hidden>
-        <h2 data-payment-title>Способи оплати</h2>
-        <p class="payment-section-description" data-payment-description></p>
-        <div class="payment-methods" data-payment-list></div>
-        <p class="payment-note" data-payment-note></p>
-    </section>
+    <section class="search-section" id="searchSection"><input id="searchInput" type="search" placeholder="Пошук..." aria-label="Пошук товарів" autocomplete="off" enterkeyhint="search"></section>
+    <section class="sort-section"><select id="sortSelect" aria-label="Сортування"><option value="new">Нові спочатку</option><option value="old">Старі спочатку</option><option value="price_up">Ціна: від нижчої</option><option value="price_down">Ціна: від вищої</option></select></section>
+    <section class="categories-section" id="categoriesSection"><h2 id="categoriesHeading">Категорії</h2><div id="categories" class="categories-list"></div></section>
+    <section class="new-arrivals-section" id="newArrivalsSection"><h2 id="newArrivalsHeading">Нові надходження</h2><div id="newArrivals" class="products-grid"></div></section>
+    <section class="catalog-section" id="catalogSection"><h2 id="catalogHeading">Каталог</h2><div id="catalog" class="products-grid"></div></section>
+    <section class="sold-section" id="soldSection"><h2 id="soldHeading">Продано</h2><div id="soldProducts" class="products-grid"></div></section>
+    <section class="shipping-section" data-shipping-section hidden><h2 data-shipping-title>Доставка та умови покупки</h2><p class="shipping-intro" data-shipping-intro></p><div class="shipping-grid"><article class="shipping-card"><span class="shipping-icon" aria-hidden="true">📍</span><div><h3 data-shipping-location-title></h3><p data-shipping-location-text></p></div></article><article class="shipping-card"><span class="shipping-icon" aria-hidden="true">🚚</span><div><h3 data-shipping-carriers-title></h3><p data-shipping-carriers-text></p></div></article><article class="shipping-card"><span class="shipping-icon" aria-hidden="true">🧾</span><div><h3 data-shipping-calculation-title></h3><p data-shipping-calculation-text></p></div></article><article class="shipping-card"><span class="shipping-icon" aria-hidden="true">📦</span><div><h3 data-shipping-packing-title></h3><p data-shipping-packing-text></p></div></article><article class="shipping-card"><span class="shipping-icon" aria-hidden="true">📷</span><div><h3 data-shipping-photo-title></h3><p data-shipping-photo-text></p></div></article></div><p class="shipping-note" data-shipping-note></p></section>
+    <section class="payment-section" data-payment-section hidden><h2 data-payment-title>Способи оплати</h2><p class="payment-section-description" data-payment-description></p><div class="payment-methods" data-payment-list></div><p class="payment-note" data-payment-note></p></section>
 </main>
-
-<nav class="mobile-navigation" aria-label="Мобільна навігація">
-    <button id="mobileCatalogButton" type="button" aria-label="Перейти до каталогу"><span aria-hidden="true">🏠</span><span id="mobileCatalogLabel">Каталог</span></button>
-    <button id="mobileSearchButton" type="button" aria-label="Відкрити пошук"><span aria-hidden="true">🔍</span><span id="mobileSearchLabel">Пошук</span></button>
-    <button id="favoritesToggle" class="favorites-toggle" type="button" aria-pressed="false" aria-label="Обране"><span aria-hidden="true">♥</span><span id="favoritesLabel">Обране</span><span id="favoritesCount" class="favorites-count" hidden>0</span></button>
-    <a id="mobileContactButton" href="tel:+380983219801" aria-label="Зв’язатися з Vintage Jam"><span aria-hidden="true">💬</span><span id="mobileContactLabel">Зв’язок</span></a>
-</nav>
-
-<script type="module" src="assets/js/app.js?v=1.2.3"></script>
-<script type="module" src="assets/js/shipping-info.js?v=1.2.3"></script>
-<script type="module" src="assets/js/payment-methods.js?v=1.2.3"></script>
-<script type="module" src="assets/js/favorites.js?v=1.2.3"></script>
+<nav class="mobile-navigation" aria-label="Мобільна навігація"><button id="mobileCatalogButton" type="button"><span aria-hidden="true">🏠</span><span id="mobileCatalogLabel">Каталог</span></button><button id="mobileSearchButton" type="button"><span aria-hidden="true">🔍</span><span id="mobileSearchLabel">Пошук</span></button><button id="favoritesToggle" class="favorites-toggle" type="button" aria-pressed="false"><span aria-hidden="true">♥</span><span id="favoritesLabel">Обране</span><span id="favoritesCount" class="favorites-count" hidden>0</span></button><a id="mobileContactButton" href="tel:+380983219801"><span aria-hidden="true">💬</span><span id="mobileContactLabel">Зв’язок</span></a></nav>
+<script src="assets/js/homepage.js?v=1.2.4"></script>
+<script type="module" src="assets/js/shipping-info.js?v=1.2.4"></script>
+<script type="module" src="assets/js/payment-methods.js?v=1.2.4"></script>
+<script type="module" src="assets/js/favorites.js?v=1.2.4"></script>
 </body>
 </html>
