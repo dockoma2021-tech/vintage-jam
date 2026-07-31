@@ -1,224 +1,72 @@
 <!DOCTYPE html>
 <html lang="uk">
-
 <head>
-
-<meta charset="UTF-8">
-
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-
-<title>
-Vintage Jam — Item
-</title>
-
-
-<link rel="stylesheet" href="assets/css/style.css">
-
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Vintage Jam — картка вінтажного товару">
+    <title>Vintage Jam — Товар</title>
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
-
-
-
 <body>
-
-
-<header class="header">
-
-
-<div class="logo">
-
-Vintage Jam
-
-</div>
-
-
-<div class="header-actions">
-
-
-<button id="languageSwitcher">
-
-UA
-
-</button>
-
-
-</div>
-
-
-</header>
-
-
-
-
-
-<main class="product-page">
-
-
-
-<section class="product-gallery">
-
-
-<div id="gallery">
-
-</div>
-
-
-</section>
-
-
-
-
-
-<section class="product-main">
-
-
-<h1 id="productTitle">
-
-</h1>
-
-
-
-<div 
-id="productPrice"
-class="product-price">
-
-</div>
-
-
-
-<div 
-id="productStatus">
-
-</div>
-
-
-
-<p 
-id="productDescription">
-
-</p>
-
-
-
-</section>
-
-
-
-
-
-
-<section class="product-details">
-
-
-<h2>
-
-Характеристики
-
-</h2>
-
-
-
-<div id="attributes">
-
-</div>
-
-
-</section>
-
-
-
-
-
-
-<section 
-id="media"
-class="product-media">
-
-
-</section>
-
-
-
-
-
-
-
-<section class="contact-section">
-
-
-<a
-id="contactButton"
-class="contact-button"
-target="_blank">
-
-💬 Зв'язатися
-
-</a>
-
-
-</section>
-
-
-
-
-
-</main>
-
-
-
-
-
-
-<nav class="mobile-navigation">
-
-
-<button>
-
-🏠
-
-<span>
-Каталог
-</span>
-
-</button>
-
-
-
-<button>
-
-🔍
-
-<span>
-Пошук
-</span>
-
-</button>
-
-
-
-<button>
-
-☰
-
-<span>
-Меню
-</span>
-
-</button>
-
-
-
-</nav>
-
-
-
-
-
-
-<script type="module" src="assets/js/item.js"></script>
-
-
+    <header class="header">
+        <a class="logo" href="index.html" aria-label="Vintage Jam — каталог">Vintage Jam</a>
+        <div class="header-actions">
+            <button id="languageSwitcher" type="button" aria-label="Change language">UA</button>
+        </div>
+    </header>
+
+    <main id="productPage" class="product-page" hidden>
+        <a class="product-back" href="index.html" id="backLink">← До каталогу</a>
+
+        <div class="product-layout">
+            <section class="product-gallery" aria-label="Галерея товару">
+                <div class="product-main-image-wrap">
+                    <img id="mainProductImage" class="product-main-image" src="assets/images/no-image.webp" alt="" decoding="async">
+                    <span id="productStatus" class="product-status" hidden></span>
+                </div>
+                <div id="galleryThumbnails" class="gallery-thumbnails" aria-label="Мініатюри зображень"></div>
+            </section>
+
+            <section class="product-summary">
+                <p id="productCategory" class="product-category"></p>
+                <h1 id="productTitle"></h1>
+                <p id="productShortDescription" class="product-lead"></p>
+                <div id="productPrice" class="product-page-price"></div>
+
+                <div id="productMedia" class="product-media"></div>
+
+                <a id="contactButton" class="contact-button product-contact-button" target="_blank" rel="noopener noreferrer">
+                    💬 <span id="contactButtonText">Зв’язатися</span>
+                </a>
+            </section>
+        </div>
+
+        <section class="product-content-card">
+            <h2 id="descriptionHeading">Опис</h2>
+            <p id="productDescription"></p>
+        </section>
+
+        <section id="attributesSection" class="product-content-card">
+            <h2 id="attributesHeading">Характеристики</h2>
+            <dl id="attributes" class="attributes-list"></dl>
+        </section>
+
+        <section id="storySection" class="product-content-card" hidden>
+            <h2 id="storyHeading">Історія предмета</h2>
+            <p id="productStory"></p>
+        </section>
+    </main>
+
+    <main id="productState" class="product-state" aria-live="polite">
+        <p id="productStateMessage">Завантаження товару…</p>
+        <a id="stateBackLink" href="index.html">Повернутися до каталогу</a>
+    </main>
+
+    <nav class="mobile-navigation" aria-label="Основна навігація">
+        <a href="index.html">🏠<span id="mobileCatalogText">Каталог</span></a>
+        <a href="index.html#searchInput">🔍<span id="mobileSearchText">Пошук</span></a>
+    </nav>
+
+    <script type="module" src="assets/js/item.js"></script>
 </body>
-
 </html>
