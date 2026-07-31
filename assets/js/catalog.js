@@ -458,16 +458,21 @@ function createProductCard(product) {
 
 
 
-    card.onclick = () => {
+  card.onclick = () => {
 
 
-        window.location.href =
-        `item.html?id=${product.id}`;
+    window.location.href =
+    `item.html?id=${product.id}`;
 
 
-    };
+};
 
 
+
+return card;
+
+
+}
 
 
 function formatPrice(product) {
