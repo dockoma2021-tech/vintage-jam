@@ -6,186 +6,23 @@
   <meta name="robots" content="noindex,nofollow">
   <title>Vintage Jam — Admin MVP</title>
   <link rel="stylesheet" href="assets/css/admin.css">
+  <link rel="stylesheet" href="assets/css/admin-readiness.css">
 </head>
 <body>
-<header class="admin-header">
-  <div><strong>Vintage Jam</strong><span>Admin MVP 1.2</span></div>
-  <a href="index.html">Перейти до каталогу</a>
-</header>
-
+<header class="admin-header"><div><strong>Vintage Jam</strong><span>Admin MVP 1.3</span></div><a href="index.html">Перейти до каталогу</a></header>
 <main class="admin-shell">
-  <section class="admin-card admin-intro">
-    <div>
-      <p class="eyebrow">Управління каталогом</p>
-      <h1>Товари, Excel, фотографії та products.json</h1>
-      <p>Дані й фотографії обробляються у вашому браузері. Локальна резервна копія захищає зміни від випадкової втрати.</p>
-      <p id="draftStatus" class="admin-draft-status">Перевірка локальної чернетки…</p>
-    </div>
-    <div class="admin-toolbar">
-      <button id="loadCurrentButton" type="button">Завантажити поточний каталог</button>
-      <button id="saveDraftButton" type="button" class="secondary">Зберегти чернетку</button>
-      <button id="restoreDraftButton" type="button" class="secondary">Відновити чернетку</button>
-      <button id="clearDraftButton" type="button" class="danger">Очистити копію</button>
-      <button id="downloadTemplateButton" type="button" class="secondary">Шаблон Excel</button>
-      <label class="file-button">Імпорт Excel<input id="excelInput" type="file" accept=".xlsx,.xls"></label>
-      <label class="file-button secondary">Імпорт JSON<input id="jsonInput" type="file" accept="application/json,.json"></label>
-    </div>
-  </section>
-
-  <section class="admin-stats" aria-live="polite">
-    <article><strong id="totalCount">0</strong><span>товарів</span></article>
-    <article><strong id="validCount">0</strong><span>без помилок</span></article>
-    <article><strong id="errorCount">0</strong><span>з помилками</span></article>
-    <article><strong id="selectedCount">0</strong><span>вибрано</span></article>
-  </section>
-
-  <section class="admin-workspace">
-    <aside class="admin-card admin-list-panel">
-      <div class="panel-heading">
-        <div><h2>Каталог</h2><p id="catalogStatus">Дані ще не завантажені</p></div>
-        <button id="newProductButton" type="button">+ Новий</button>
-      </div>
-      <div class="list-filters">
-        <input id="productSearch" type="search" placeholder="Пошук за назвою або ID">
-        <select id="statusFilter">
-          <option value="all">Усі статуси</option>
-          <option value="available">В наявності</option>
-          <option value="reserved">Резерв</option>
-          <option value="sold">Продано</option>
-        </select>
-      </div>
-      <div id="productList" class="admin-product-list"></div>
-    </aside>
-
-    <section class="admin-card admin-editor-panel">
-      <div class="panel-heading">
-        <div><h2>Редактор товару</h2><p id="editorHint">Створіть товар або виберіть його зі списку</p></div>
-        <button id="deleteProductButton" type="button" class="danger" disabled>Видалити</button>
-      </div>
-
-      <form id="productForm" class="product-form" autocomplete="off">
-        <fieldset>
-          <legend>Основні дані</legend>
-          <label>ID<input name="id" placeholder="vj-000003"></label>
-          <label>Дата додавання<input name="date_added" type="date"></label>
-          <label>Публікація<select name="publication_status"><option value="published">Опубліковано</option><option value="draft">Чернетка</option></select></label>
-          <label>Статус продажу<select name="sale_status"><option value="available">В наявності</option><option value="reserved">Резерв</option><option value="sold">Продано</option></select></label>
-          <label>Категорія<select name="category" id="categorySelect"></select></label>
-        </fieldset>
-
-        <fieldset class="full-width">
-          <legend>Назви та описи</legend>
-          <label>Назва українською<input name="title_uk"></label>
-          <label>Title in English<input name="title_en"></label>
-          <label>Короткий опис українською<textarea name="short_description_uk" rows="2"></textarea></label>
-          <label>Short description in English<textarea name="short_description_en" rows="2"></textarea></label>
-          <label>Опис українською<textarea name="description_uk" rows="5"></textarea></label>
-          <label>Description in English<textarea name="description_en" rows="5"></textarea></label>
-        </fieldset>
-
-        <fieldset>
-          <legend>Ціна</legend>
-          <label>Тип<select name="price_type"><option value="request">За запитом</option><option value="fixed">Фіксована</option></select></label>
-          <label>Сума<input name="price_value" type="number" min="0" step="1"></label>
-          <label>Валюта<input name="price_currency" value="UAH"></label>
-        </fieldset>
-
-        <fieldset class="full-width">
-          <legend>Фото та відео</legend>
-          <label class="wide">Шляхи до фотографій, один у рядку<textarea name="images" rows="6" placeholder="images/products/vj-000003/01.webp"></textarea></label>
-
-          <section class="media-manager wide" aria-labelledby="mediaManagerTitle">
-            <div class="media-manager-heading">
-              <div>
-                <h3 id="mediaManagerTitle">Підготовка фотографій</h3>
-                <p>Виберіть фото з телефона або комп’ютера. Вони будуть зменшені, перетворені у WebP і правильно перейменовані.</p>
-              </div>
-              <label class="file-button media-select-button">Обрати фото
-                <input id="productImagesInput" type="file" accept="image/jpeg,image/png,image/webp,image/heic,image/heif" multiple>
-              </label>
-            </div>
-
-            <div class="media-settings">
-              <label>Максимальна сторона
-                <select id="mediaMaxSize">
-                  <option value="1200">1200 px</option>
-                  <option value="1600">1600 px</option>
-                  <option value="1800" selected>1800 px</option>
-                  <option value="2400">2400 px</option>
-                </select>
-              </label>
-              <label>Якість WebP
-                <select id="mediaQuality">
-                  <option value="0.72">Економна</option>
-                  <option value="0.82" selected>Оптимальна</option>
-                  <option value="0.9">Висока</option>
-                </select>
-              </label>
-              <button id="clearPreparedImagesButton" type="button" class="danger">Очистити фото</button>
-            </div>
-
-            <div id="mediaDropZone" class="media-drop-zone" tabindex="0">
-              Перетягніть фотографії сюди або натисніть «Обрати фото»
-            </div>
-            <div id="mediaProgress" class="media-progress" hidden></div>
-            <div id="preparedImages" class="prepared-images"></div>
-            <p id="mediaSummary" class="media-summary">Підготовлених фотографій немає.</p>
-
-            <div class="media-package-actions">
-              <button id="prepareProductZipButton" type="button">Завантажити ZIP товару</button>
-              <span>Архів міститиме папку фотографій, актуальний products.json та інструкцію.</span>
-            </div>
-          </section>
-
-          <label>YouTube<input name="youtube" type="url"></label>
-          <label>Shorts<input name="shorts" type="url"></label>
-        </fieldset>
-
-        <fieldset>
-          <legend>Характеристики</legend>
-          <label>Бренд / автор (UA)<input name="brand_uk"></label>
-          <label>Brand / artist (EN)<input name="brand_en"></label>
-          <label>Модель / назва (UA)<input name="model_uk"></label>
-          <label>Model / name (EN)<input name="model_en"></label>
-          <label>Рік<input name="year"></label>
-          <label>Країна (UA)<input name="country_uk"></label>
-          <label>Country (EN)<input name="country_en"></label>
-          <label>Матеріал (UA)<input name="material_uk"></label>
-          <label>Material (EN)<input name="material_en"></label>
-          <label>Розміри (UA)<input name="dimensions_uk"></label>
-          <label>Dimensions (EN)<input name="dimensions_en"></label>
-        </fieldset>
-
-        <fieldset class="full-width">
-          <legend>Історія та додаткові поля</legend>
-          <label>Історія українською<textarea name="story_uk" rows="3"></textarea></label>
-          <label>Story in English<textarea name="story_en" rows="3"></textarea></label>
-          <label class="wide">Додаткові характеристики JSON<textarea name="attributes_json" rows="5" placeholder='{"condition":{"uk":"...","en":"..."}}'></textarea></label>
-        </fieldset>
-
-        <div id="validationBox" class="validation-box" hidden></div>
-        <div class="form-actions">
-          <button id="saveProductButton" type="submit">Зберегти товар</button>
-          <button id="duplicateProductButton" type="button" class="secondary" disabled>Дублювати</button>
-        </div>
-      </form>
-    </section>
-  </section>
-
-  <section class="admin-card export-panel">
-    <div><h2>Експорт і резервна копія</h2><p>Перед завантаженням перевірте, щоб не залишилося помилок.</p></div>
-    <div class="admin-toolbar">
-      <button id="validateAllButton" type="button" class="secondary">Перевірити все</button>
-      <button id="exportJsonButton" type="button">Завантажити products.json</button>
-      <button id="exportExcelButton" type="button" class="secondary">Експорт в Excel</button>
-    </div>
-  </section>
-</main>
-
-<div id="adminToast" class="admin-toast" role="status" hidden></div>
-<script src="https://cdn.jsdelivr.net/npm/xlsx@0.18.5/dist/xlsx.full.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/jszip@3.10.1/dist/jszip.min.js"></script>
-<script type="module" src="assets/js/admin.js"></script>
-<script type="module" src="assets/js/admin-media.js"></script>
-</body>
-</html>
+<section class="admin-card admin-intro"><div><p class="eyebrow">Управління каталогом</p><h1>Товари, фотографії та підготовка до публікації</h1><p>Дані й фотографії обробляються у вашому браузері. Перед публікацією товар проходить фінальну перевірку.</p><p id="draftStatus" class="admin-draft-status">Перевірка локальної чернетки…</p></div><div class="admin-toolbar"><button id="loadCurrentButton" type="button">Завантажити поточний каталог</button><button id="saveDraftButton" type="button" class="secondary">Зберегти чернетку</button><button id="restoreDraftButton" type="button" class="secondary">Відновити чернетку</button><button id="clearDraftButton" type="button" class="danger">Очистити копію</button><button id="downloadTemplateButton" type="button" class="secondary">Шаблон Excel</button><label class="file-button">Імпорт Excel<input id="excelInput" type="file" accept=".xlsx,.xls"></label><label class="file-button secondary">Імпорт JSON<input id="jsonInput" type="file" accept="application/json,.json"></label></div></section>
+<section class="admin-stats" aria-live="polite"><article><strong id="totalCount">0</strong><span>товарів</span></article><article><strong id="validCount">0</strong><span>без помилок</span></article><article><strong id="errorCount">0</strong><span>з помилками</span></article><article><strong id="selectedCount">0</strong><span>вибрано</span></article></section>
+<section class="admin-workspace"><aside class="admin-card admin-list-panel"><div class="panel-heading"><div><h2>Каталог</h2><p id="catalogStatus">Дані ще не завантажені</p></div><button id="newProductButton" type="button">+ Новий</button></div><div class="list-filters"><input id="productSearch" type="search" placeholder="Пошук за назвою або ID"><select id="statusFilter"><option value="all">Усі статуси</option><option value="available">В наявності</option><option value="reserved">Резерв</option><option value="sold">Продано</option></select></div><div id="productList" class="admin-product-list"></div></aside>
+<section class="admin-card admin-editor-panel"><div class="panel-heading"><div><h2>Редактор товару</h2><p id="editorHint">Створіть товар або виберіть його зі списку</p></div><button id="deleteProductButton" type="button" class="danger" disabled>Видалити</button></div>
+<form id="productForm" class="product-form" autocomplete="off">
+<fieldset><legend>Основні дані</legend><label>ID<input name="id" placeholder="vj-000003"></label><label>Дата додавання<input name="date_added" type="date"></label><label>Публікація<select name="publication_status"><option value="published">Опубліковано</option><option value="draft">Чернетка</option></select></label><label>Статус продажу<select name="sale_status"><option value="available">В наявності</option><option value="reserved">Резерв</option><option value="sold">Продано</option></select></label><label>Категорія<select name="category" id="categorySelect"></select></label></fieldset>
+<fieldset class="full-width"><legend>Назви та описи</legend><label>Назва українською<input name="title_uk"></label><label>Title in English<input name="title_en"></label><label>Короткий опис українською<textarea name="short_description_uk" rows="2"></textarea></label><label>Short description in English<textarea name="short_description_en" rows="2"></textarea></label><label>Опис українською<textarea name="description_uk" rows="5"></textarea></label><label>Description in English<textarea name="description_en" rows="5"></textarea></label></fieldset>
+<fieldset><legend>Ціна</legend><label>Тип<select name="price_type"><option value="request">За запитом</option><option value="fixed">Фіксована</option></select></label><label>Сума<input name="price_value" type="number" min="0" step="1"></label><label>Валюта<input name="price_currency" value="UAH"></label></fieldset>
+<fieldset class="full-width"><legend>Фото та відео</legend><label class="wide">Шляхи до фотографій, один у рядку<textarea name="images" rows="6" placeholder="images/products/vj-000003/01.webp"></textarea></label><section class="media-manager wide" aria-labelledby="mediaManagerTitle"><div class="media-manager-heading"><div><h3 id="mediaManagerTitle">Підготовка фотографій</h3><p>Виберіть фото з телефона або комп’ютера. Вони будуть зменшені, перетворені у WebP і правильно перейменовані.</p></div><label class="file-button media-select-button">Обрати фото<input id="productImagesInput" type="file" accept="image/jpeg,image/png,image/webp,image/heic,image/heif" multiple></label></div><div class="media-settings"><label>Максимальна сторона<select id="mediaMaxSize"><option value="1200">1200 px</option><option value="1600">1600 px</option><option value="1800" selected>1800 px</option><option value="2400">2400 px</option></select></label><label>Якість WebP<select id="mediaQuality"><option value="0.72">Економна</option><option value="0.82" selected>Оптимальна</option><option value="0.9">Висока</option></select></label><button id="clearPreparedImagesButton" type="button" class="danger">Очистити фото</button></div><div id="mediaDropZone" class="media-drop-zone" tabindex="0">Перетягніть фотографії сюди або натисніть «Обрати фото»</div><div id="mediaProgress" class="media-progress" hidden></div><div id="preparedImages" class="prepared-images"></div><p id="mediaSummary" class="media-summary">Підготовлених фотографій немає.</p><div class="media-package-actions"><button id="prepareProductZipButton" type="button">Завантажити ZIP товару</button><span>Архів міститиме папку фотографій, актуальний products.json та інструкцію.</span></div></section><label>YouTube<input name="youtube" type="url"></label><label>Shorts<input name="shorts" type="url"></label></fieldset>
+<fieldset><legend>Характеристики</legend><label>Бренд / автор (UA)<input name="brand_uk"></label><label>Brand / artist (EN)<input name="brand_en"></label><label>Модель / назва (UA)<input name="model_uk"></label><label>Model / name (EN)<input name="model_en"></label><label>Рік<input name="year"></label><label>Країна (UA)<input name="country_uk"></label><label>Country (EN)<input name="country_en"></label><label>Матеріал (UA)<input name="material_uk"></label><label>Material (EN)<input name="material_en"></label><label>Розміри (UA)<input name="dimensions_uk"></label><label>Dimensions (EN)<input name="dimensions_en"></label></fieldset>
+<fieldset class="full-width"><legend>Історія та додаткові поля</legend><label>Історія українською<textarea name="story_uk" rows="3"></textarea></label><label>Story in English<textarea name="story_en" rows="3"></textarea></label><label class="wide">Додаткові характеристики JSON<textarea name="attributes_json" rows="5" placeholder='{"condition":{"uk":"...","en":"..."}}'></textarea></label></fieldset>
+<div id="validationBox" class="validation-box" hidden></div><div class="form-actions"><button id="saveProductButton" type="submit">Зберегти товар</button><button id="duplicateProductButton" type="button" class="secondary" disabled>Дублювати</button></div></form></section></section>
+<section class="admin-card publish-readiness"><div class="readiness-header"><div><h2>Фінальна перевірка товару</h2><p>Перевірте обидві мови, головне фото, ціну та статус перед створенням пакета.</p></div><span id="readinessBadge" class="readiness-badge">Не перевірено</span></div><div class="readiness-grid"><section class="readiness-checks"><h3>Контрольний список</h3><div id="readinessChecklist" class="checklist"></div><div class="readiness-actions"><button id="refreshPreviewButton" type="button" class="secondary">Оновити перевірку</button><button id="markReadyButton" type="button">Позначити як готовий</button></div></section><section class="product-preview-panel"><div class="preview-language-switch"><button id="previewUkButton" type="button">UA</button><button id="previewEnButton" type="button" class="secondary">EN</button></div><h3>Попередній перегляд</h3><article class="preview-card"><div class="preview-image-wrap"><img id="previewImage" src="assets/images/no-image.webp" alt=""></div><div class="preview-body"><div id="previewCategory" class="preview-category"></div><div id="previewTitle" class="preview-title">Без назви</div><div id="previewDescription" class="preview-description"></div><div id="previewPrice" class="preview-price"></div></div></article></section></div><section class="publish-history"><h3>Журнал підготовлених товарів</h3><div id="publishHistoryList" class="publish-history-list"></div></section></section>
+<section class="admin-card export-panel"><div><h2>Експорт і резервна копія</h2><p>Перед завантаженням перевірте, щоб не залишилося помилок.</p></div><div class="admin-toolbar"><button id="validateAllButton" type="button" class="secondary">Перевірити все</button><button id="exportJsonButton" type="button">Завантажити products.json</button><button id="exportExcelButton" type="button" class="secondary">Експорт в Excel</button></div></section>
+</main><div id="adminToast" class="admin-toast" role="status" hidden></div><script src="https://cdn.jsdelivr.net/npm/xlsx@0.18.5/dist/xlsx.full.min.js"></script><script src="https://cdn.jsdelivr.net/npm/jszip@3.10.1/dist/jszip.min.js"></script><script type="module" src="assets/js/admin.js"></script><script type="module" src="assets/js/admin-media.js"></script><script type="module" src="assets/js/admin-readiness.js"></script></body></html>
