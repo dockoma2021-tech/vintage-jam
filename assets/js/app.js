@@ -2,13 +2,13 @@ import {
     initLanguage,
     changeLanguage,
     getLanguage
-} from "./i18n.js";
+} from "./i18n.js?v=1.2.2";
 
 import {
     initCatalog,
     searchProducts,
     setSort
-} from "./catalog.js";
+} from "./catalog.js?v=1.2.2";
 
 async function startApp() {
     setStartupState("loading");
