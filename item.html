@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/gallery-enhancements.css">
     <link rel="stylesheet" href="assets/css/gallery-lightbox.css">
+    <link rel="stylesheet" href="assets/css/contact-actions.css">
 </head>
 <body>
     <header class="header">
@@ -40,7 +41,7 @@
 
                 <div id="productMedia" class="product-media"></div>
 
-                <a id="contactButton" class="contact-button product-contact-button" target="_blank" rel="noopener noreferrer">
+                <a id="contactButton" class="contact-button product-contact-button">
                     💬 <span id="contactButtonText">Зв’язатися</span>
                 </a>
             </section>
@@ -82,8 +83,35 @@
         <span id="lightboxCounter" class="lightbox-counter" aria-live="polite"></span>
     </div>
 
+    <div id="contactSheet" class="contact-sheet" role="dialog" aria-modal="true" aria-labelledby="contactSheetTitle" hidden>
+        <button id="contactSheetBackdrop" class="contact-sheet-backdrop" type="button" aria-label="Закрити"></button>
+        <section class="contact-sheet-panel">
+            <button id="contactSheetClose" class="contact-sheet-close" type="button" aria-label="Закрити">×</button>
+            <header class="contact-sheet-header">
+                <h2 id="contactSheetTitle">Зв’язатися щодо товару</h2>
+                <p id="contactSheetSubtitle">Оберіть зручний спосіб зв’язку</p>
+            </header>
+
+            <div id="contactMethods" class="contact-methods">
+                <a id="contactTelegram" class="contact-method" target="_blank" rel="noopener noreferrer" hidden><span class="contact-method-icon">✈️</span><span id="contactTelegramText">Telegram</span></a>
+                <a id="contactViber" class="contact-method" target="_blank" rel="noopener noreferrer" hidden><span class="contact-method-icon">📞</span><span id="contactViberText">Viber</span></a>
+                <a id="contactWhatsapp" class="contact-method" target="_blank" rel="noopener noreferrer" hidden><span class="contact-method-icon">💬</span><span id="contactWhatsappText">WhatsApp</span></a>
+                <a id="contactPhone" class="contact-method" hidden><span class="contact-method-icon">☎️</span><span id="contactPhoneText">Зателефонувати</span></a>
+                <a id="contactEmail" class="contact-method" hidden><span class="contact-method-icon">✉️</span><span id="contactEmailText">Email</span></a>
+            </div>
+
+            <div class="contact-secondary-actions">
+                <button id="shareProduct" class="contact-secondary-action" type="button"><span id="shareProductText">Поділитися товаром</span></button>
+                <button id="copyProductLink" class="contact-secondary-action secondary" type="button"><span id="copyProductLinkText">Скопіювати посилання</span></button>
+            </div>
+        </section>
+    </div>
+
+    <div id="contactToast" class="contact-toast" role="status" aria-live="polite" hidden></div>
+
     <script type="module" src="assets/js/item.js"></script>
     <script type="module" src="assets/js/gallery-swipe.js"></script>
     <script type="module" src="assets/js/gallery-lightbox.js"></script>
+    <script type="module" src="assets/js/contact-actions.js"></script>
 </body>
 </html>
