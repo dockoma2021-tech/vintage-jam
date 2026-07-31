@@ -1,3 +1,5 @@
+console.log("NEW CATALOG FILE LOADED");
+
 let products = [];
 
 let categories = [];
