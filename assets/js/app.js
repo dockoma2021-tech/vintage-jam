@@ -26,7 +26,25 @@ async function startApp() {
     setupSearch();
 
 }
+function applyFilters(){
 
+let result = products;
+
+
+if(activeCategory){
+
+result =
+result.filter(
+product =>
+product.category === activeCategory
+);
+
+}
+
+
+return result;
+
+}
 
 function setupSearch(){
 
