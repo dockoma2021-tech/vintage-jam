@@ -1,22 +1,27 @@
-import { loadTranslations } from "./i18n.js";
-import { initCatalog } from "./catalog.js";
+import { 
+    initLanguage,
+    changeLanguage,
+    getLanguage
+} from "./i18n.js";
 
-
-let currentLanguage = "uk";
+import { 
+    initCatalog
+} from "./catalog.js";
 
 
 
 async function startApp() {
 
 
-    await loadTranslations(currentLanguage);
+    await initLanguage();
 
 
-    initCatalog(currentLanguage);
+    initCatalog(
+        getLanguage()
+    );
 
 
     setupLanguageSwitcher();
-
 
 }
 
@@ -25,9 +30,10 @@ async function startApp() {
 function setupLanguageSwitcher() {
 
 
-    const button = document.getElementById(
-        "languageSwitcher"
-    );
+    const button =
+        document.getElementById(
+            "languageSwitcher"
+        );
 
 
     if (!button) return;
@@ -39,29 +45,31 @@ function setupLanguageSwitcher() {
         () => {
 
 
-            currentLanguage =
-                currentLanguage === "uk"
+            const newLanguage =
+                getLanguage() === "uk"
                 ? "en"
                 : "uk";
 
 
 
-            loadTranslations(
-                currentLanguage
+            changeLanguage(
+                newLanguage
             );
 
 
+
             initCatalog(
-                currentLanguage
+                newLanguage
             );
 
 
             button.textContent =
-                currentLanguage.toUpperCase();
+                newLanguage.toUpperCase();
 
 
         }
     );
+
 
 }
 
