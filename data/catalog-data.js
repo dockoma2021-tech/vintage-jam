@@ -1,6 +1,6 @@
 window.VINTAGE_JAM_DATA = {
   "version": "3.3.0",
-  "generatedAt": "2026-07-31T22:57:54.695Z",
+  "generatedAt": "2026-07-31T23:17:16.653Z",
   "site": {
     "name": "Vintage Jam",
     "defaultLanguage": "uk"
@@ -386,6 +386,65 @@ window.VINTAGE_JAM_DATA = {
       "story": {
         "uk": "Модель Marauder від компанії District 9 — зразок сучасного інженерного дизайну в сегменті кастомних та технологічних складних ножів 2020-х років.",
         "en": "The Marauder model by District 9 is an example of modern engineering design in the custom and high-tech folding knife segment of the 2020s."
+      },
+      "documents": []
+    },
+    {
+      "id": "vj-000004",
+      "publication_status": "published",
+      "sale_status": "available",
+      "date_added": "2026-07-31",
+      "category": "paintings",
+      "title": {
+        "uk": "Картина «Мандаринки»",
+        "en": "Painting \"Mandarin Ducks\""
+      },
+      "short_description": {
+        "uk": "Яскрава авторська картина Ігора Яновського «Мандаринки» (2011 р.), виконана на полотні акрилом у стилі примітивізм.",
+        "en": "Original painting \"Mandarin Ducks\" by Igor Yanovsky (2011), acrylic on canvas, primitive art style."
+      },
+      "description": {
+        "uk": "Оригінальна картина «Мандаринки» українського художника Ігора Яновського. Робота створена у 2011 році у стилі наївного мистецтва (примітивізму) з виразними контрастними кольорами. На лицьовій стороні міститься підпис автора. На звороті полотна нанесено рукописний вірш Д. Хармса, назву картини, рік створення та підпис художника. Стан відмінний.",
+        "en": "Original painting \"Mandarin Ducks\" by Ukrainian artist Igor Yanovsky, created in 2011 in the naive/primitive art style with vibrant contrasting colors. Features the artist's signature on the front. The back of the canvas includes a handwritten poem by D. Kharms, title, year of creation, and official artist signature with an \"ORIGINAL\" stamp. Excellent condition."
+      },
+      "price": {
+        "type": "request",
+        "value": null,
+        "currency": "UAH"
+      },
+      "media": {
+        "images": [
+          "images/products/vj-000004/01.webp",
+          "images/products/vj-000004/02.webp",
+          "images/products/vj-000004/03.webp",
+          "images/products/vj-000004/04.webp",
+          "images/products/vj-000004/05.webp",
+          "images/products/vj-000004/06.webp",
+          "images/products/vj-000004/07.webp",
+          "images/products/vj-000004/08.webp",
+          "images/products/vj-000004/09.webp"
+        ],
+        "youtube": "https://youtube.com/shorts/Cmu-0zUQdzU?si=nL5nPJhQE51orh7y",
+        "shorts": ""
+      },
+      "attributes": {
+        "year": "2011",
+        "material": {
+          "uk": "Полотно, акрил",
+          "en": "Canvas, acrylic"
+        },
+        "dimensions": {
+          "uk": "40 х 50 см",
+          "en": "40 x 50 cm"
+        },
+        "artist": {
+          "uk": "Ігор Яновський",
+          "en": "Igor Yanovsky"
+        }
+      },
+      "story": {
+        "uk": "На звороті полотна художник власноруч написав вірш Даниїла Хармса («Открыв наугад зеленый том...»), що додає картині особливої концептуальної цінності.",
+        "en": "On the reverse side of the canvas, the artist handwritten a poem by Daniil Kharms, adding a unique conceptual touch to the artwork."
       },
       "documents": []
     }
