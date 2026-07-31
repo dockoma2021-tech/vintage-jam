@@ -5,19 +5,20 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
 <meta name="description" content="Vintage Jam — картка вінтажного товару">
 <title>Vintage Jam — Товар</title>
-<link rel="stylesheet" href="assets/css/style.css?v=1.2.6">
-<link rel="stylesheet" href="assets/css/gallery-enhancements.css?v=1.2.6">
-<link rel="stylesheet" href="assets/css/gallery-lightbox.css?v=1.2.6">
-<link rel="stylesheet" href="assets/css/contact-actions.css?v=1.2.6">
-<link rel="stylesheet" href="assets/css/payment-methods.css?v=1.2.6">
-<link rel="stylesheet" href="assets/css/shipping-info.css?v=1.2.6">
+<link rel="stylesheet" href="assets/css/style.css?v=1.2.7">
+<link rel="stylesheet" href="assets/css/gallery-enhancements.css?v=1.2.7">
+<link rel="stylesheet" href="assets/css/gallery-lightbox.css?v=1.2.7">
+<link rel="stylesheet" href="assets/css/contact-actions.css?v=1.2.7">
+<link rel="stylesheet" href="assets/css/payment-methods.css?v=1.2.7">
+<link rel="stylesheet" href="assets/css/shipping-info.css?v=1.2.7">
+<link rel="stylesheet" href="assets/css/product-polish.css?v=1.2.7">
 </head>
 <body>
 <header class="header"><a class="logo" href="index.html">Vintage Jam</a><div class="header-actions"><button id="languageSwitcher" type="button">UA</button></div></header>
 <main id="productPage" class="product-page" hidden>
 <a class="product-back" href="index.html" id="backLink">← До каталогу</a>
 <div class="product-layout">
-<section class="product-gallery"><div class="product-main-image-wrap"><img id="mainProductImage" class="product-main-image" src="assets/images/no-image.webp" alt=""><span id="productStatus" class="product-status" hidden></span><button id="galleryPrevious" class="gallery-arrow previous" type="button">‹</button><button id="galleryNext" class="gallery-arrow next" type="button">›</button><span id="galleryCounter" class="gallery-counter"></span></div><div id="galleryThumbnails" class="gallery-thumbnails"></div></section>
+<section class="product-gallery"><div class="product-main-image-wrap"><img id="mainProductImage" class="product-main-image" src="assets/images/no-image.webp" alt=""><span id="productStatus" class="product-status" hidden></span><button id="galleryPrevious" class="gallery-arrow previous" type="button" aria-label="Попереднє зображення">‹</button><button id="galleryNext" class="gallery-arrow next" type="button" aria-label="Наступне зображення">›</button><span id="galleryCounter" class="gallery-counter" aria-live="polite"></span></div><div id="galleryThumbnails" class="gallery-thumbnails" aria-label="Мініатюри зображень"></div></section>
 <section class="product-summary"><p id="productCategory" class="product-category"></p><h1 id="productTitle"></h1><p id="productShortDescription" class="product-lead"></p><div id="productPrice" class="product-page-price"></div><div id="productMedia" class="product-media"></div><a id="contactButton" class="contact-button product-contact-button" href="tel:+380983219801">💬 <span id="contactButtonText">Зв’язатися</span></a></section>
 </div>
 <section class="product-content-card"><h2 id="descriptionHeading">Опис</h2><p id="productDescription"></p></section>
@@ -28,9 +29,9 @@
 </main>
 <main id="productState" class="product-state"><p id="productStateMessage">Завантаження товару…</p><a id="stateBackLink" href="index.html">Повернутися до каталогу</a></main>
 <nav class="mobile-navigation"><a href="index.html">🏠<span id="mobileCatalogText">Каталог</span></a><a href="index.html#searchInput">🔍<span id="mobileSearchText">Пошук</span></a></nav>
-<script src="data/catalog-fallback.js?v=1.2.6"></script>
-<script src="assets/js/item-fast.js?v=1.2.6"></script>
-<script type="module" src="assets/js/shipping-info.js?v=1.2.6"></script>
-<script type="module" src="assets/js/payment-methods.js?v=1.2.6"></script>
+<script src="data/catalog-fallback.js?v=1.2.7"></script>
+<script src="assets/js/item-fast.js?v=1.2.7"></script>
+<script type="module" src="assets/js/shipping-info.js?v=1.2.7"></script>
+<script type="module" src="assets/js/payment-methods.js?v=1.2.7"></script>
 </body>
 </html>
