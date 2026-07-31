@@ -283,6 +283,27 @@ function createProductCard(product) {
 
     }
 
+    function isNew(date){
+
+
+    const added =
+    new Date(date);
+
+
+    const now =
+    new Date();
+
+
+    const days =
+    (now - added)
+    /
+    (1000 * 60 * 60 * 24);
+
+
+    return days <= 30;
+
+}
+
 
 
     card.innerHTML = `
