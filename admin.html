@@ -9,7 +9,7 @@
 </head>
 <body>
 <header class="admin-header">
-  <div><strong>Vintage Jam</strong><span>Admin MVP 1.1</span></div>
+  <div><strong>Vintage Jam</strong><span>Admin MVP 1.2</span></div>
   <a href="index.html">Перейти до каталогу</a>
 </header>
 
@@ -17,8 +17,8 @@
   <section class="admin-card admin-intro">
     <div>
       <p class="eyebrow">Управління каталогом</p>
-      <h1>Товари, Excel та products.json</h1>
-      <p>Дані обробляються у вашому браузері. Локальна резервна копія захищає зміни від випадкової втрати.</p>
+      <h1>Товари, Excel, фотографії та products.json</h1>
+      <p>Дані й фотографії обробляються у вашому браузері. Локальна резервна копія захищає зміни від випадкової втрати.</p>
       <p id="draftStatus" class="admin-draft-status">Перевірка локальної чернетки…</p>
     </div>
     <div class="admin-toolbar">
@@ -93,6 +93,50 @@
         <fieldset class="full-width">
           <legend>Фото та відео</legend>
           <label class="wide">Шляхи до фотографій, один у рядку<textarea name="images" rows="6" placeholder="images/products/vj-000003/01.webp"></textarea></label>
+
+          <section class="media-manager wide" aria-labelledby="mediaManagerTitle">
+            <div class="media-manager-heading">
+              <div>
+                <h3 id="mediaManagerTitle">Підготовка фотографій</h3>
+                <p>Виберіть фото з телефона або комп’ютера. Вони будуть зменшені, перетворені у WebP і правильно перейменовані.</p>
+              </div>
+              <label class="file-button media-select-button">Обрати фото
+                <input id="productImagesInput" type="file" accept="image/jpeg,image/png,image/webp,image/heic,image/heif" multiple>
+              </label>
+            </div>
+
+            <div class="media-settings">
+              <label>Максимальна сторона
+                <select id="mediaMaxSize">
+                  <option value="1200">1200 px</option>
+                  <option value="1600">1600 px</option>
+                  <option value="1800" selected>1800 px</option>
+                  <option value="2400">2400 px</option>
+                </select>
+              </label>
+              <label>Якість WebP
+                <select id="mediaQuality">
+                  <option value="0.72">Економна</option>
+                  <option value="0.82" selected>Оптимальна</option>
+                  <option value="0.9">Висока</option>
+                </select>
+              </label>
+              <button id="clearPreparedImagesButton" type="button" class="danger">Очистити фото</button>
+            </div>
+
+            <div id="mediaDropZone" class="media-drop-zone" tabindex="0">
+              Перетягніть фотографії сюди або натисніть «Обрати фото»
+            </div>
+            <div id="mediaProgress" class="media-progress" hidden></div>
+            <div id="preparedImages" class="prepared-images"></div>
+            <p id="mediaSummary" class="media-summary">Підготовлених фотографій немає.</p>
+
+            <div class="media-package-actions">
+              <button id="prepareProductZipButton" type="button">Завантажити ZIP товару</button>
+              <span>Архів міститиме папку фотографій, актуальний products.json та інструкцію.</span>
+            </div>
+          </section>
+
           <label>YouTube<input name="youtube" type="url"></label>
           <label>Shorts<input name="shorts" type="url"></label>
         </fieldset>
@@ -140,6 +184,8 @@
 
 <div id="adminToast" class="admin-toast" role="status" hidden></div>
 <script src="https://cdn.jsdelivr.net/npm/xlsx@0.18.5/dist/xlsx.full.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jszip@3.10.1/dist/jszip.min.js"></script>
 <script type="module" src="assets/js/admin.js"></script>
+<script type="module" src="assets/js/admin-media.js"></script>
 </body>
 </html>
