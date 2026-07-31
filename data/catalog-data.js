@@ -1,6 +1,6 @@
 window.VINTAGE_JAM_DATA = {
   "version": "3.3.0",
-  "generatedAt": "2026-07-31T23:20:48.503Z",
+  "generatedAt": "2026-07-31T23:20:59.750Z",
   "site": {
     "name": "Vintage Jam",
     "defaultLanguage": "uk"
@@ -396,8 +396,8 @@ window.VINTAGE_JAM_DATA = {
       "date_added": "2026-07-31",
       "category": "paintings",
       "title": {
-        "uk": "Картина «Мандаринки»",
-        "en": "Painting \"Mandarin Ducks\""
+        "uk": "«Мандаринки»",
+        "en": "\"Mandarin Ducks\""
       },
       "short_description": {
         "uk": "Яскрава авторська картина Ігора Яновського «Мандаринки» (2011 р.), виконана на полотні акрилом у стилі примітивізм.",
