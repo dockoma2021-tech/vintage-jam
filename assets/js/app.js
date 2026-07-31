@@ -5,7 +5,8 @@ import {
 } from "./i18n.js";
 
 import { 
-    initCatalog
+    initCatalog,
+    searchProducts
 } from "./catalog.js";
 
 
@@ -26,7 +27,34 @@ async function startApp() {
 }
 
 
+function setupSearch(){
 
+
+    const input =
+    document.getElementById(
+        "searchInput"
+    );
+
+
+    if(!input) return;
+
+
+
+    input.addEventListener(
+        "input",
+        (event)=>{
+
+
+            searchProducts(
+                event.target.value
+            );
+
+
+        }
+    );
+
+
+}
 function setupLanguageSwitcher() {
 
 
