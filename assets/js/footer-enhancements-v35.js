@@ -106,7 +106,7 @@
       href: `tel:${phone}`,
       labelUk: 'Телефон / Viber',
       labelEn: 'Phone / Viber',
-      value: phone.replace(/^(\+380)(\d{2})(\d{3})(\d{2})(\d{2})$/, '$1 $2 $3 $2 $2'),
+      value: phone.replace(/^(\+380)(\d{2})(\d{3})(\d{2})(\d{2})$/, '$1 $2 $3 $4 $5'),
       type: 'phone'
     }));
     if (email) list.append(contactItem({
