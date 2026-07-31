@@ -4,6 +4,8 @@ let categories = [];
 
 let currentLanguage = "uk";
 
+let activeCategory = null;
+
 
 
 export async function initCatalog(language = "uk") {
@@ -418,5 +420,68 @@ function filterByCategory(categoryId) {
 
 
     renderCatalog(filtered);
+
+}
+export function searchProducts(query) {
+
+
+    query =
+    query.toLowerCase().trim();
+
+
+
+    if(!query){
+
+        renderCatalog(products);
+
+        return;
+
+    }
+
+
+
+    const result =
+    products.filter(product => {
+
+
+        const title =
+        product.title[currentLanguage]
+        .toLowerCase();
+
+
+
+        const description =
+        product.description[currentLanguage]
+        .toLowerCase();
+
+
+
+        const category =
+        product.category
+        .toLowerCase();
+
+
+
+        return (
+
+            title.includes(query)
+
+            ||
+
+            description.includes(query)
+
+            ||
+
+            category.includes(query)
+
+        );
+
+
+    });
+
+
+
+    renderCatalog(result);
+
 
 }
