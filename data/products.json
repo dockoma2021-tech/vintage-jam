@@ -81,7 +81,11 @@
     },
     "media": {
       "images": [
-        "assets/images/no-image.webp"
+        "images/products/vj-000002/01.webp",
+        "images/products/vj-000002/02.webp",
+        "images/products/vj-000002/03.webp",
+        "images/products/vj-000002/04.webp",
+        "images/products/vj-000002/05.webp"
       ],
       "youtube": "",
       "shorts": ""
