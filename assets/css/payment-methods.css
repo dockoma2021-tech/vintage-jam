@@ -1,0 +1,81 @@
+.payment-section {
+    margin: 36px 16px 96px;
+    border: 1px solid var(--border);
+    border-radius: 22px;
+    background: linear-gradient(180deg, #ffffff 0%, var(--surface) 100%);
+    padding: 24px 18px;
+    text-align: center;
+}
+
+.payment-section h2 {
+    margin-bottom: 6px;
+    font-size: 21px;
+}
+
+.payment-section-description {
+    max-width: 620px;
+    margin: 0 auto 18px;
+    color: var(--text-secondary);
+    font-size: 14px;
+}
+
+.payment-methods {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+.payment-method {
+    display: inline-flex;
+    min-height: 52px;
+    align-items: center;
+    gap: 9px;
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    background: #ffffff;
+    padding: 9px 13px;
+    color: var(--text-primary);
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.04);
+}
+
+.payment-logo {
+    display: inline-flex;
+    min-width: 34px;
+    height: 30px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 9px;
+    padding: 0 7px;
+    background: #f2f2f7;
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: -0.02em;
+    white-space: nowrap;
+}
+
+.payment-logo.privat24 { background: #eaf7e8; color: #16861b; }
+.payment-logo.paypal { background: #edf4ff; color: #003087; }
+.payment-logo.payoneer { background: #fff1ea; color: #d84a12; }
+.payment-logo.skrill { background: #f8edf7; color: #862165; }
+.payment-logo.usdt { background: #e8f8f3; color: #168f72; }
+
+.payment-name {
+    font-size: 14px;
+    font-weight: 650;
+    white-space: nowrap;
+}
+
+.payment-note {
+    margin: 16px 0 0;
+    color: var(--text-secondary);
+    font-size: 12px;
+}
+
+@media (min-width: 768px) {
+    .payment-section {
+        margin-right: 32px;
+        margin-left: 32px;
+        padding: 28px;
+    }
+}
