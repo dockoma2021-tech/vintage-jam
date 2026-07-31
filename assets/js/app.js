@@ -131,10 +131,13 @@ function updateStaticLabels(language) {
     };
 
     const input = document.getElementById("searchInput");
-    if (input) input.placeholder = labels.searchPlaceholder;
+    if (input) {
+        input.placeholder = labels.searchPlaceholder;
+        input.setAttribute("aria-label", labels.searchLabel);
+    }
 
-    setText("searchLabel", labels.searchLabel);
-    setText("sortLabel", labels.sortLabel);
+    document.getElementById("sortSelect")?.setAttribute("aria-label", labels.sortLabel);
+
     setText("categoriesHeading", labels.categories);
     setText("newArrivalsHeading", labels.arrivals);
     setText("catalogHeading", labels.catalog);
