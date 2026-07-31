@@ -4,6 +4,7 @@ import {
     getLanguage
 } from "./i18n.js";
 
+
 import { 
     initCatalog,
     searchProducts
@@ -17,42 +18,29 @@ async function startApp() {
     await initLanguage();
 
 
-    initCatalog(
+    await initCatalog(
         getLanguage()
     );
 
 
     setupLanguageSwitcher();
+
     setupSearch();
 
-}
-function applyFilters(){
-
-let result = products;
-
-
-if(activeCategory){
-
-result =
-result.filter(
-product =>
-product.category === activeCategory
-);
 
 }
 
 
-return result;
 
-}
+
 
 function setupSearch(){
 
 
     const input =
-    document.getElementById(
-        "searchInput"
-    );
+        document.getElementById(
+            "searchInput"
+        );
 
 
     if(!input) return;
@@ -74,6 +62,12 @@ function setupSearch(){
 
 
 }
+
+
+
+
+
+
 function setupLanguageSwitcher() {
 
 
@@ -87,9 +81,16 @@ function setupLanguageSwitcher() {
 
 
 
+    button.textContent =
+        getLanguage()
+        .toUpperCase();
+
+
+
+
     button.addEventListener(
         "click",
-        () => {
+        async () => {
 
 
             const newLanguage =
@@ -105,9 +106,10 @@ function setupLanguageSwitcher() {
 
 
 
-            initCatalog(
+            await initCatalog(
                 newLanguage
             );
+
 
 
             button.textContent =
@@ -119,6 +121,8 @@ function setupLanguageSwitcher() {
 
 
 }
+
+
 
 
 
