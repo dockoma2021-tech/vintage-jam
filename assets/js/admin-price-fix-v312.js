@@ -34,12 +34,23 @@
     setTimeout(() => {
       const amount = String(priceValue.value).trim();
       if (priceType.value === 'fixed' && amount !== '') {
-        notify(`Товар сохранён. Цена: ${amount} ${currency.value || 'UAH'}`);
+        notify(`Товар збережено локально. Ціна: ${amount} ${currency.value || 'UAH'}`);
       } else {
-        notify('Товар сохранён. Цена: по запросу');
+        notify('Товар збережено локально. Ціна: за запитом');
       }
     }, 80);
   });
 
   priceValue.disabled = priceType.value !== 'fixed';
+
+  document.title = 'Vintage Jam — Admin 3.2';
+  const version = document.querySelector('.admin-header span');
+  if (version) version.textContent = 'Admin 3.2';
+  const intro = document.querySelector('.admin-intro p:not(.eyebrow)');
+  if (intro) intro.textContent = 'Заповніть або відредагуйте товар і натисніть «Зберегти й опублікувати». Файли та фотографії оновляться автоматично.';
+
+  const script = document.createElement('script');
+  script.src = `assets/js/admin-direct-publish-v32.js?v=3.2.0-${Date.now()}`;
+  script.onerror = () => notify('Не вдалося завантажити модуль прямої публікації');
+  document.head.append(script);
 })();
