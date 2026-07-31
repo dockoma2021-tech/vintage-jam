@@ -6,6 +6,8 @@ let currentLanguage = "uk";
 
 let activeCategory = null;
 
+let currentSort = "new";
+
 
 
 export async function initCatalog(language = "uk") {
@@ -56,7 +58,75 @@ async function loadData() {
 
 }
 
+function sortProducts(items){
 
+
+    let sorted =
+    [...items];
+
+
+
+    switch(currentSort){
+
+
+        case "new":
+
+            sorted.sort(
+                (a,b)=>
+                new Date(b.date_added)
+                -
+                new Date(a.date_added)
+            );
+
+            break;
+
+
+
+        case "old":
+
+            sorted.sort(
+                (a,b)=>
+                new Date(a.date_added)
+                -
+                new Date(b.date_added)
+            );
+
+            break;
+
+
+
+        case "price_up":
+
+            sorted.sort(
+                (a,b)=>
+                (a.price.value || 0)
+                -
+                (b.price.value || 0)
+            );
+
+            break;
+
+
+
+        case "price_down":
+
+            sorted.sort(
+                (a,b)=>
+                (b.price.value || 0)
+                -
+                (a.price.value || 0)
+            );
+
+            break;
+
+
+    }
+
+
+
+    return sorted;
+
+}
 
 
 
