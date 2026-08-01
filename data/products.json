@@ -315,5 +315,66 @@
       "en": "Created by the artist in 2007. From a private collection."
     },
     "documents": []
+  },
+  {
+    "id": "vj-000006",
+    "publication_status": "published",
+    "sale_status": "available",
+    "date_added": "2026-08-01",
+    "category": "paintings",
+    "title": {
+      "uk": "«Пляжний натюрморт»",
+      "en": "\"Beach Still Life\""
+    },
+    "short_description": {
+      "uk": "Авторська картина одеського художника В. С. Потеряйка.",
+      "en": "Original painting by Odesa artist V. S. Poteryayko."
+    },
+    "description": {
+      "uk": "Оригінальна картина «Пляжний натюрморт» одеського художника Віктора Спиридоновича Потеряйка (нар. 1940 р.), створена у 2017 році в Одесі. Написана олійними фарбами на полотні, натягнутому на дерев'яний підрамник. Робота поєднує елементи натюрморту та одеського морського пейзажу: згадка про літній відпочинок на пляжі, поєднана з побутовими деталями (сушена риба, пляшка, газета). Картина підписана автором спереду та містить підписи й параметри роботи на звороті підрамника. Стан збереження відмінний.",
+      "en": "Original oil painting titled \"Beach Still Life\" created in 2017 in Odesa by Ukrainian artist Viktor Spiridonovich Poteryayko (born 1940). Painted in oil on canvas stretched over a wooden stretcher frame. The composition combines elements of still life and Odesa seaside landscape, capturing the relaxed atmosphere of a summer beach. Signed by the artist on the front and featuring full handwritten attribution on the back of the frame. Excellent original condition. Unframed."
+    },
+    "price": {
+      "type": "request",
+      "value": null,
+      "currency": "UAH"
+    },
+    "media": {
+      "images": [
+        "images/products/vj-000006/01.webp",
+        "images/products/vj-000006/02.webp",
+        "images/products/vj-000006/03.webp",
+        "images/products/vj-000006/04.webp",
+        "images/products/vj-000006/05.webp",
+        "images/products/vj-000006/06.webp",
+        "images/products/vj-000006/07.webp"
+      ],
+      "youtube": "",
+      "shorts": ""
+    },
+    "attributes": {
+      "year": "2017",
+      "country": {
+        "uk": "Україна",
+        "en": "Ukraine"
+      },
+      "material": {
+        "uk": "Олія, полотно",
+        "en": "Oil on canvas"
+      },
+      "dimensions": {
+        "uk": "68 х 43 см",
+        "en": "68 x 43 cm"
+      },
+      "artist": {
+        "uk": "Потеряйко В. С.",
+        "en": "V. S. Poteryayko"
+      }
+    },
+    "story": {
+      "uk": "Написана автором в Одесі у 2017 році. Підтверджена авторським підписом та написом на обороті підрамника.",
+      "en": "Created by the artist in Odesa in 2017. Confirmed by artist's signature and handwritten inscription on the reverse."
+    },
+    "documents": []
   }
 ]
