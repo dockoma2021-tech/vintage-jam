@@ -1,6 +1,6 @@
 window.VINTAGE_JAM_DATA = {
   "version": "3.3.0",
-  "generatedAt": "2026-08-01T01:27:12.348Z",
+  "generatedAt": "2026-08-01T01:27:38.735Z",
   "site": {
     "name": "Vintage Jam",
     "defaultLanguage": "uk"
@@ -202,8 +202,8 @@ window.VINTAGE_JAM_DATA = {
       "date_added": "2026-07-31",
       "category": "watches",
       "title": {
-        "uk": "Годинник Seiko Vintage Solar",
-        "en": "Seiko Vintage Solar Watch"
+        "uk": "Seiko Vintage Solar",
+        "en": "Seiko Vintage Solar"
       },
       "short_description": {
         "uk": "Колекційний японський годинник Seiko.",
