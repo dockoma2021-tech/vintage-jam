@@ -1,6 +1,6 @@
 window.VINTAGE_JAM_DATA = {
   "version": "3.3.0",
-  "generatedAt": "2026-08-01T01:24:34.003Z",
+  "generatedAt": "2026-08-01T01:27:12.348Z",
   "site": {
     "name": "Vintage Jam",
     "defaultLanguage": "uk"
@@ -329,8 +329,8 @@ window.VINTAGE_JAM_DATA = {
       "date_added": "2026-07-31",
       "category": "knives",
       "title": {
-        "uk": "Складний ніж District 9 Marauder, сталь M390, титан (2023)",
-        "en": "District 9 Marauder Folding Knife, M390 Steel, Titanium (2023)"
+        "uk": "District 9 Marauder",
+        "en": "District 9 Marauder"
       },
       "short_description": {
         "uk": "Колекційний складний ніж District 9 Marauder 2023 року з клинком зі стали M390 та титановим руків'ям.",
