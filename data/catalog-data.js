@@ -1,6 +1,6 @@
 window.VINTAGE_JAM_DATA = {
   "version": "3.3.0",
-  "generatedAt": "2026-07-31T23:21:29.364Z",
+  "generatedAt": "2026-08-01T00:01:14.607Z",
   "site": {
     "name": "Vintage Jam",
     "defaultLanguage": "uk"
@@ -445,6 +445,70 @@ window.VINTAGE_JAM_DATA = {
       "story": {
         "uk": "На звороті полотна художник власноруч написав вірш Даниїла Хармса («Открыв наугад зеленый том...»), що додає картині особливої концептуальної цінності.",
         "en": "On the reverse side of the canvas, the artist handwritten a poem by Daniil Kharms, adding a unique conceptual touch to the artwork."
+      },
+      "documents": []
+    },
+    {
+      "id": "vj-000005",
+      "publication_status": "published",
+      "sale_status": "available",
+      "date_added": "2026-07-31",
+      "category": "paintings",
+      "title": {
+        "uk": "«Натюрморт з квітами»",
+        "en": "\"Still Life with Flowers\""
+      },
+      "short_description": {
+        "uk": "Авторський натюрморт з білими квітами у вазі.",
+        "en": "Original still life painting with white flowers in a vase."
+      },
+      "description": {
+        "uk": "Живописна картина «Натюрморт з квітами» українського художника Юрія Ніколаєнка, створена у 2007 році. Написана олійними фарбами на гладкій стороні ДВП (оргаліту). Робота вирізняється пастозною манерою письма, багатою фактурою та світлою колористичною гамою. Натюрморт включає вазу з розписом, букет білих квітів та металевий посуд. У лівому нижньому куті міститься авторський підпис і дата. Стан збереження відмінний, фарбовий шар цілісний.",
+        "en": "Original oil painting titled \"Still Life with Flowers\" created by Ukrainian artist Yuriy Nikolayenko in 2007. Painted in oil on a fiberboard (hardboard) panel. The artwork features rich impasto texture, expressive brushwork, and a harmonious light palette depicting white flowers in a decorated ceramic vase alongside metalware. Signed and dated by the artist in the lower left corner. Excellent condition with intact paint layer. Unframed."
+      },
+      "price": {
+        "type": "request",
+        "value": null,
+        "currency": "UAH"
+      },
+      "media": {
+        "images": [
+          "images/products/vj-000005/01.webp",
+          "images/products/vj-000005/02.webp",
+          "images/products/vj-000005/03.webp",
+          "images/products/vj-000005/04.webp",
+          "images/products/vj-000005/05.webp",
+          "images/products/vj-000005/06.webp",
+          "images/products/vj-000005/07.webp",
+          "images/products/vj-000005/08.webp",
+          "images/products/vj-000005/09.webp",
+          "images/products/vj-000005/10.webp"
+        ],
+        "youtube": "",
+        "shorts": ""
+      },
+      "attributes": {
+        "year": "2007",
+        "country": {
+          "uk": "Україна",
+          "en": "Ukraine"
+        },
+        "material": {
+          "uk": "Олія, ДВП",
+          "en": "Oil on hardboard"
+        },
+        "dimensions": {
+          "uk": "56 х 68 см",
+          "en": "56 x 68 cm"
+        },
+        "artist": {
+          "uk": "Юрій Ніколаєнко",
+          "en": "Yuriy Nikolayenko"
+        }
+      },
+      "story": {
+        "uk": "Створена художником у 2007 році. Походить з приватної колекції.",
+        "en": "Created by the artist in 2007. From a private collection."
       },
       "documents": []
     }
