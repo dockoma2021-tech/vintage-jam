@@ -6,6 +6,7 @@
   const categoriesSection = document.getElementById('categoriesSection');
   const brand = document.querySelector('.brand');
   const actions = document.querySelector('.header-actions');
+  const languageButton = document.getElementById('languageButton');
   if (!headerInner || !categories || !brand || !actions) return;
 
   if (!brand.querySelector('.brand-mark')) {
@@ -19,6 +20,31 @@
   headerInner.insertBefore(nav, actions);
 
   if (categoriesSection) categoriesSection.hidden = true;
+
+  const style = document.createElement('style');
+  style.textContent = `
+    .purchase-nav-link{display:inline-flex;align-items:center;justify-content:center;min-height:32px;padding:0 13px;border-radius:999px;background:#1d1d1f;color:#fff;text-decoration:none;font-size:11.5px;font-weight:620;letter-spacing:-.01em;white-space:nowrap;transition:transform .18s ease,background .18s ease,box-shadow .18s ease}
+    .purchase-nav-link:hover{background:#000;box-shadow:0 5px 14px rgba(0,0,0,.14)}
+    .purchase-nav-link:active{transform:scale(.97)}
+    @media(max-width:760px){.purchase-nav-link{min-height:30px;padding:0 11px;font-size:11px}}
+    @media(max-width:390px){.purchase-nav-link{padding:0 9px;font-size:10.5px}}
+  `;
+  document.head.append(style);
+
+  const purchaseLink = document.createElement('a');
+  purchaseLink.className = 'purchase-nav-link';
+  purchaseLink.href = 'purchase.html';
+  purchaseLink.textContent = document.documentElement.lang === 'en' ? 'How to buy' : 'Як придбати';
+  purchaseLink.setAttribute('aria-label', purchaseLink.textContent);
+  if (languageButton) actions.insertBefore(purchaseLink, actions.firstChild);
+  else actions.prepend(purchaseLink);
+
+  const updatePurchaseLabel = () => {
+    const english = document.documentElement.lang === 'en';
+    purchaseLink.textContent = english ? 'How to buy' : 'Як придбати';
+    purchaseLink.setAttribute('aria-label', purchaseLink.textContent);
+  };
+  languageButton?.addEventListener('click', () => requestAnimationFrame(updatePurchaseLabel));
 
   const ensureVisible = button => {
     if (!button) return;
