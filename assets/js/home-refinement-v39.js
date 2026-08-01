@@ -42,21 +42,22 @@
     </a>`;
   }
 
-  function removeFavorites() {
+  function hideFavorites() {
     document.querySelectorAll('.favorite-button').forEach(el => el.remove());
-    byId('mobileFavorites')?.remove();
+    const mobile = byId('mobileFavorites');
+    if (mobile) mobile.hidden = true;
   }
 
   function refresh() {
     hideEmptyCategories();
     renderShippingLink();
-    removeFavorites();
+    hideFavorites();
   }
 
   requestAnimationFrame(refresh);
   const observer = new MutationObserver(() => {
     hideEmptyCategories();
-    removeFavorites();
+    hideFavorites();
   });
   const categories = byId('categories');
   const grids = document.querySelectorAll('.product-grid');
