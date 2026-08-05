@@ -456,5 +456,60 @@
       "en": "The tradition of manufacturing automatic stilettos in Maniago, Italy, dates back to the early 20th century. The \"Rostfrei\" marking (German for \"stainless steel\") was applied by Italian manufacturers specifically for export to German-speaking European markets. These stilettos have become classic items among vintage automatic knife collectors."
     },
     "documents": []
+  },
+  {
+    "id": "vj-000008",
+    "publication_status": "published",
+    "sale_status": "available",
+    "date_added": "2026-08-05",
+    "category": "art_objects",
+    "title": {
+      "uk": "Юнак з плодом",
+      "en": "Boy with a Fruit"
+    },
+    "short_description": {
+      "uk": "Витончена велика скульптура заввишки 88 см з глазурованої кераміки із зображенням юнака в класичному стилі.",
+      "en": "Elegant large 88 cm glazed ceramic sculpture depicting a young boy in a classic posture."
+    },
+    "description": {
+      "uk": "Інтер'єрна керамічна статуетка у вигляді гнучкої фігури юнака, що тримає в піднятих руках круглий плоский або кулястий предмет. Пластика виробу виконана з акцентом на виразність лінії силуету та гармонійне поєднання білої глазурі з коричнево-теракотовими відтінками.\n\n\n\nПоверхня покрита тонким шаром глазурі з природним сітчастим цеком, характерним для майолікових виборів того періоду. Предмет збережений у первинному стані без явних втрат.\n\n\n\nЗавдяки висоті 88 см статуетка стане чудовим доповненням для приватного зібрання кераміки або підлоговим акцентним елементом сучасного та класичного інтер'єру.",
+      "en": "An interior ceramic figurine featuring a graceful figure of a young boy holding a round fruit in his raised hands. The sculpture highlights expressive lines and a harmonious combination of white glaze with rich brown-terracotta shading.\n\n\n\nThe surface features a fine natural craze in the glaze, typical of vintage majolica of that era. The piece has survived in good condition without significant damages.\n\n\n\nStanding at 88 cm in height, this sculpture serves as a refined floor accent piece for antique art collections or modern interior spaces."
+    },
+    "price": {
+      "type": "fixed",
+      "value": 18000,
+      "currency": "UAH"
+    },
+    "media": {
+      "images": [
+        "images/products/vj-000008/01.webp",
+        "images/products/vj-000008/02.webp",
+        "images/products/vj-000008/03.webp",
+        "images/products/vj-000008/04.webp",
+        "images/products/vj-000008/05.webp",
+        "images/products/vj-000008/06.webp",
+        "images/products/vj-000008/07.webp",
+        "images/products/vj-000008/08.webp",
+        "images/products/vj-000008/09.webp",
+        "images/products/vj-000008/10.webp"
+      ],
+      "youtube": "",
+      "shorts": ""
+    },
+    "attributes": {
+      "material": {
+        "uk": "Кераміка, глазур",
+        "en": "Ceramics, glaze"
+      },
+      "dimensions": {
+        "uk": "Висота 88 см",
+        "en": "Height 88 cm"
+      }
+    },
+    "story": {
+      "uk": "",
+      "en": ""
+    },
+    "documents": []
   }
 ]
