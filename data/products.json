@@ -511,5 +511,95 @@
       "en": ""
     },
     "documents": []
+  },
+  {
+    "id": "vj-000009",
+    "publication_status": "published",
+    "sale_status": "available",
+    "date_added": "2026-08-05",
+    "category": "knives",
+    "title": {
+      "uk": "Автоматичний Стилет Rostfrei Import",
+      "en": "Automatic Stiletto Rostfrei Import"
+    },
+    "short_description": {
+      "uk": "Вінтажний автоматичний складний ніж стилетоподібного типу з роговими накладками та кнопковим механізмом.",
+      "en": "Vintage automatic stiletto folding knife featuring natural stag horn handle scales and push-button mechanism."
+    },
+    "description": {
+      "uk": "Автоматичний складний ніж виконаний у традиційному італійському стилі середини ХХ століття. Вузький клинок стилетного типу виготовлений з нержавіючої сталі та оснащений кнопковим фіксатором. Рукоять сформована з плашок натурального рогу оленя, закріплених латунними штифтами, та доповнена металевими притинами. На спинці рукояті виконано гравіювання імені. Предмет збережений у первинному винтажному стані з природною патиною.",
+      "en": "Automatic folding knife crafted in the traditional mid-20th-century Italian stiletto style. The slender stiletto blade is made of stainless steel and equipped with a button-release mechanism. The handle features natural stag horn scales secured with brass pins and fitted with metal bolsters. The spine of the handle bears an engraved name. The piece retains its original vintage condition with natural patina."
+    },
+    "price": {
+      "type": "fixed",
+      "value": 13500,
+      "currency": "UAH"
+    },
+    "media": {
+      "images": [
+        "images/products/vj-000009/01.webp",
+        "images/products/vj-000009/02.webp",
+        "images/products/vj-000009/03.webp",
+        "images/products/vj-000009/04.webp",
+        "images/products/vj-000009/05.webp",
+        "images/products/vj-000009/06.webp",
+        "images/products/vj-000009/07.webp",
+        "images/products/vj-000009/08.webp",
+        "images/products/vj-000009/09.webp",
+        "images/products/vj-000009/10.webp",
+        "images/products/vj-000009/11.webp",
+        "images/products/vj-000009/12.webp",
+        "images/products/vj-000009/13.webp",
+        "images/products/vj-000009/14.webp",
+        "images/products/vj-000009/15.webp",
+        "images/products/vj-000009/16.webp",
+        "images/products/vj-000009/17.webp",
+        "images/products/vj-000009/18.webp",
+        "images/products/vj-000009/19.webp",
+        "images/products/vj-000009/20.webp"
+      ],
+      "youtube": "",
+      "shorts": ""
+    },
+    "attributes": {
+      "condition": {
+        "uk": "Вінтажний стан, наявні сліди часового окиснення металу та патина",
+        "en": "Vintage condition with signs of metal oxidation and natural patina"
+      },
+      "markings": {
+        "uk": "Клеймо Rostfrei IMPORT на клинку, гравиювання Franz K. Peters на спинці",
+        "en": "Rostfrei IMPORT stamp on blade, Franz K. Peters engraved on spine"
+      },
+      "mechanism": {
+        "uk": "Автоматичний (кнопка з запобіжником)",
+        "en": "Automatic (push-button with safety lock)"
+      },
+      "completeness": {
+        "uk": "Тільки ніж",
+        "en": "Knife only"
+      },
+      "brand": {
+        "uk": "Rostfrei",
+        "en": "Rostfrei"
+      },
+      "year": "1960–1970",
+      "country": {
+        "uk": "Італія",
+        "en": "Italy"
+      },
+      "material": {
+        "uk": "Сталь, рог оленя, латунь",
+        "en": "Steel, stag horn, brass"
+      },
+      "dimensions": {
+        "uk": "Загальна довжина 27,5 см; довжина клинка 12,5 см",
+        "en": "Total length 27.5 cm; blade length 12.5 cm"
+      }
+    },
+    "story": {
+      "uk": "Автоматичні стилети подібного типу масово вироблялися в італійському регіоні Маніаго впродовж 1950–1970-х років та експортувалися до країн Європи з маркуванням «Rostfrei / IMPORT».",
+      "en": "Automatic stilettos of this design were widely produced in Maniago, Italy, during the 1950s–1970s and exported across Europe bearing the \"Rostfrei / IMPORT\" mark."
+    },
+    "documents": []
   }
 ]
