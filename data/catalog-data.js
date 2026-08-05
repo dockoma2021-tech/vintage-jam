@@ -1,6 +1,6 @@
 window.VINTAGE_JAM_DATA = {
   "version": "3.3.0",
-  "generatedAt": "2026-08-01T01:27:38.735Z",
+  "generatedAt": "2026-08-05T10:14:36.975Z",
   "site": {
     "name": "Vintage Jam",
     "defaultLanguage": "uk"
@@ -202,8 +202,8 @@ window.VINTAGE_JAM_DATA = {
       "date_added": "2026-07-31",
       "category": "watches",
       "title": {
-        "uk": "Seiko Vintage Solar",
-        "en": "Seiko Vintage Solar"
+        "uk": "Годинник Seiko Vintage Solar",
+        "en": "Seiko Vintage Solar Watch"
       },
       "short_description": {
         "uk": "Колекційний японський годинник Seiko.",
@@ -570,6 +570,86 @@ window.VINTAGE_JAM_DATA = {
       "story": {
         "uk": "Написана автором в Одесі у 2017 році. Підтверджена авторським підписом та написом на обороті підрамника.",
         "en": "Created by the artist in Odesa in 2017. Confirmed by artist's signature and handwritten inscription on the reverse."
+      },
+      "documents": []
+    },
+    {
+      "id": "vj-000007",
+      "publication_status": "published",
+      "sale_status": "available",
+      "date_added": "2026-08-05",
+      "category": "knives",
+      "title": {
+        "uk": "Італійський автоматичний ніж-стилет Rostfrei",
+        "en": "Italian Automatic Stiletto Knife Rostfrei"
+      },
+      "short_description": {
+        "uk": "Вінтажний італійський автоматичний стилет другої половини XX століття з кнопковим механізмом та накладками з рогу.",
+        "en": "Vintage Italian automatic stiletto knife from the second half of the 20th century featuring a push-button mechanism and stag horn scales."
+      },
+      "description": {
+        "uk": "Класичний автоматичний ніж, виконаний у традиціях італійських ножевих майстрів. Конструкція включает кнопковий замок висування клинка, запобіжник від випадкового спрацьовування та поворотний больстер. Клинок має характерну вузьку форму зі спусками та маркуванням біля основи.\n\n\n\nРукоятка зібрана на латунних плашках із накладками з обробленого оленячого рогу, зафіксованими металевими заклепками. Металеві елементи мають природний блиск із мінімальними слідами часу. Всі деталі зберегли оригінальну фактуру без сучасного переполірування.",
+        "en": "Classic automatic knife crafted in the traditional style of Italian stiletto makers. The design features a push-button blade release, a safety lock to prevent accidental deployment, and a tilting bolster. The blade has a characteristic slender profile with a marked ricasso.\n\n\n\nThe handle is built on brass liners with textured stag horn scales secured by rivets. The metal components display a natural luster with light vintage aging. All elements retain their original surface condition without modern repolishing."
+      },
+      "price": {
+        "type": "fixed",
+        "value": 8100,
+        "currency": "UAH"
+      },
+      "media": {
+        "images": [
+          "images/products/vj-000007/01.webp",
+          "images/products/vj-000007/02.webp",
+          "images/products/vj-000007/03.webp",
+          "images/products/vj-000007/04.webp",
+          "images/products/vj-000007/05.webp",
+          "images/products/vj-000007/06.webp",
+          "images/products/vj-000007/07.webp",
+          "images/products/vj-000007/08.webp",
+          "images/products/vj-000007/09.webp",
+          "images/products/vj-000007/10.webp"
+        ],
+        "youtube": "",
+        "shorts": ""
+      },
+      "attributes": {
+        "condition": {
+          "uk": "Вінтажний стан, присутні дрібні подряпини та природна патина на металі",
+          "en": "Vintage condition with minor surface scratches and natural metal patina"
+        },
+        "weight": {
+          "uk": "101 г",
+          "en": "101 g"
+        },
+        "markings": {
+          "uk": "Гравіювання Rostfrei з піктограмою на клинку",
+          "en": "Rostfrei engraving with emblem on the blade"
+        },
+        "mechanism": {
+          "uk": "Автоматичний кнопковий із запобіжником",
+          "en": "Automatic push-button with safety lock"
+        },
+        "year": "1960–1980",
+        "country": {
+          "uk": "Італія",
+          "en": "Italy"
+        },
+        "material": {
+          "uk": "Сталь, латунь, ріг оленя",
+          "en": "Steel, brass, stag horn"
+        },
+        "dimensions": {
+          "uk": "Загальна довжина 21 см; довжина клинка 9 см",
+          "en": "Total length 21 cm; blade length 9 cm"
+        },
+        "brand": {
+          "uk": "Rostfrei",
+          "en": "Rostfrei"
+        }
+      },
+      "story": {
+        "uk": "Традиція виготовлення автоматичних стилетиків у місті Маниаго (Італія) сягає корінням першої половини XX століття. Маркування «Rostfrei» (у перекладі з німецької — «нержавіючий») наносилося італійськими фабриками спеціально для експорту товарів у німецькомовні країни Європи. Подібні стилети стали класикою колекціонування винтажної холодної зброї та побутових автоматичних ножів.",
+        "en": "The tradition of manufacturing automatic stilettos in Maniago, Italy, dates back to the early 20th century. The \"Rostfrei\" marking (German for \"stainless steel\") was applied by Italian manufacturers specifically for export to German-speaking European markets. These stilettos have become classic items among vintage automatic knife collectors."
       },
       "documents": []
     }
