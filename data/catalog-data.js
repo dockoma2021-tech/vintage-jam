@@ -1,6 +1,6 @@
 window.VINTAGE_JAM_DATA = {
   "version": "3.3.0",
-  "generatedAt": "2026-08-05T13:43:25.552Z",
+  "generatedAt": "2026-08-05T13:44:56.366Z",
   "site": {
     "name": "Vintage Jam",
     "defaultLanguage": "uk"
@@ -580,8 +580,8 @@ window.VINTAGE_JAM_DATA = {
       "date_added": "2026-08-05",
       "category": "knives",
       "title": {
-        "uk": "Італійський автоматичний ніж-стилет Rostfrei",
-        "en": "Italian Automatic Stiletto Knife Rostfrei"
+        "uk": "Автоматичний Стилет Rostfrei",
+        "en": "Automatic Stiletto Rostfrei"
       },
       "short_description": {
         "uk": "Вінтажний італійський автоматичний стилет другої половини XX століття з кнопковим механізмом та накладками з рогу.",
