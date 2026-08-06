@@ -1,6 +1,6 @@
 window.VINTAGE_JAM_DATA = {
   "version": "3.3.0",
-  "generatedAt": "2026-08-06T08:52:07.315Z",
+  "generatedAt": "2026-08-06T16:41:33.697Z",
   "site": {
     "name": "Vintage Jam",
     "defaultLanguage": "uk"
@@ -660,8 +660,8 @@ window.VINTAGE_JAM_DATA = {
       "date_added": "2026-08-05",
       "category": "art_objects",
       "title": {
-        "uk": "Юнак з плодом",
-        "en": "Boy with a Fruit"
+        "uk": "Юнак з кулею",
+        "en": "Boy with a bullet"
       },
       "short_description": {
         "uk": "Витончена велика скульптура заввишки 88 см з глазурованої кераміки із зображенням юнака в класичному стилі.",
@@ -689,7 +689,7 @@ window.VINTAGE_JAM_DATA = {
           "images/products/vj-000008/09.webp",
           "images/products/vj-000008/10.webp"
         ],
-        "youtube": "",
+        "youtube": "https://youtube.com/shorts/iMG4vWwiuMg?si=9-8pcQL5iNgpCV1l",
         "shorts": ""
       },
       "attributes": {
