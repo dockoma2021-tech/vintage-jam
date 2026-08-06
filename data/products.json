@@ -601,5 +601,89 @@
       "en": "Automatic stilettos of this design were widely produced in Maniago, Italy, during the 1950s–1970s and exported across Europe bearing the \"Rostfrei / IMPORT\" mark."
     },
     "documents": []
+  },
+  {
+    "id": "vj-000010",
+    "publication_status": "published",
+    "sale_status": "available",
+    "date_added": "2026-08-06",
+    "category": "knives",
+    "title": {
+      "uk": "Складний викидний стилет Made in Italy",
+      "en": "Italian Switchblade Stiletto Knife"
+    },
+    "short_description": {
+      "uk": "Вінтажний автоматичний ніж-стилет італійського виробництва з клеймом Made in Italy Inoxid та накладками з натурального рогу.",
+      "en": "Vintage Italian automatic stiletto knife featuring Made in Italy Inoxid markings and natural stag horn handle scales."
+    },
+    "description": {
+      "uk": "Класичний викидний ніж стилетного типу другої половини ХХ століття. Модель оснащена клинком із нержавіючої сталі, шарнірно-поворотною гардою (Swinguard) та кнопковим затискачем із запобіжником.\n\n\n\nРукоять сформована з латунних плашок та накладок із фактурного рогу оленя, закріплених штифтами. На пяті клинка чітко проглядається виробниче маркування Made in Italy Inoxid та Patent.\n\n\n\nПредмет знаходиться у збереженому колишньому ужитку стані з природною патиною, незначними потертостями та подряпинами на металевих частинах.",
+      "en": "Classic folding automatic stiletto knife dating to the second half of the 20th century. Equipped with a stainless steel blade, folding swinguard, and button release mechanism with a safety lock.\n\n\n\nThe handle features brass liners and textured deer stag scales secured with pins. The ricasso clearly displays stamped markings: Made in Italy Inoxid and Patent.\n\n\n\nPreserved in original vintage condition displaying natural aged patina, light surface wear, and minor marks on metal bolsters."
+    },
+    "price": {
+      "type": "fixed",
+      "value": 16000,
+      "currency": "UAH"
+    },
+    "media": {
+      "images": [
+        "images/products/vj-000010/01.webp",
+        "images/products/vj-000010/02.webp",
+        "images/products/vj-000010/03.webp",
+        "images/products/vj-000010/04.webp",
+        "images/products/vj-000010/05.webp",
+        "images/products/vj-000010/06.webp",
+        "images/products/vj-000010/07.webp",
+        "images/products/vj-000010/08.webp",
+        "images/products/vj-000010/09.webp",
+        "images/products/vj-000010/10.webp"
+      ],
+      "youtube": "",
+      "shorts": ""
+    },
+    "attributes": {
+      "condition": {
+        "uk": "Вінтажний стан, присутні подряпини, потемніння металу та сліди часу",
+        "en": "Vintage condition with scratches, metal darkening, and signs of age"
+      },
+      "weight": {
+        "uk": "161.6 г",
+        "en": "161.6 g"
+      },
+      "markings": {
+        "uk": "Made in Italy Inoxid / PATENT",
+        "en": "Made in Italy Inoxid / PATENT"
+      },
+      "type": {
+        "uk": "Викидний / автоматичний ніж",
+        "en": "Switchblade / automatic knife"
+      },
+      "features": {
+        "uk": "Поворотно-складна гарда (Swinguard), кнопковий замок, запобіжник",
+        "en": "Swinguard, push-button lock, safety switch"
+      },
+      "model": {
+        "uk": "Stiletto Swinguard",
+        "en": "Stiletto Swinguard"
+      },
+      "year": "1950–1970",
+      "country": {
+        "uk": "Італія",
+        "en": "Italy"
+      },
+      "material": {
+        "uk": "Нержавіюча сталь, ріг оленя, латунь",
+        "en": "Stainless steel, stag horn, brass"
+      },
+      "dimensions": {
+        "uk": "Загальна довжина 28 см; довжина клинка 12.3 см",
+        "en": "Total length 28 cm; blade length 12.3 cm"
+      }
+    },
+    "story": {
+      "uk": "Традиційні італійські викидні ножі стилетної форми стали культовими предметами колекціонування в другій половині ХХ століття. Маркування Inoxid та Patent характерне для експортних серій італійських майстерень регіону Маніаго.",
+      "en": "Traditional Italian automatic stiletto knives became iconic collectibles during the mid-20th century. The Inoxid and Patent markings were widely used on export production pieces originating from workshops in Maniago, Italy."
+    },
+    "documents": []
   }
 ]
