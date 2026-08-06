@@ -1,0 +1,65 @@
+/* Vintage Jam Brand Palette 4.2 — reversible theme layer */
+:root{
+  --vj-blue:#173A5E;
+  --vj-bronze:#B8894A;
+  --vj-offwhite:#F7F4ED;
+  --vj-graphite:#25282C;
+  --vj-line:#E5E4E1;
+  --vj-white:#FFFFFF;
+  --vj-navy:#0D1B2A;
+  --vj-muted:#6E7278;
+  --vj-soft:#F2F2F0;
+  --text:var(--vj-graphite);
+  --muted:var(--vj-muted);
+  --line:var(--vj-line);
+  --surface:var(--vj-white);
+  --surface-muted:var(--vj-soft);
+  --accent:var(--vj-blue);
+}
+html{background:var(--vj-offwhite)}
+body{background:var(--vj-offwhite);color:var(--vj-graphite)}
+a{color:var(--vj-blue)}
+.site-header,.purchase-header{background:rgba(247,244,237,.9)!important;border-bottom-color:rgba(184,137,74,.28)!important}
+.brand,.purchase-brand,.site-footer-brand{color:var(--vj-blue)!important}
+.brand-mark,.purchase-brand-mark{color:var(--vj-blue)!important}
+.brand-mark::after,.purchase-brand-mark::after{content:"";width:5px;height:5px;background:var(--vj-bronze);transform:rotate(45deg);border-radius:1px;display:block;position:absolute;right:-1px;bottom:0}
+.brand-mark,.purchase-brand-mark{position:relative}
+.hero,.shipping-page,.purchase-main,.product-page{background:var(--vj-offwhite)}
+.hero h1,.section-heading h2,.product-summary h1,.shipping-hero h1,.purchase-hero h1,.content-card h2,.shipping-card h2,.purchase-section-heading h2,.purchase-note h2{color:var(--vj-graphite)}
+.hero p,.product-lead,.shipping-lead,.purchase-lead,.section-note,.product-category,.eyebrow,.shipping-card p,.purchase-steps p,.purchase-note p{color:var(--vj-muted)}
+.product-card,.content-card,.shipping-card,.purchase-steps article,.purchase-note,.purchase-contact-grid a,.payment-panel,.contacts-panel{background:var(--vj-white)!important;border-color:var(--vj-line)!important;box-shadow:0 12px 34px rgba(13,27,42,.045)!important}
+.product-card:hover,.purchase-contact-grid a:hover,.shipping-card:hover{box-shadow:0 16px 40px rgba(13,27,42,.075)!important}
+.product-title,.product-price,.product-page-price{color:var(--vj-graphite)!important}
+.product-category,.footer-contact-value,.site-footer-meta{color:var(--vj-muted)!important}
+.primary-button,.shipping-primary,.purchase-button,.purchase-cta,.how-to-buy-link{background:var(--vj-blue)!important;color:var(--vj-white)!important;border-color:var(--vj-blue)!important;box-shadow:none!important}
+.primary-button:hover,.shipping-primary:hover,.purchase-button:hover,.purchase-cta:hover,.how-to-buy-link:hover{background:var(--vj-navy)!important;border-color:var(--vj-navy)!important}
+.secondary-button,.shipping-secondary{background:var(--vj-white)!important;color:var(--vj-blue)!important;border-color:var(--vj-line)!important}
+.pill-button,.purchase-language,.header-search-toggle,.header-search-close{color:var(--vj-blue)!important}
+.header-search-panel input,#searchInput{background:var(--vj-white)!important;color:var(--vj-graphite)!important;border-color:var(--vj-line)!important}
+.header-search-panel input:focus,#searchInput:focus{border-color:rgba(23,58,94,.45)!important;box-shadow:0 0 0 3px rgba(23,58,94,.1)!important}
+.header-category-nav .category-button{color:var(--vj-graphite)!important}
+.header-category-nav .category-button.active{color:var(--vj-blue)!important}
+.header-category-nav .category-button.active::after{background:var(--vj-bronze)!important}
+.shipping-ribbon,.shipping-link{background:var(--vj-white)!important;border-color:rgba(184,137,74,.32)!important;color:var(--vj-blue)!important}
+.shipping-ribbon-icon,.shipping-mini svg{color:var(--vj-blue)!important}
+.shipping-arrow{color:var(--vj-bronze)!important}
+.payment-panel,.contacts-panel{background:var(--vj-white)!important}
+.payment-brand,.contact-icon-link,.footer-contact{border-color:var(--vj-line)!important;background:var(--vj-soft)!important}
+.contact-icon-label,.footer-contact-label{color:var(--vj-graphite)!important}
+.site-footer,.purchase-footer{background:var(--vj-offwhite)!important;border-top-color:rgba(184,137,74,.24)!important}
+.mobile-nav{background:rgba(247,244,237,.94)!important;border-top-color:var(--vj-line)!important}
+.mobile-nav a,.mobile-nav button{color:var(--vj-blue)!important}
+.badge{background:var(--vj-blue)!important;color:var(--vj-white)!important}
+.gallery-main,.thumbnails img{background:var(--vj-soft)!important;border-color:var(--vj-line)!important}
+.gallery-arrow,.close-button{background:rgba(247,244,237,.92)!important;color:var(--vj-blue)!important;border-color:var(--vj-line)!important}
+.back-link,.shipping-back,.purchase-back{color:var(--vj-blue)!important}
+.eyebrow,.shipping-kicker,.purchase-eyebrow{color:var(--vj-bronze)!important}
+.attributes dt{color:var(--vj-muted)!important}
+.attributes dd{color:var(--vj-graphite)!important}
+.shipping-note{background:var(--vj-soft)!important;border-left:3px solid var(--vj-bronze)!important;color:var(--vj-graphite)!important}
+.purchase-steps article>span{color:var(--vj-bronze)!important}
+.purchase-contact-grid a b{color:var(--vj-bronze)!important}
+.contact-panel{background:var(--vj-offwhite)!important;color:var(--vj-graphite)!important}
+.lightbox{background:rgba(13,27,42,.94)!important}
+::selection{background:rgba(184,137,74,.26);color:var(--vj-navy)}
+@media (prefers-color-scheme:dark){html,body{background:var(--vj-offwhite);color:var(--vj-graphite)}}
