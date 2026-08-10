@@ -1,6 +1,6 @@
 window.VINTAGE_JAM_DATA = {
   "version": "3.3.0",
-  "generatedAt": "2026-08-06T16:41:47.767Z",
+  "generatedAt": "2026-08-10T11:18:54.249Z",
   "site": {
     "name": "Vintage Jam",
     "defaultLanguage": "uk"
@@ -711,7 +711,7 @@ window.VINTAGE_JAM_DATA = {
     {
       "id": "vj-000009",
       "publication_status": "published",
-      "sale_status": "available",
+      "sale_status": "sold",
       "date_added": "2026-08-05",
       "category": "knives",
       "title": {
@@ -774,10 +774,6 @@ window.VINTAGE_JAM_DATA = {
           "uk": "Тільки ніж",
           "en": "Knife only"
         },
-        "brand": {
-          "uk": "Rostfrei",
-          "en": "Rostfrei"
-        },
         "year": "1960–1970",
         "country": {
           "uk": "Італія",
@@ -790,6 +786,10 @@ window.VINTAGE_JAM_DATA = {
         "dimensions": {
           "uk": "Загальна довжина 27,5 см; довжина клинка 12,5 см",
           "en": "Total length 27.5 cm; blade length 12.5 cm"
+        },
+        "brand": {
+          "uk": "Rostfrei",
+          "en": "Rostfrei"
         }
       },
       "story": {
