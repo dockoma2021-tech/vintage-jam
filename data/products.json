@@ -515,7 +515,7 @@
   {
     "id": "vj-000009",
     "publication_status": "published",
-    "sale_status": "available",
+    "sale_status": "sold",
     "date_added": "2026-08-05",
     "category": "knives",
     "title": {
@@ -578,10 +578,6 @@
         "uk": "Тільки ніж",
         "en": "Knife only"
       },
-      "brand": {
-        "uk": "Rostfrei",
-        "en": "Rostfrei"
-      },
       "year": "1960–1970",
       "country": {
         "uk": "Італія",
@@ -594,6 +590,10 @@
       "dimensions": {
         "uk": "Загальна довжина 27,5 см; довжина клинка 12,5 см",
         "en": "Total length 27.5 cm; blade length 12.5 cm"
+      },
+      "brand": {
+        "uk": "Rostfrei",
+        "en": "Rostfrei"
       }
     },
     "story": {
