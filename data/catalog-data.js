@@ -1,6 +1,6 @@
 window.VINTAGE_JAM_DATA = {
   "version": "3.3.0",
-  "generatedAt": "2026-08-10T11:18:54.249Z",
+  "generatedAt": "2026-08-13T12:56:52.727Z",
   "site": {
     "name": "Vintage Jam",
     "defaultLanguage": "uk"
@@ -879,6 +879,78 @@ window.VINTAGE_JAM_DATA = {
       "story": {
         "uk": "Традиційні італійські викидні ножі стилетної форми стали культовими предметами колекціонування в другій половині ХХ століття. Маркування Inoxid та Patent характерне для експортних серій італійських майстерень регіону Маніаго.",
         "en": "Traditional Italian automatic stiletto knives became iconic collectibles during the mid-20th century. The Inoxid and Patent markings were widely used on export production pieces originating from workshops in Maniago, Italy."
+      },
+      "documents": []
+    },
+    {
+      "id": "vj-000011",
+      "publication_status": "published",
+      "sale_status": "available",
+      "date_added": "2026-08-13",
+      "category": "icons",
+      "title": {
+        "uk": "«Вогненне вознесіння пророка Іллі»",
+        "en": "“The Fiery Ascent of the Prophet Elijah”"
+      },
+      "short_description": {
+        "uk": "Православна житійна ікона із зображенням пророка Іллі, вогненного вознесіння та кількох епізодів його житія.",
+        "en": "An Orthodox narrative icon depicting the Prophet Elijah, his fiery ascent, and several episodes from his life."
+      },
+      "description": {
+        "uk": "Багатофігурна православна ікона, присвячена пророку Іллі. Назва сюжету читається у верхній частині композиції; центральний образ оточений житійними сценами, а у верхній частині показане вогненне вознесіння. Ікона виконана вручну на дерев'яній основі. На звороті розташовані дві горизонтальні дерев'яні планки, первинність яких потребує додаткової перевірки. Поверхня має виражені вікові зміни: кракелюр, тріщини основи, локальні потертості та втрати по краях. Основний сюжет і більшість фігур залишаються добре читабельними.",
+        "en": "A multi-figure Orthodox icon devoted to the Prophet Elijah. The subject title remains legible at the top, while the central image is surrounded by narrative scenes and the fiery ascent is shown above. The icon is hand-painted on a wooden support. Two horizontal wooden battens are attached to the reverse; whether they are original or later reinforcements requires further examination. The surface displays pronounced age-related craquelure, cracks in the wooden support, local wear and small losses along the edges. The principal composition and most figures remain clearly legible."
+      },
+      "price": {
+        "type": "request",
+        "value": null,
+        "currency": "UAH"
+      },
+      "media": {
+        "images": [
+          "images/products/vj-000011/01.webp",
+          "images/products/vj-000011/02.webp",
+          "images/products/vj-000011/03.webp",
+          "images/products/vj-000011/04.webp",
+          "images/products/vj-000011/05.webp",
+          "images/products/vj-000011/06.webp",
+          "images/products/vj-000011/07.webp",
+          "images/products/vj-000011/08.webp",
+          "images/products/vj-000011/09.webp",
+          "images/products/vj-000011/10.webp"
+        ],
+        "youtube": "",
+        "shorts": ""
+      },
+      "attributes": {
+        "condition": {
+          "uk": "Віковий стан: кракелюр, тріщини дерев'яної основи, локальні потертості та втрати по краях",
+          "en": "Age-related condition with craquelure, cracks in the wooden support, local wear and edge losses"
+        },
+        "technique": {
+          "uk": "Ручний іконопис на підготовленій дерев'яній основі; склад ґрунту та фарб за фотографіями достовірно не визначено",
+          "en": "Hand-painted icon on a prepared wooden support; the composition of the ground and pigments cannot be reliably determined from photographs"
+        },
+        "markings": {
+          "uk": "На верхньому полі читається назва сюжету «Огненное восхождение святаго пророка Илии»; присутній напис «Гдь Саваофъ»",
+          "en": "The upper field bears the subject title “Огненное восхождение святаго пророка Илии”; the inscription “Гдь Саваофъ” is also present"
+        },
+        "features": {
+          "uk": "Житійна багатофігурна композиція; оклад відсутній; на звороті дві горизонтальні дерев'яні планки",
+          "en": "Multi-figure narrative composition; no metal cover; two horizontal wooden battens on the reverse"
+        },
+        "year": "1800-1850",
+        "material": {
+          "uk": "Дерево",
+          "en": "Wood"
+        },
+        "dimensions": {
+          "uk": "31 × 36 × 3 см",
+          "en": "31 × 36 × 3 cm"
+        }
+      },
+      "story": {
+        "uk": "Підтверджених відомостей про походження, майстерню або історію володіння саме цією іконою немає.",
+        "en": "No verified information is available about the provenance, workshop, or ownership history of this particular icon."
       },
       "documents": []
     }
