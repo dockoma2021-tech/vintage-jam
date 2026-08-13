@@ -1,5 +1,5 @@
 .paintings-showcase{min-height:clamp(560px,78vh,760px)}
 .paintings-showcase .showcase-card-visual{height:64%;padding:0 16px 8px}
 .paintings-showcase .showcase-card-visual:before{display:none}
-.paintings-showcase .showcase-card-image{width:min(94vw,1100px);max-width:none;max-height:100%;object-fit:contain;filter:none}
-@media(max-width:700px){.paintings-showcase{min-height:560px}.paintings-showcase .showcase-card-inner{padding-top:38px}.paintings-showcase .showcase-card-visual{height:auto;inset:auto 0 18px;display:block;padding:0 10px}.paintings-showcase .showcase-card-image{width:100%;max-height:none;height:auto}.paintings-showcase .showcase-card p{font-size:17px}.paintings-showcase .showcase-card .showcase-action{margin-top:16px}}
+.paintings-showcase .showcase-card-image{content:normal!important;width:min(94vw,1100px);max-width:none;max-height:100%;object-fit:contain;filter:none}
+@media(max-width:700px){.paintings-showcase{min-height:560px}.paintings-showcase .showcase-card-inner{padding-top:38px}.paintings-showcase .showcase-card-visual{height:auto;inset:auto 0 18px;display:block;padding:0 10px}.paintings-showcase .showcase-card-image{content:normal!important;width:100%;max-height:none;height:auto}.paintings-showcase .showcase-card p{font-size:17px}.paintings-showcase .showcase-card .showcase-action{margin-top:16px}}
