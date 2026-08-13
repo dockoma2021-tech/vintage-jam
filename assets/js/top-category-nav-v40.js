@@ -62,3 +62,54 @@
   });
   observer.observe(categories, {childList:true, subtree:true, attributes:true, attributeFilter:['class']});
 })();
+
+(() => {
+  'use strict';
+  const heroAsset = 'assets/images/categories/paintings-collage-v1.svg?v=3';
+  const fallback = 'images/products/vj-000002/01.webp';
+
+  const installStyle = () => {
+    if (document.getElementById('paintingsHeroFix')) return;
+    const style = document.createElement('style');
+    style.id = 'paintingsHeroFix';
+    style.textContent = `
+      .paintings-showcase{min-height:clamp(570px,78vh,760px)!important}
+      .paintings-showcase .showcase-card-visual{height:65%!important;padding:0 18px 8px!important}
+      .paintings-showcase .showcase-card-visual:before{display:none!important}
+      .paintings-showcase .showcase-card-image{content:normal!important;width:min(94vw,1100px)!important;max-width:none!important;max-height:100%!important;height:auto!important;object-fit:contain!important;filter:none!important}
+      @media(max-width:700px){
+        .paintings-showcase{min-height:570px!important}
+        .paintings-showcase .showcase-card-inner{padding:36px 16px 0!important}
+        .paintings-showcase .showcase-card-visual{height:auto!important;inset:auto 0 18px!important;padding:0 8px!important;display:block!important}
+        .paintings-showcase .showcase-card-image{content:normal!important;width:100%!important;max-height:none!important;height:auto!important}
+        .paintings-showcase .showcase-card p{font-size:17px!important}
+        .paintings-showcase .showcase-card .showcase-action{margin-top:16px!important}
+      }
+    `;
+    document.head.append(style);
+  };
+
+  const apply = () => {
+    installStyle();
+    const card = document.querySelector('.showcase-stack .showcase-card:first-child');
+    if (!card) return;
+    card.classList.add('paintings-showcase');
+    const img = card.querySelector('.showcase-card-image');
+    if (!img) return;
+    if (!img.dataset.paintingsHero) {
+      img.dataset.paintingsHero = '1';
+      img.src = heroAsset;
+      img.loading = 'eager';
+      img.removeAttribute('srcset');
+      img.onerror = function () {
+        this.onerror = null;
+        this.src = fallback;
+      };
+    }
+  };
+
+  window.addEventListener('DOMContentLoaded', () => {
+    apply();
+    document.getElementById('languageButton')?.addEventListener('click', () => setTimeout(apply, 0));
+  });
+})();
