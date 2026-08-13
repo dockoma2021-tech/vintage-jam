@@ -65,7 +65,7 @@
 
 (() => {
   'use strict';
-  const heroAsset = 'assets/images/categories/paintings-collage-vintage-jam.webp?v=1';
+  const heroAsset = 'assets/images/categories/paintings-collage-vintage-jam.webp?v=2';
   const fallback = 'images/products/vj-000002/01.webp';
 
   const installStyle = () => {
@@ -76,21 +76,21 @@
       document.head.append(style);
     }
     style.textContent = `
-      .paintings-showcase{min-height:clamp(620px,80vh,820px)!important}
-      .paintings-showcase .showcase-card-inner{padding-top:50px!important}
+      .paintings-showcase{min-height:clamp(560px,70vh,700px)!important}
+      .paintings-showcase .showcase-card-inner{padding-top:40px!important}
       .paintings-showcase .showcase-card-copy{z-index:4!important}
-      .paintings-showcase .showcase-card .showcase-action{position:relative!important;z-index:5!important;margin-top:18px!important}
-      .paintings-showcase .showcase-card-visual{height:61%!important;inset:auto 0 0!important;padding:0 12px 10px!important;display:flex!important;align-items:flex-end!important;justify-content:center!important}
+      .paintings-showcase .showcase-card .showcase-action{position:relative!important;z-index:5!important;margin-top:16px!important}
+      .paintings-showcase .showcase-card-visual{height:58%!important;inset:auto 0 0!important;padding:0 10px 8px!important;display:flex!important;align-items:flex-end!important;justify-content:center!important}
       .paintings-showcase .showcase-card-visual:before{display:none!important}
-      .paintings-showcase .showcase-card-image{content:normal!important;display:block!important;width:min(92vw,1120px)!important;max-width:none!important;max-height:100%!important;height:auto!important;object-fit:contain!important;filter:none!important;border:0!important}
+      .paintings-showcase .showcase-card-image{content:normal!important;display:block!important;width:min(90vw,1080px)!important;max-width:none!important;max-height:100%!important;height:auto!important;object-fit:contain!important;filter:none!important;border:0!important}
       @media(max-width:700px){
-        .paintings-showcase{min-height:590px!important}
-        .paintings-showcase .showcase-card-inner{padding:34px 14px 0!important}
-        .paintings-showcase .showcase-card h2{font-size:clamp(42px,12vw,56px)!important}
-        .paintings-showcase .showcase-card p{font-size:17px!important;line-height:1.3!important;margin-top:12px!important}
-        .paintings-showcase .showcase-card .showcase-action{margin-top:18px!important;min-height:46px!important;padding:0 24px!important}
-        .paintings-showcase .showcase-card-visual{height:auto!important;inset:auto 0 14px!important;padding:0 8px!important;display:block!important}
-        .paintings-showcase .showcase-card-image{width:96vw!important;max-width:96vw!important;max-height:none!important;height:auto!important;margin:0 auto!important}
+        .paintings-showcase{min-height:auto!important}
+        .paintings-showcase .showcase-card-inner{padding:30px 12px 0!important}
+        .paintings-showcase .showcase-card h2{font-size:clamp(40px,11vw,52px)!important}
+        .paintings-showcase .showcase-card p{font-size:17px!important;line-height:1.28!important;margin-top:10px!important}
+        .paintings-showcase .showcase-card .showcase-action{margin-top:16px!important;min-height:44px!important;padding:0 23px!important}
+        .paintings-showcase .showcase-card-visual{position:relative!important;inset:auto!important;height:auto!important;width:100%!important;margin-top:26px!important;padding:0 0 14px!important;display:block!important}
+        .paintings-showcase .showcase-card-image{width:100%!important;max-width:100%!important;max-height:none!important;height:auto!important;margin:0 auto!important}
       }
     `;
   };
