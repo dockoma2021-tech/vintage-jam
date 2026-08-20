@@ -60,9 +60,6 @@
         open();
       }
     });
-    img.addEventListener('error', () => {
-      console.warn('Vintage Jam watches hero failed:', HERO);
-    });
 
     visual.replaceChildren(img);
   }
