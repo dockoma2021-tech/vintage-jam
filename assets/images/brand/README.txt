@@ -1,0 +1,1 @@
+Vintage Jam brand assets.
