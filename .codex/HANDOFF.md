@@ -1,47 +1,41 @@
 # Codex Handoff
 
 ## Task
-Restore the Knives / Ножі category as a visible informational/archive section without purchase functionality, working directly in GitHub because Codex usage is unavailable.
+Make the category showcase visuals consistent in size, using the Watches category presentation as the reference size for Paintings and all other visible categories.
 
 ## Result
-- Knives is no longer treated as a restricted/hidden category in the main router.
-- Daggers remains restricted and hidden.
-- Knives category buttons and showcase cards remain visible and route normally to `?view=catalog&category=knives`.
-- Knives catalog cards are explicitly marked as informational/archive and their price text is replaced with an archive-only label.
-- The Knives hero copy is changed to an archive/reference description and states that sale through the site is not offered.
-- Product detail pages for Knives load an informational guard: price is replaced by an archive-only notice; contact buttons, contact sheet, contact methods and shipping block are hidden.
-- No product data, product prices, contacts, Admin 3.3 data or Vercel configuration were changed.
+- Added a dedicated override stylesheet `assets/css/category-uniform-v74.css`.
+- Connected it after the existing category hero stylesheet in `index.html` so it wins over older category-specific sizing rules.
+- All category showcase cards now use the same visual frame dimensions as Watches on desktop.
+- Category hero images use the same 16:9 frame, width, cover behavior, border radius and shadow as Watches on desktop.
+- Collage-based categories now use the same 16:9 outer frame dimensions.
+- On mobile (<=700px), all categories use the same full-width 16:9 presentation as Watches, with square edge-to-edge images and no shadow.
+- Existing category images and product data were not changed.
 
 ## Changed files
-- `assets/js/navigation-router-v60.js`
-- `assets/js/informational-product-v73.js` (new)
-- `item.html`
+- `assets/css/category-uniform-v74.css` (new)
+- `index.html`
 - `.codex/HANDOFF.md`
 
 ## Checks
-- Changes are isolated to routing/display behavior and the new informational product guard.
-- Knives routing is allowed; Daggers routing remains blocked.
-- Existing category title fallback remains, while category UI continues to receive `data-category-id` from the router.
-- Informational labels are localized for UA/EN.
-- The product guard only activates when the current published product has `category === "knives"`.
-- Existing known validator issue for `vj-000009/11.webp`–`20.webp` is pre-existing and unrelated to this task.
+- The new stylesheet loads after `category-heroes-v72.css`, so the uniform rules override the older Paintings/Icons/Watches-specific geometry.
+- Desktop reference width remains `min(96vw, 1120px)` with 16:9 aspect ratio.
+- Mobile reference matches the existing Watches layout: full width, 16:9, no radius/shadow.
+- No JavaScript, catalog data, product prices, contacts, Admin 3.3 data or Vercel configuration were modified.
 
 ## Problems found
-- Codex still has stale local unstaged changes from the earlier attempt. Before using that local clone again, it should be reconciled with the new `origin/main` rather than force-pushed.
-- `vj-000009` still references missing images 11–20; this remains a separate catalog-data issue.
+- Existing legacy category-specific sizing remains in `category-heroes-v72.css`, but is intentionally overridden by the new v74 stylesheet. It can be consolidated later.
+- Existing unrelated missing image references for `vj-000009/11.webp`–`20.webp` remain a separate pre-existing issue.
 
 ## Decisions
-- Keep Knives visible only as an informational/archive category.
-- Remove purchase-oriented presentation for Knives while preserving browsing, images, descriptions and share functionality.
-- Keep Daggers restricted.
-- Make one atomic Git commit based on the latest `main` so concurrent Admin 3.3 changes are preserved.
+- Use a small, isolated stylesheet instead of rewriting the large legacy hero CSS during this visual adjustment.
+- Normalize size only; preserve each category's existing background, image content and copy.
 
 ## Remaining work
-- Verify the Vercel production deployment after the commit is live.
-- Separately repair the stale `vj-000009/11.webp`–`20.webp` references.
-- Reconcile the old Codex local working tree before resuming Codex work.
+- Visually verify the production Vercel deployment after cache/deploy propagation.
+- Later consolidate legacy sizing rules into one stylesheet if desired.
 
 ## Git
 Branch: `main`
-Commit SHA: see the GitHub commit created for this task
-Push status: direct fast-forward update to `main`
+Commit SHA: latest site change `c2c6f3948021d74d80585b5e3f4f272768867431`
+Push status: direct GitHub updates to `main` completed
