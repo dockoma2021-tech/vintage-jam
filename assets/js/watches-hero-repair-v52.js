@@ -1,7 +1,8 @@
 (() => {
   'use strict';
 
-  const HERO = 'assets/images/categories/watches-category-v67.jpg?v=6.7.2';
+  const HERO_B64 = 'assets/images/categories/watches-category-v68.webp.b64.txt?v=6.8.0';
+  let cachedHero = '';
 
   function findWatchCard() {
     const data = window.VINTAGE_JAM_DATA;
@@ -34,7 +35,17 @@
     `;
   }
 
-  function apply() {
+  async function getHero() {
+    if (cachedHero) return cachedHero;
+    const response = await fetch(HERO_B64, { cache: 'no-store' });
+    if (!response.ok) throw new Error(`watches hero ${response.status}`);
+    const b64 = (await response.text()).replace(/\s+/g, '');
+    if (!b64.startsWith('UklGR')) throw new Error('invalid WebP payload');
+    cachedHero = `data:image/webp;base64,${b64}`;
+    return cachedHero;
+  }
+
+  async function apply() {
     const card = findWatchCard();
     const visual = card?.querySelector('.showcase-card-visual');
     if (!card || !visual) return;
@@ -45,7 +56,6 @@
 
     const img = document.createElement('img');
     img.className = 'vj-watches-final52';
-    img.src = HERO;
     img.alt = '';
     img.loading = 'eager';
     img.decoding = 'async';
@@ -62,9 +72,16 @@
     });
 
     visual.replaceChildren(img);
+
+    try {
+      img.src = await getHero();
+    } catch (error) {
+      console.warn('Vintage Jam watches hero:', error);
+      img.remove();
+    }
   }
 
-  const run = () => requestAnimationFrame(() => requestAnimationFrame(apply));
+  const run = () => requestAnimationFrame(() => requestAnimationFrame(() => { apply(); }));
   window.addEventListener('DOMContentLoaded', run);
   window.addEventListener('load', run);
   document.getElementById('languageButton')?.addEventListener('click', () => setTimeout(run, 100));
