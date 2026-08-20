@@ -3,7 +3,7 @@
 
   const data = window.VINTAGE_JAM_DATA || {};
   const byId = id => document.getElementById(id);
-  const esc = value => String(value ?? '').replace(/[&<>"']/g, ch => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot',"'":'&#39;'}[ch]));
+  const esc = value => String(value ?? '').replace(/[&<>"']/g, ch => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[ch]));
 
   const icons = {
     telegram: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3.7 11.2 19.6 5c.7-.3 1.3.2 1 1l-2.7 13c-.2.9-1 1.1-1.7.6l-4.1-3-2 1.9c-.2.2-.4.4-.8.4l.3-4.2 7.7-7c.3-.3-.1-.5-.5-.2l-9.5 6-4.1-1.3c-.9-.3-.9-.9.5-1.4Z" fill="currentColor"/></svg>',
