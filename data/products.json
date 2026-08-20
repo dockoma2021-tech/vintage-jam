@@ -810,10 +810,6 @@
         "uk": "Оформлена в дерев'яну раму",
         "en": "Framed in a wooden frame"
       },
-      "artist": {
-        "uk": "Юрій Ніколаєнко",
-        "en": "Yuriy Nikolayenko"
-      },
       "year": "1978",
       "country": {
         "uk": "СРСР",
@@ -826,6 +822,10 @@
       "dimensions": {
         "uk": "78х57 см (загальні)",
         "en": "78x57 cm (overall)"
+      },
+      "artist": {
+        "uk": "Юрій Ніколаєнко",
+        "en": "Yuriy Nikolayenko"
       }
     },
     "story": {
