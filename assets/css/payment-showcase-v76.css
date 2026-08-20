@@ -1,0 +1,26 @@
+/* Premium unified payment-method showcase. */
+.payment-panel{margin:10px 0 28px;padding:18px;border:1px solid rgba(193,160,101,.28);border-radius:24px;background:linear-gradient(180deg,#fbf8f1 0%,#f4eee3 100%);box-shadow:0 14px 34px rgba(52,45,34,.08)}
+.payment-list{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:12px}
+.payment-brand{position:relative;min-height:94px;padding:16px 14px 19px;border:1px solid rgba(196,160,92,.38);border-radius:18px;background:linear-gradient(180deg,rgba(255,255,255,.94),rgba(249,244,234,.96));box-shadow:0 9px 20px rgba(59,50,37,.08),inset 0 1px 0 rgba(255,255,255,.95);display:flex;align-items:center;justify-content:center;gap:10px;overflow:hidden;color:#1e344f}
+.payment-brand::after{content:"";position:absolute;left:16px;right:16px;bottom:12px;height:1px;background:linear-gradient(90deg,transparent,rgba(188,149,77,.45),transparent)}
+.payment-brand::before{content:"";position:absolute;width:7px;height:7px;bottom:9px;left:50%;transform:translateX(-50%) rotate(45deg);background:#c7a76a;border-radius:1px;z-index:2}
+.payment-brand-mark{position:relative;flex:0 0 42px;width:42px;height:42px;display:grid;place-items:center;font-weight:800;color:#f7f2e8}
+.payment-brand-name{font-family:Georgia,"Times New Roman",serif;font-size:clamp(16px,1.7vw,23px);font-weight:600;letter-spacing:-.02em;white-space:nowrap;color:#20364f}
+.payment-brand[data-brand="privatbank"] .payment-brand-mark{border-radius:10px;background:linear-gradient(145deg,#132a43,#324a66)}
+.payment-brand[data-brand="privatbank"] .payment-brand-mark::after{content:"P";font-size:26px;line-height:1}
+.payment-brand[data-brand="paypal"] .payment-brand-mark{background:transparent}
+.payment-brand[data-brand="paypal"] .payment-brand-mark::before,.payment-brand[data-brand="paypal"] .payment-brand-mark::after{content:"P";position:absolute;font-family:Arial,sans-serif;font-weight:900;font-style:italic;font-size:34px;line-height:1}
+.payment-brand[data-brand="paypal"] .payment-brand-mark::before{color:#173552;left:4px;top:2px}
+.payment-brand[data-brand="paypal"] .payment-brand-mark::after{color:#71849a;left:12px;top:9px;opacity:.88}
+.payment-brand[data-brand="payoneer"] .payment-brand-mark{border-radius:50%;border:7px solid #c6a363;border-right-color:transparent;color:transparent;transform:rotate(-18deg)}
+.payment-brand[data-brand="skrill"] .payment-brand-mark{background:transparent}
+.payment-brand[data-brand="skrill"] .payment-brand-mark::before,.payment-brand[data-brand="skrill"] .payment-brand-mark::after{content:"";position:absolute;width:23px;height:23px;background:linear-gradient(145deg,#17314c,#2c4967);transform:rotate(45deg);border-radius:2px}
+.payment-brand[data-brand="skrill"] .payment-brand-mark::before{left:3px}
+.payment-brand[data-brand="skrill"] .payment-brand-mark::after{right:3px;opacity:.92}
+.payment-brand[data-brand="usdt"] .payment-brand-mark{border-radius:50%;background:linear-gradient(145deg,#7d91a6,#5e7389)}
+.payment-brand[data-brand="usdt"] .payment-brand-mark::before{content:"T";font-family:Arial,sans-serif;font-size:27px;font-weight:800;color:#f7f2e8;transform:translateY(-1px)}
+.payment-brand[data-brand="usdt"] .payment-brand-mark::after{content:"";position:absolute;width:30px;height:11px;border:2px solid rgba(247,242,232,.9);border-radius:50%;top:17px}
+.payment-brand[data-brand="paypal"] .payment-brand-name{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif;font-weight:750;font-style:italic}
+@media(max-width:900px){.payment-list{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media(max-width:640px){.payment-panel{margin:8px 0 22px;padding:12px;border-radius:18px}.payment-list{grid-template-columns:1fr 1fr;gap:9px}.payment-brand{min-height:82px;padding:12px 10px 17px;border-radius:14px}.payment-brand-mark{flex-basis:36px;width:36px;height:36px}.payment-brand-name{font-size:15px}.payment-brand[data-brand="paypal"] .payment-brand-mark::before,.payment-brand[data-brand="paypal"] .payment-brand-mark::after{font-size:30px}}
+@media(max-width:390px){.payment-list{grid-template-columns:1fr}.payment-brand{min-height:76px}}
