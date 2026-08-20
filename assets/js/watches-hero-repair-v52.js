@@ -1,7 +1,7 @@
 (() => {
   'use strict';
 
-  const HERO = 'assets/images/categories/watches-category-v70.jpg?v=7.0.6';
+  const HERO = 'assets/images/categories/watches-category-v71.jpg?v=7.1.0';
 
   function findWatchCard() {
     const data = window.VINTAGE_JAM_DATA;
@@ -21,14 +21,14 @@
       document.head.append(style);
     }
     style.textContent = `
-      .showcase-card.vj-watches-fixed52{min-height:auto!important;background:linear-gradient(180deg,#f4f6f9 0%,#e9eef5 54%,#f6f2ec 100%)!important}
+      .showcase-card.vj-watches-fixed52{min-height:auto!important;background:linear-gradient(180deg,#f4f6f9 0%,#edf2f7 50%,#f7f3ee 100%)!important}
       .showcase-card.vj-watches-fixed52 .showcase-card-inner{padding-bottom:0!important}
-      .showcase-card.vj-watches-fixed52 .showcase-card-visual{position:relative!important;inset:auto!important;height:auto!important;width:100%!important;margin-top:24px!important;padding:0 16px 18px!important;display:flex!important;justify-content:center!important;align-items:center!important;pointer-events:auto!important}
+      .showcase-card.vj-watches-fixed52 .showcase-card-visual{position:relative!important;inset:auto!important;height:auto!important;width:100%!important;margin-top:20px!important;padding:0 16px 18px!important;display:flex!important;justify-content:center!important;align-items:center!important;pointer-events:auto!important}
       .showcase-card.vj-watches-fixed52 .showcase-card-visual:before{display:none!important}
       .vj-watches-final52{display:block;width:min(96vw,1120px);max-width:100%;height:auto;aspect-ratio:16/9;object-fit:cover;border-radius:18px;box-shadow:0 24px 54px rgba(25,35,48,.14);cursor:pointer;background:#eef2f6}
       @media(max-width:700px){
-        .showcase-card.vj-watches-fixed52 .showcase-card-inner{padding:30px 0 0!important}
-        .showcase-card.vj-watches-fixed52 .showcase-card-visual{margin-top:22px!important;padding:0 0 10px!important}
+        .showcase-card.vj-watches-fixed52 .showcase-card-inner{padding:26px 0 0!important}
+        .showcase-card.vj-watches-fixed52 .showcase-card-visual{margin-top:18px!important;padding:0 0 8px!important}
         .vj-watches-final52{width:100%;max-width:none;border-radius:0;box-shadow:none;aspect-ratio:16/9;object-fit:cover}
       }
     `;
