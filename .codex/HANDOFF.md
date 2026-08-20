@@ -2,63 +2,61 @@
 
 ## Task
 
-Провести полный технический аудит текущего проекта Vintage Jam без изменения кода: проверить структуру, `index.html`, подключённые CSS/JavaScript, порядок загрузки, конфликты hero/hotfix-скриптов, изображения категорий, пути и 404, responsive, iPhone Safari-риски, меню категорий и переходы из showcase в каталог.
+Выполнить ЭТАП 1 стабилизации Vintage Jam: конвертировать правильный Watches hero, объединить конфликтующую hero-логику в один renderer, перевести навигацию на `data-category-id`, отключить старые hotfix-скрипты и проверить desktop/mobile без изменения данных и дизайна.
 
 ## Result
 
-Проведён статический и runtime-аудит главной страницы. Установлено, что переходы из больших блоков Paintings, Icons и Watches построены поверх нескольких поколений скриптов. Переход Watches в `index.html?view=catalog&category=watches` в runtime работает, однако его hero последовательно изменяется несколькими модулями и зависит от порядка событий.
+Подтверждено, что `watches-category-v71.jpg` — нужный баннер с пятью часами, но с PNG-сигнатурой. Без генерации и изменения композиции он конвертирован в настоящий WebP 1672×941. Embedded Icons WebP вынесен из JavaScript в обычный WebP 480×270.
 
-Код сайта во время аудита не изменялся.
+Создан единый `category-heroes-v72.js`, управляющий hero DOM, изображениями/collage и кликами. Все карточки получают `data-category-id`. Hero CSS вынесен в `category-heroes-v72.css`. Router переведён с DOM-индексов на ID; удалены его hero-handler, динамические стили, таймерный scroll hotfix и monkey patch. Старые v43/v47/v48/v49/v52 отключены в `index.html`, но физически сохранены.
 
 ## Changed files
 
-- Файлы сайта не изменялись.
-- `.codex/HANDOFF.md` создан позднее как отчёт о выполненном аудите.
+- `.codex/HANDOFF.md`
+- `index.html`
+- `assets/css/category-heroes-v72.css`
+- `assets/js/category-heroes-v72.js`
+- `assets/js/navigation-router-v60.js`
+- `assets/js/top-category-nav-v40.js`
+- `assets/images/categories/watches-category-hero.webp`
+- `assets/images/categories/icons-category-hero.webp`
 
 ## Checks
 
-- Выполнен `git pull --ff-only origin main`: локальная `main` была актуальна.
-- Проверены структура репозитория и все подключения в `index.html`.
-- Выполнен поиск всех операций с `.showcase-card-visual` и `replaceChildren()`.
-- Запущен `python tools/validate_site.py`: проверка завершилась ошибкой из-за отсутствующих `images/products/vj-000009/11.webp`–`20.webp`.
-- Выполнена проверка локальных asset-путей: подтверждены те же десять отсутствующих изображений.
-- Выполнена runtime-проверка главной страницы на desktop 1440×900 и mobile 390×844.
-- На mobile не обнаружено горизонтального переполнения; нижняя навигация отображается и учитывает safe area.
-- Проверен переход Watches → каталог: URL, активная категория и фильтрация товаров корректны.
-- Проверены сигнатуры category hero-файлов.
-- JavaScript-ошибок в консоли основного сценария не обнаружено.
+- Перед изменениями выполнен `git pull --ff-only origin main`; дерево было чистым.
+- `node --check` выполнен для всех подключённых JavaScript-файлов: syntax errors отсутствуют.
+- `git diff --check` прошёл.
+- Подтверждено отсутствие старых v43/v47/v48/v49/v52 среди активных подключений.
+- В новом hero renderer/router отсутствуют base64, Blob URL, fetch hero, dynamic `<style>`, `replaceChildren`, timer hotfix и monkey patch `scrollIntoView`.
+- Новые assets имеют сигнатуру `RIFF/WEBP`; Pillow: Watches WEBP 1672×941 RGB, Icons WEBP 480×270 RGB.
+- Browser 1440×900, 390×844 и 430×900: страница отображается, horizontal overflow отсутствует.
+- Клики Paintings, Icons и Watches формируют правильный URL и активируют соответствующий `data-category-id`.
+- Watches загружается обычным локальным WebP (`complete=true`, natural size 1672×941).
+- Browser console errors/warnings и error overlay отсутствуют; hero-assets успешно отдаются без 404.
+- `python tools/validate_site.py` сообщает только ранее известные отсутствующие `vj-000009/11.webp`–`20.webp`, явно исключённые пользователем из этого этапа.
 
 ## Problems found
 
-- Watches hero управляется последовательно `category-showcase-v43.js`, `category-collages-v48.js` и `watches-hero-repair-v52.js`; это создаёт гонки, повторные DOM-замены и layout shift.
-- Icons hero сначала получает повреждённый `icons-category-v1.jpg`, затем заменяется embedded WebP из `icons-hero-hotfix-v49.js`.
-- `watches-category-v71.jpg` фактически является PNG с сигнатурой `89 50 4E 47`, несмотря на расширение `.jpg`; размер файла около 1.95 MB.
-- `vj-000009` содержит ссылки на отсутствующие изображения `11.webp`–`20.webp`, вызывающие HTTP 404.
-- Запрос `/favicon.ico` возвращает 404.
-- Несколько обработчиков назначаются одновременно вложенному hero-элементу и `.showcase-card-visual`, поэтому один клик может вызвать переход дважды.
-- `navigation-router-v60.js` сопоставляет hero-карточки категориям по DOM-индексу, а не по идентификатору категории.
-- Router временно переписывает `scrollIntoView`, что является хрупким monkey patch.
-- Существенная часть CSS инжектируется из JavaScript через динамические `<style>`.
-- Использование `100vh` в catalog view потенциально нестабильно при динамических панелях iPhone Safari.
-- В репозитории остаются неподключённые hotfix/legacy-файлы и временные Watches-ассеты.
+- Общая проверка проекта остаётся красной только из-за отсутствующих `vj-000009/11.webp`–`20.webp`; проблема существовала до этапа и исключена пользователем.
+- Отключённые hero/hotfix-файлы и старые временные assets остаются в репозитории до отдельного этапа удаления.
+- `/favicon.ico` может по-прежнему возвращать 404; это вне scope hero-стабилизации.
 
 ## Decisions
 
-- Во время аудита ничего не исправлять и не удалять, поскольку задача была только диагностической.
-- Рекомендовать единый renderer category hero, один CSS-файл, `data-category-id` на карточках и router, работающий по ID.
-- Не считать mislabeled PNG нормальным JPEG и не использовать его как окончательный Safari-safe Watches asset без конвертации или замены.
-- Старые файлы удалять только после отключения, проверки нового механизма и отдельного подтверждённого этапа очистки.
+- Сохранить исходную Watches-композицию с пятью часами и только перекодировать её в настоящий WebP.
+- Для Icons использовать существующий корректный visual source, но хранить его обычным asset вместо embedded JavaScript.
+- Renderer является единственным владельцем hero DOM и hero-кликов; router владеет catalog view и URL.
+- Категории сопоставляются по `data-category-id`; текстовое сопоставление оставлено только как bootstrap fallback для существующих category buttons до назначения dataset.
+- Не удалять legacy-файлы и не затрагивать данные товаров, цены, тексты, контакты, header/footer, Vercel config и vj-000009.
 
 ## Remaining work
 
-1. Предоставить или создать корректный JPEG/WebP Watches hero с той же композицией.
-2. Объединить hero-логику v43/v48/v49/v52 в один модуль без таймерных hotfix и динамических стилей.
-3. Добавить `data-category-id` и перевести router с DOM-индексов на ID.
-4. Исправить отсутствующие изображения `vj-000009/11.webp`–`20.webp` или удалить недействительные ссылки из обоих источников каталога.
-5. После успешных runtime-проверок отдельным этапом удалить неподключённые legacy/hotfix-файлы.
+1. После production/Vercel-проверки отдельным этапом удалить отключённые legacy hero/hotfix-файлы и временные assets.
+2. Отдельно исправить отсутствующие `vj-000009/11.webp`–`20.webp` или ссылки на них.
+3. При необходимости отдельно устранить `/favicon.ico` 404.
 
 ## Git
 
 Branch: `main`
-Commit SHA: отсутствует — аудит не создавал commit
-Push status: не выполнялся, поскольку код сайта не изменялся
+Commit SHA: см. commit, содержащий этот handoff; точный SHA указан в итоговом отчёте Codex
+Push status: ожидает commit и push после финальной проверки staged diff

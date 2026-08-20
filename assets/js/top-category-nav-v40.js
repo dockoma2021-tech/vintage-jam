@@ -18,7 +18,6 @@
   nav.setAttribute('aria-label', 'Категорії товарів');
   nav.append(categories);
   headerInner.insertBefore(nav, actions);
-
   if (categoriesSection) categoriesSection.hidden = true;
 
   const style = document.createElement('style');
@@ -48,9 +47,8 @@
 
   const ensureVisible = button => {
     if (!button) return;
-    button.scrollIntoView({behavior:'smooth', block:'nearest', inline:'center'});
+    button.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' });
   };
-
   categories.addEventListener('click', event => {
     const button = event.target.closest('.category-button');
     if (button) requestAnimationFrame(() => ensureVisible(button));
@@ -60,61 +58,5 @@
     const active = categories.querySelector('.category-button.active');
     if (active) ensureVisible(active);
   });
-  observer.observe(categories, {childList:true, subtree:true, attributes:true, attributeFilter:['class']});
-})();
-
-(() => {
-  'use strict';
-  const heroAsset = 'assets/images/categories/paintings-collage-vintage-jam.webp?v=2';
-  const fallback = 'images/products/vj-000002/01.webp';
-
-  const installStyle = () => {
-    let style = document.getElementById('paintingsHeroFix');
-    if (!style) {
-      style = document.createElement('style');
-      style.id = 'paintingsHeroFix';
-      document.head.append(style);
-    }
-    style.textContent = `
-      .paintings-showcase{min-height:clamp(560px,70vh,700px)!important}
-      .paintings-showcase .showcase-card-inner{padding-top:40px!important}
-      .paintings-showcase .showcase-card-copy{z-index:4!important}
-      .paintings-showcase .showcase-card .showcase-action{position:relative!important;z-index:5!important;margin-top:16px!important}
-      .paintings-showcase .showcase-card-visual{height:58%!important;inset:auto 0 0!important;padding:0 10px 8px!important;display:flex!important;align-items:flex-end!important;justify-content:center!important}
-      .paintings-showcase .showcase-card-visual:before{display:none!important}
-      .paintings-showcase .showcase-card-image{content:normal!important;display:block!important;width:min(90vw,1080px)!important;max-width:none!important;max-height:100%!important;height:auto!important;object-fit:contain!important;filter:none!important;border:0!important}
-      @media(max-width:700px){
-        .paintings-showcase{min-height:auto!important}
-        .paintings-showcase .showcase-card-inner{padding:30px 12px 0!important}
-        .paintings-showcase .showcase-card h2{font-size:clamp(40px,11vw,52px)!important}
-        .paintings-showcase .showcase-card p{font-size:17px!important;line-height:1.28!important;margin-top:10px!important}
-        .paintings-showcase .showcase-card .showcase-action{margin-top:16px!important;min-height:44px!important;padding:0 23px!important}
-        .paintings-showcase .showcase-card-visual{position:relative!important;inset:auto!important;height:auto!important;width:100%!important;margin-top:26px!important;padding:0 0 14px!important;display:block!important}
-        .paintings-showcase .showcase-card-image{width:100%!important;max-width:100%!important;max-height:none!important;height:auto!important;margin:0 auto!important}
-      }
-    `;
-  };
-
-  const apply = () => {
-    installStyle();
-    const card = document.querySelector('.showcase-stack .showcase-card:first-child');
-    if (!card) return;
-    card.classList.add('paintings-showcase');
-    const img = card.querySelector('.showcase-card-image');
-    if (!img) return;
-    img.dataset.paintingsHero = '1';
-    img.src = heroAsset;
-    img.loading = 'eager';
-    img.decoding = 'async';
-    img.removeAttribute('srcset');
-    img.onerror = function () {
-      this.onerror = null;
-      this.src = fallback;
-    };
-  };
-
-  window.addEventListener('DOMContentLoaded', () => {
-    apply();
-    document.getElementById('languageButton')?.addEventListener('click', () => setTimeout(apply, 0));
-  });
+  observer.observe(categories, { childList: true, subtree: true, attributes: true, attributeFilter: ['class'] });
 })();
