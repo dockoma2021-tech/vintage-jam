@@ -1,6 +1,6 @@
 window.VINTAGE_JAM_DATA = {
   "version": "3.3.0",
-  "generatedAt": "2026-08-20T18:50:22.406Z",
+  "generatedAt": "2026-08-20T19:47:42.638Z",
   "site": {
     "name": "Vintage Jam",
     "defaultLanguage": "uk"
@@ -1027,6 +1027,91 @@ window.VINTAGE_JAM_DATA = {
       "story": {
         "uk": "Немає підтверджених відомостей про історію цього предмета.",
         "en": "No verified information about the history of this item is available."
+      },
+      "documents": []
+    },
+    {
+      "id": "vj-000013",
+      "publication_status": "published",
+      "sale_status": "available",
+      "date_added": "2026-08-20",
+      "category": "paintings",
+      "title": {
+        "uk": "Ю. Ніколаєнко «Зимовий пейзаж»",
+        "en": "Winter Landscape by Y. Nikolaenko"
+      },
+      "short_description": {
+        "uk": "Атмосферний олійний живопис із зображенням засніженого лісу пензля одеського художника Юрія Ніколаєнко.",
+        "en": "Atmospheric oil painting depicting a snow-covered forest path by Odesa artist Yuriy Nikolaenko."
+      },
+      "description": {
+        "uk": "Станкова живописна робота «Зимовий пейзаж» демонструє традиції одеської школи живопису другої половини ХХ століття. Композиція побудована навколо засніженої лісової алеї в оточенні струнких дерев, виконаних у стриманій природній кольоровій гамі.\n\n\n\nПолотно натягнуте на оригінальний дерев'яний підрамник. У нижній частині лицьового боку міститься авторський підпис із зазначенням міста.\n\n\n\nКартина перебуває у вінтажному стані із збереженим фактурним фарбовим шаром та природними слідами часу по краях полотна.",
+        "en": "The easel painting \"Winter Landscape\" demonstrates the traditions of the Odesa school of painting from the second half of the 20th century. The composition is built around a snow-covered forest path surrounded by slender trees, executed in a restrained natural color palette.\n\n\n\nThe canvas is stretched over an original wooden stretcher. The lower portion of the front side features the artist's signature with the city specified.\n\n\n\nThe painting is in vintage condition with a preserved textured paint layer and natural signs of age along the edges of the canvas."
+      },
+      "price": {
+        "type": "request",
+        "value": null,
+        "currency": "UAH"
+      },
+      "media": {
+        "images": [
+          "images/products/vj-000013/01.webp",
+          "images/products/vj-000013/02.webp",
+          "images/products/vj-000013/03.webp",
+          "images/products/vj-000013/04.webp",
+          "images/products/vj-000013/05.webp",
+          "images/products/vj-000013/06.webp",
+          "images/products/vj-000013/07.webp",
+          "images/products/vj-000013/08.webp",
+          "images/products/vj-000013/09.webp",
+          "images/products/vj-000013/10.webp",
+          "images/products/vj-000013/11.webp",
+          "images/products/vj-000013/12.webp",
+          "images/products/vj-000013/13.webp",
+          "images/products/vj-000013/14.webp",
+          "images/products/vj-000013/15.webp"
+        ],
+        "youtube": "",
+        "shorts": ""
+      },
+      "attributes": {
+        "condition": {
+          "uk": "Вінтажний стан, збережена цілісність фарбового шару, незначні сліди часу по краях полотна",
+          "en": "Vintage condition, preserved paint layer integrity, minor signs of age along canvas edges"
+        },
+        "technique": {
+          "uk": "Олійний живопис",
+          "en": "Oil painting"
+        },
+        "markings": {
+          "uk": "Авторський підпис «ЮН Одесса» на лицьовому боці, підпис «Ю Николаенко 80г» на звороті",
+          "en": "Artist signature 'ЮН Одесса' on the front, signature 'Ю Николаенко 80г' on the reverse"
+        },
+        "completeness": {
+          "uk": "Картина на дерев'яному підрамнику (без рами)",
+          "en": "Painting on a wooden stretcher (without frame)"
+        },
+        "artist": {
+          "uk": "Юрій Ніколаєнко",
+          "en": "Yuriy Nikolaenko"
+        },
+        "year": "1980",
+        "country": {
+          "uk": "Україна",
+          "en": "Ukraine"
+        },
+        "material": {
+          "uk": "Полотно, олія",
+          "en": "Canvas, oil"
+        },
+        "dimensions": {
+          "uk": "65х52 см (без рами)",
+          "en": "65x52 cm (without frame)"
+        }
+      },
+      "story": {
+        "uk": "На звороті полотна збережено авторський напис олівцем із датуванням 1980 роком, що відносить роботу до пізньорадянського періоду одеського образотворчого мистецтва.",
+        "en": "On the reverse of the canvas, the artist's pencil inscription dated 1980 is preserved, attributing the work to the late Soviet period of Odesa fine art."
       },
       "documents": []
     }
