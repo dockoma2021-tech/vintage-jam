@@ -1,6 +1,6 @@
 window.VINTAGE_JAM_DATA = {
   "version": "3.3.0",
-  "generatedAt": "2026-08-13T12:56:52.727Z",
+  "generatedAt": "2026-08-20T18:49:51.610Z",
   "site": {
     "name": "Vintage Jam",
     "defaultLanguage": "uk"
@@ -951,6 +951,82 @@ window.VINTAGE_JAM_DATA = {
       "story": {
         "uk": "Підтверджених відомостей про походження, майстерню або історію володіння саме цією іконою немає.",
         "en": "No verified information is available about the provenance, workshop, or ownership history of this particular icon."
+      },
+      "documents": []
+    },
+    {
+      "id": "vj-000012",
+      "publication_status": "published",
+      "sale_status": "available",
+      "date_added": "2026-08-20",
+      "category": "paintings",
+      "title": {
+        "uk": "Ю. Ніколаєнка «Натюрморт»",
+        "en": "\"Still Life\" by Y. Nikolayenko"
+      },
+      "short_description": {
+        "uk": "Олійне полотно 1978 року із зображенням дарів природи та дерев'яного посуду в дерев'яній рамі.",
+        "en": "Oil on canvas painting from 1978 depicting fruits and a wooden scoop in a wooden frame."
+      },
+      "description": {
+        "uk": "Картина є зразком станкового живопису другої половини XX століття. Композиція побудована на контрасті глибокого темного тла та насичених соковитих тонів фруктів, викладених на керамічному блюді поряд із дерев'яним ковшем. Художник використовує щільний, фактурний мазок, що надає зображенню об'єму та матеріальності.\n\n\n\nПолотно оформлене у темну дерев'яну раму. У правому нижньому куті збережено авторський підпис та дату створення. Предмет має виражений вінтажний характер із природними слідами часу на рамі та поверхні фарби.",
+        "en": "The painting represents easel painting from the second half of the 20th century. The composition is built on the contrast of a deep dark background and rich, juicy tones of fruits set on a ceramic dish next to a wooden scoop. The artist employs a dense, textured brushstroke that gives volume and materiality to the image.\n\n\n\nThe canvas is framed in a dark wooden frame. The lower right corner features the artist's signature and the date of creation. The item displays a distinct vintage character with natural signs of aging on the frame and paint surface."
+      },
+      "price": {
+        "type": "request",
+        "value": null,
+        "currency": "UAH"
+      },
+      "media": {
+        "images": [
+          "images/products/vj-000012/01.webp",
+          "images/products/vj-000012/02.webp",
+          "images/products/vj-000012/03.webp",
+          "images/products/vj-000012/04.webp",
+          "images/products/vj-000012/05.webp",
+          "images/products/vj-000012/06.webp"
+        ],
+        "youtube": "",
+        "shorts": ""
+      },
+      "attributes": {
+        "condition": {
+          "uk": "Вінтажний стан, присутні дрібні потертості та сколи на рамі, природний кракелюр",
+          "en": "Vintage condition, minor scuffs and chips on the frame, natural craquelure"
+        },
+        "technique": {
+          "uk": "Пастозний масляний живопис",
+          "en": "Impasto oil painting"
+        },
+        "markings": {
+          "uk": "Авторський підпис та дата '78' у правому нижньому куті",
+          "en": "Artist's signature and date '78' in the lower right corner"
+        },
+        "framing": {
+          "uk": "Оформлена в дерев'яну раму",
+          "en": "Framed in a wooden frame"
+        },
+        "artist": {
+          "uk": "Юрій Ніколаєнко",
+          "en": "Yuriy Nikolayenko"
+        },
+        "year": "1978",
+        "country": {
+          "uk": "СРСР",
+          "en": "USSR"
+        },
+        "material": {
+          "uk": "Полотно, олія, дерево",
+          "en": "Canvas, oil, wood"
+        },
+        "dimensions": {
+          "uk": "78х57 см (загальні)",
+          "en": "78x57 cm (overall)"
+        }
+      },
+      "story": {
+        "uk": "Немає підтверджених відомостей про історію цього предмета.",
+        "en": "No verified information about the history of this item is available."
       },
       "documents": []
     }
