@@ -1,8 +1,7 @@
 (() => {
   'use strict';
 
-  const HERO_SVG = 'assets/images/categories/watches-category-final-v64.svg?v=6.6.0';
-  let objectUrl = '';
+  const HERO = 'assets/images/categories/watches-category-final-v64.svg?v=6.7.0';
 
   function findWatchCard() {
     const data = window.VINTAGE_JAM_DATA;
@@ -26,43 +25,18 @@
       .showcase-card.vj-watches-fixed52 .showcase-card-inner{padding-bottom:0!important}
       .showcase-card.vj-watches-fixed52 .showcase-card-visual{position:relative!important;inset:auto!important;height:auto!important;width:100%!important;margin-top:24px!important;padding:0 16px 18px!important;display:flex!important;justify-content:center!important;align-items:center!important;pointer-events:auto!important}
       .showcase-card.vj-watches-fixed52 .showcase-card-visual:before{display:none!important}
-      .vj-watches-final52{display:block;width:min(96vw,1120px);max-width:100%;height:auto;aspect-ratio:1672/941;object-fit:cover;border-radius:18px;box-shadow:0 24px 54px rgba(25,35,48,.14);cursor:pointer;background:#eef2f6}
+      .vj-watches-final52{position:relative;display:block;width:min(96vw,1120px);max-width:100%;aspect-ratio:1672/941;border-radius:18px;overflow:hidden;box-shadow:0 24px 54px rgba(25,35,48,.14);cursor:pointer;background:#eef2f6}
+      .vj-watches-final52 object{display:block;width:100%;height:100%;border:0;pointer-events:none;background:#eef2f6}
+      .vj-watches-final52 .fallback{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:-1}
       @media(max-width:700px){
         .showcase-card.vj-watches-fixed52 .showcase-card-inner{padding:30px 0 0!important}
         .showcase-card.vj-watches-fixed52 .showcase-card-visual{margin-top:22px!important;padding:0 0 10px!important}
-        .vj-watches-final52{width:100%;max-width:none;border-radius:0;box-shadow:none;aspect-ratio:1672/941;object-fit:cover}
+        .vj-watches-final52{width:100%;max-width:none;border-radius:0;box-shadow:none;aspect-ratio:1672/941}
       }
     `;
   }
 
-  async function getHeroObjectUrl() {
-    const response = await fetch(HERO_SVG, { cache: 'no-store' });
-    if (!response.ok) throw new Error(`hero fetch ${response.status}`);
-    const svgText = await response.text();
-    const match = svgText.match(/data:image\/jpeg;base64,([^\"']+)/i);
-    if (!match || !match[1]) throw new Error('embedded jpeg not found');
-
-    const binary = atob(match[1].replace(/\s/g, ''));
-    const bytes = new Uint8Array(binary.length);
-    for (let i = 0; i < binary.length; i += 1) bytes[i] = binary.charCodeAt(i);
-
-    if (objectUrl) URL.revokeObjectURL(objectUrl);
-    objectUrl = URL.createObjectURL(new Blob([bytes], { type: 'image/jpeg' }));
-    return objectUrl;
-  }
-
-  function bindOpen(img, card) {
-    const open = () => card.querySelector('.showcase-action')?.click();
-    img.addEventListener('click', open);
-    img.addEventListener('keydown', e => {
-      if (e.key === 'Enter' || e.key === ' ') {
-        e.preventDefault();
-        open();
-      }
-    });
-  }
-
-  async function apply() {
+  function apply() {
     const card = findWatchCard();
     const visual = card?.querySelector('.showcase-card-visual');
     if (!card || !visual) return;
@@ -71,26 +45,38 @@
     card.classList.remove('has-vj-collage','has-custom-hero');
     card.classList.add('vj-watches-fixed52');
 
-    const img = document.createElement('img');
-    img.className = 'vj-watches-final52';
-    img.alt = '';
-    img.loading = 'eager';
-    img.decoding = 'async';
-    img.setAttribute('role','button');
-    img.setAttribute('tabindex','0');
-    bindOpen(img, card);
-    visual.replaceChildren(img);
+    const hero = document.createElement('div');
+    hero.className = 'vj-watches-final52';
+    hero.setAttribute('role','button');
+    hero.setAttribute('tabindex','0');
+    hero.setAttribute('aria-label', document.documentElement.lang === 'en' ? 'Open Watches category' : 'Відкрити категорію Годинники');
 
-    try {
-      img.src = await getHeroObjectUrl();
-    } catch (error) {
-      console.warn('Vintage Jam watches hero fallback:', error);
-      img.src = 'images/products/vj-000001/01.webp';
-    }
+    const fallback = document.createElement('img');
+    fallback.className = 'fallback';
+    fallback.src = 'images/products/vj-000001/01.webp';
+    fallback.alt = '';
+
+    const object = document.createElement('object');
+    object.type = 'image/svg+xml';
+    object.data = HERO;
+    object.setAttribute('aria-hidden','true');
+
+    hero.append(fallback, object);
+
+    const open = () => card.querySelector('.showcase-action')?.click();
+    hero.addEventListener('click', open);
+    hero.addEventListener('keydown', e => {
+      if (e.key === 'Enter' || e.key === ' ') {
+        e.preventDefault();
+        open();
+      }
+    });
+
+    visual.replaceChildren(hero);
   }
 
-  const run = () => requestAnimationFrame(() => requestAnimationFrame(() => { apply(); }));
+  const run = () => requestAnimationFrame(() => requestAnimationFrame(apply));
   window.addEventListener('DOMContentLoaded', run);
   window.addEventListener('load', run);
-  document.getElementById('languageButton')?.addEventListener('click', () => setTimeout(run, 100));
+  document.getElementById('languageButton')?.addEventListener('click', () => setTimeout(run, 80));
 })();
