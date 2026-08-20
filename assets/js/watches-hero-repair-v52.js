@@ -1,7 +1,7 @@
 (() => {
   'use strict';
 
-  const HERO = 'assets/images/categories/watches-category-v70.jpg?v=7.0.0';
+  const HERO = 'assets/images/categories/watches-category-v70.jpg?v=7.0.6';
 
   function findWatchCard() {
     const data = window.VINTAGE_JAM_DATA;
@@ -38,9 +38,11 @@
     const card = findWatchCard();
     const visual = card?.querySelector('.showcase-card-visual');
     if (!card || !visual) return;
+
     ensureStyle();
     card.classList.remove('has-vj-collage','has-custom-hero');
     card.classList.add('vj-watches-fixed52');
+
     const img = document.createElement('img');
     img.className = 'vj-watches-final52';
     img.src = HERO;
@@ -49,6 +51,7 @@
     img.decoding = 'async';
     img.setAttribute('role','button');
     img.setAttribute('tabindex','0');
+
     const open = () => card.querySelector('.showcase-action')?.click();
     img.addEventListener('click', open);
     img.addEventListener('keydown', e => {
@@ -57,6 +60,7 @@
         open();
       }
     });
+
     visual.replaceChildren(img);
   }
 
