@@ -1,0 +1,14 @@
+/* Uniform category showcase sizing: use Watches as the reference frame. */
+.category-showcase .showcase-card{min-height:auto}
+.category-showcase .showcase-card .showcase-card-inner{padding:52px 20px 0}
+.category-showcase .showcase-card .showcase-card-visual,.category-showcase .showcase-card.has-vj-collage .showcase-card-visual,.category-showcase .showcase-card.has-category-image .showcase-card-visual{position:relative;inset:auto;height:auto;width:100%;margin-top:18px;padding:0 16px 14px;display:flex;align-items:center;justify-content:center}
+.category-showcase .showcase-card .showcase-card-visual:before{display:none}
+.category-showcase .showcase-card .showcase-hero-image{display:block;width:min(96vw,1120px);max-width:100%;height:auto;aspect-ratio:16/9;object-fit:cover;border-radius:18px;box-shadow:0 24px 54px rgba(25,35,48,.14);background:#eef2f6}
+.category-showcase .vj-category-collage{width:min(96vw,1120px);max-width:100%;height:auto;max-height:none;min-height:0;aspect-ratio:16/9;margin:0 auto}
+.category-showcase .showcase-card.no-image .showcase-card-visual{aspect-ratio:16/9}
+@media(max-width:700px){
+  .category-showcase .showcase-card .showcase-card-inner{padding:24px 0 0}
+  .category-showcase .showcase-card .showcase-card-visual,.category-showcase .showcase-card.has-vj-collage .showcase-card-visual,.category-showcase .showcase-card.has-category-image .showcase-card-visual{margin-top:16px;padding:0 0 6px;display:flex}
+  .category-showcase .showcase-card .showcase-hero-image{width:100%;max-width:none;aspect-ratio:16/9;object-fit:cover;border-radius:0;box-shadow:none}
+  .category-showcase .vj-category-collage{width:100%;height:auto;max-height:none;min-height:0;aspect-ratio:16/9}
+}
