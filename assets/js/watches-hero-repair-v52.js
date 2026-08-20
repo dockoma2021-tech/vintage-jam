@@ -1,8 +1,7 @@
 (() => {
   'use strict';
 
-  const HERO_B64 = 'assets/images/categories/watches-category-v68.webp.b64.txt?v=6.9.0';
-  let objectUrl = '';
+  const HERO = 'assets/images/categories/watches-category-v70.jpg?v=7.0.0';
 
   function findWatchCard() {
     const data = window.VINTAGE_JAM_DATA;
@@ -35,22 +34,7 @@
     `;
   }
 
-  async function getHeroUrl() {
-    const response = await fetch(HERO_B64, { cache: 'no-store' });
-    if (!response.ok) throw new Error(`watches hero ${response.status}`);
-    const b64 = (await response.text()).replace(/\s+/g, '');
-    if (!b64.startsWith('UklGR')) throw new Error('invalid WebP payload');
-
-    const binary = atob(b64);
-    const bytes = new Uint8Array(binary.length);
-    for (let i = 0; i < binary.length; i += 1) bytes[i] = binary.charCodeAt(i);
-
-    if (objectUrl) URL.revokeObjectURL(objectUrl);
-    objectUrl = URL.createObjectURL(new Blob([bytes], { type: 'image/webp' }));
-    return objectUrl;
-  }
-
-  async function apply() {
+  function apply() {
     const card = findWatchCard();
     const visual = card?.querySelector('.showcase-card-visual');
     if (!card || !visual) return;
@@ -61,6 +45,7 @@
 
     const img = document.createElement('img');
     img.className = 'vj-watches-final52';
+    img.src = HERO;
     img.alt = '';
     img.loading = 'eager';
     img.decoding = 'async';
@@ -76,20 +61,10 @@
       }
     });
     img.addEventListener('error', () => {
-      console.warn('Vintage Jam watches hero: browser could not decode image');
-      img.remove();
-      visual.style.minHeight = '0';
-    }, { once: true });
+      console.warn('Vintage Jam watches hero failed:', HERO);
+    });
 
     visual.replaceChildren(img);
-
-    try {
-      img.src = await getHeroUrl();
-    } catch (error) {
-      console.warn('Vintage Jam watches hero:', error);
-      img.remove();
-      visual.style.minHeight = '0';
-    }
   }
 
   const run = () => requestAnimationFrame(() => requestAnimationFrame(apply));
