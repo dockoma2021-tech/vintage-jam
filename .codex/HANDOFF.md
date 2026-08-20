@@ -1,41 +1,53 @@
 # Codex Handoff
 
 ## Task
-Make the category showcase visuals consistent in size, using the Watches category presentation as the reference size for Paintings and all other visible categories.
+Standardize category showcase imagery so every category uses one dedicated image file from `assets/images/categories`, never a collage built from product photos. Also set the user-provided image as the Knives archive category hero.
 
 ## Result
-- Added a dedicated override stylesheet `assets/css/category-uniform-v74.css`.
-- Connected it after the existing category hero stylesheet in `index.html` so it wins over older category-specific sizing rules.
-- All category showcase cards now use the same visual frame dimensions as Watches on desktop.
-- Category hero images use the same 16:9 frame, width, cover behavior, border radius and shadow as Watches on desktop.
-- Collage-based categories now use the same 16:9 outer frame dimensions.
-- On mobile (<=700px), all categories use the same full-width 16:9 presentation as Watches, with square edge-to-edge images and no shadow.
-- Existing category images and product data were not changed.
+- Added `assets/js/category-heroes-v75.js` and disconnected the old v72 renderer in `index.html`.
+- v75 uses one naming convention: `assets/images/categories/<category-id>-category-hero.webp`.
+- The renderer no longer reads product media to construct category collages.
+- All category hero images use the existing shared sizing rules from `category-uniform-v74.css`, matching the Watches 16:9 frame.
+- Added a dedicated `knives-category-hero.webp` based on the user-provided image.
+- Added `paintings-category-hero.webp` as a stable alias of the current Paintings artwork.
+- Existing `icons-category-hero.webp` and `watches-category-hero.webp` remain the dedicated assets for those categories.
+- Created dedicated placeholder files for the remaining category IDs so every category has a predictable replaceable file path.
+- Added `assets/images/categories/README.md` explaining the file naming and replacement workflow.
+- Knives remains informational/archive-only; this task does not add purchase functionality.
 
 ## Changed files
-- `assets/css/category-uniform-v74.css` (new)
+- `assets/js/category-heroes-v75.js` (new)
 - `index.html`
+- `assets/images/categories/README.md` (new)
+- `assets/images/categories/category-placeholder.webp` (new path)
+- `assets/images/categories/paintings-category-hero.webp` (new path)
+- `assets/images/categories/knives-category-hero.webp` (new image)
+- Dedicated category hero placeholder paths for `art_objects`, `daggers`, `orders_medals`, `silver`, `coins`, `books`, `porcelain`, `electronics`, `miscellaneous`
 - `.codex/HANDOFF.md`
 
 ## Checks
-- The new stylesheet loads after `category-heroes-v72.css`, so the uniform rules override the older Paintings/Icons/Watches-specific geometry.
-- Desktop reference width remains `min(96vw, 1120px)` with 16:9 aspect ratio.
-- Mobile reference matches the existing Watches layout: full width, 16:9, no radius/shadow.
-- No JavaScript, catalog data, product prices, contacts, Admin 3.3 data or Vercel configuration were modified.
+- `node --check` passed for `category-heroes-v75.js` before upload.
+- No category image path in v75 references `product.media` or product image folders.
+- All category hero filenames are deterministic from the category ID.
+- Existing shared 16:9 category sizing CSS remains active.
+- Latest pre-existing Admin/GitHub image update was preserved by basing this change on the current `main` head.
 
 ## Problems found
-- Existing legacy category-specific sizing remains in `category-heroes-v72.css`, but is intentionally overridden by the new v74 stylesheet. It can be consolidated later.
-- Existing unrelated missing image references for `vj-000009/11.webp`–`20.webp` remain a separate pre-existing issue.
+- Legacy `category-heroes-v72.js` remains in the repository for history but is no longer loaded by `index.html`.
+- Legacy collage CSS remains but is unused by v75 and can be removed in a later cleanup.
+- Existing unrelated missing `vj-000009/11.webp`–`20.webp` references remain a separate issue.
 
 ## Decisions
-- Use a small, isolated stylesheet instead of rewriting the large legacy hero CSS during this visual adjustment.
-- Normalize size only; preserve each category's existing background, image content and copy.
+- Use a filename convention instead of a JavaScript image map so future image replacement does not require code changes.
+- Use dedicated neutral placeholder files for categories that do not yet have custom artwork.
+- Preserve the current Paintings, Icons and Watches category art while standardizing their file locations/naming.
 
 ## Remaining work
-- Visually verify the production Vercel deployment after cache/deploy propagation.
-- Later consolidate legacy sizing rules into one stylesheet if desired.
+- Visually verify production after Vercel deploy propagation.
+- Replace neutral placeholder category images with custom artwork over time as desired.
+- Later remove unused legacy collage renderer/CSS after production verification.
 
 ## Git
 Branch: `main`
-Commit SHA: latest site change `c2c6f3948021d74d80585b5e3f4f272768867431`
-Push status: direct GitHub updates to `main` completed
+Commit SHA: see latest GitHub commit for this task
+Push status: direct fast-forward update to `main`
