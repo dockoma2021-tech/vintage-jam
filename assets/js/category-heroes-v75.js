@@ -6,7 +6,7 @@
 
   const byId = id => document.getElementById(id);
   const ASSET_ROOT = 'assets/images/categories';
-  const ASSET_VERSION = '7.5.0';
+  const ASSET_VERSION = '7.5.1';
 
   const copy = {
     uk: {
@@ -23,6 +23,7 @@
       soldText: 'Предмети, які вже знайшли нових власників.',
       soldButton: 'Переглянути продані',
       catalog: 'Каталог',
+      items: 'Предмети',
       back: 'До категорій'
     },
     en: {
@@ -39,6 +40,7 @@
       soldText: 'Objects that have already found new owners.',
       soldButton: 'View sold items',
       catalog: 'Catalog',
+      items: 'Items',
       back: 'Back to categories'
     }
   };
@@ -92,6 +94,26 @@
 
   const categoryImageSrc = categoryId => `${ASSET_ROOT}/${categoryId}-category-hero.webp?v=${ASSET_VERSION}`;
 
+  function selectedCategory() {
+    const params = new URL(window.location.href).searchParams;
+    const id = params.get('category');
+    if (id) return data.categories.find(category => category.id === id) || null;
+    const active = document.querySelector('#categories .category-button.active');
+    const activeId = active?.dataset.categoryId;
+    return activeId && activeId !== 'all' ? data.categories.find(category => category.id === activeId) || null : null;
+  }
+
+  function syncWorkspaceHead() {
+    const c = currentCopy();
+    const category = selectedCategory();
+    const shellTitle = document.querySelector('.vj-catalog-shell-title');
+    const catalogTitle = byId('catalogTitle');
+    const back = document.querySelector('.vj-back-showcase');
+    if (shellTitle) shellTitle.textContent = category ? localize(category.title) : c.catalog;
+    if (catalogTitle) catalogTitle.textContent = category ? c.items : c.all;
+    if (back) back.textContent = c.back;
+  }
+
   function openWorkspace(mode = 'catalog') {
     document.body.classList.add('vj-catalog-open');
     document.body.classList.toggle('vj-new-open', mode === 'new');
@@ -101,11 +123,13 @@
   function openCategory(category) {
     openWorkspace('catalog');
     categoryButton(category)?.click();
+    requestAnimationFrame(syncWorkspaceHead);
   }
 
   function openAll() {
     openWorkspace('catalog');
     document.querySelector('#categories .category-button')?.click();
+    requestAnimationFrame(syncWorkspaceHead);
   }
 
   function createImagePresentation(category) {
@@ -187,10 +211,7 @@
     categories.forEach((category, index) => stack.append(createCard(category, index)));
     bindShowcaseEvents(section, categories);
     document.querySelector('main')?.prepend(section);
-    const title = document.querySelector('.vj-catalog-shell-title');
-    if (title) title.textContent = c.catalog;
-    const back = document.querySelector('.vj-back-showcase');
-    if (back) back.textContent = c.back;
+    syncWorkspaceHead();
   }
 
   function prepareWorkspace() {
@@ -210,5 +231,14 @@
   document.body.classList.add('vj-showcase-home');
   prepareWorkspace();
   renderShowcase();
-  byId('languageButton')?.addEventListener('click', () => requestAnimationFrame(renderShowcase));
+
+  document.addEventListener('click', event => {
+    if (event.target.closest('#categories .category-button')) requestAnimationFrame(syncWorkspaceHead);
+  });
+  window.addEventListener('popstate', () => setTimeout(syncWorkspaceHead, 0));
+  window.addEventListener('DOMContentLoaded', () => setTimeout(syncWorkspaceHead, 30));
+  byId('languageButton')?.addEventListener('click', () => requestAnimationFrame(() => {
+    renderShowcase();
+    requestAnimationFrame(syncWorkspaceHead);
+  }));
 })();
