@@ -1,6 +1,6 @@
 window.VINTAGE_JAM_DATA = {
   "version": "3.3.0",
-  "generatedAt": "2026-08-20T18:49:51.610Z",
+  "generatedAt": "2026-08-20T18:49:55.663Z",
   "site": {
     "name": "Vintage Jam",
     "defaultLanguage": "uk"
@@ -1006,10 +1006,6 @@ window.VINTAGE_JAM_DATA = {
           "uk": "Оформлена в дерев'яну раму",
           "en": "Framed in a wooden frame"
         },
-        "artist": {
-          "uk": "Юрій Ніколаєнко",
-          "en": "Yuriy Nikolayenko"
-        },
         "year": "1978",
         "country": {
           "uk": "СРСР",
@@ -1022,6 +1018,10 @@ window.VINTAGE_JAM_DATA = {
         "dimensions": {
           "uk": "78х57 см (загальні)",
           "en": "78x57 cm (overall)"
+        },
+        "artist": {
+          "uk": "Юрій Ніколаєнко",
+          "en": "Yuriy Nikolayenko"
         }
       },
       "story": {
