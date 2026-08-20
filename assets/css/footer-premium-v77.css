@@ -1,0 +1,36 @@
+/* Vintage Jam premium footer 7.7 — compact payments + unified contacts. */
+.footer-panels{display:grid!important;grid-template-columns:minmax(0,1.65fr) minmax(330px,.9fr)!important;gap:14px!important;align-items:stretch!important;margin:18px 0 28px!important}
+.payment-panel,.contacts-panel{margin:0!important;padding:22px!important;border:1px solid rgba(184,137,74,.24)!important;border-radius:22px!important;background:linear-gradient(180deg,#fffdf9 0%,#fbf8f1 100%)!important;box-shadow:0 12px 30px rgba(13,27,42,.055)!important;overflow:hidden}
+.vj-footer-panel-head{margin:0 0 16px;padding-top:10px;position:relative}
+.vj-footer-panel-head::before{content:"";position:absolute;left:0;top:0;width:38px;height:2px;border-radius:999px;background:#b8894a}
+.vj-footer-panel-title{margin:0;color:#173a5e;font-family:Georgia,"Times New Roman",serif;font-size:clamp(20px,2vw,28px);font-weight:650;letter-spacing:-.025em;line-height:1.1}
+.vj-footer-panel-subtitle{margin:7px 0 0;color:#7a7d82;font-size:14px;line-height:1.35}
+.payment-list{display:grid!important;grid-template-columns:repeat(5,minmax(0,1fr))!important;gap:9px!important;overflow:visible!important}
+.payment-brand{position:relative!important;min-width:0!important;min-height:76px!important;height:auto!important;padding:12px 9px 17px!important;border:1px solid rgba(184,137,74,.22)!important;border-radius:15px!important;background:linear-gradient(180deg,#fff 0%,#faf7f0 100%)!important;box-shadow:0 7px 16px rgba(13,27,42,.045)!important;display:flex!important;align-items:center!important;justify-content:center!important;gap:7px!important;color:#173a5e!important;overflow:hidden!important}
+.payment-brand::after{left:12px!important;right:12px!important;bottom:10px!important;background:linear-gradient(90deg,transparent,rgba(184,137,74,.32),transparent)!important}
+.payment-brand::before{width:6px!important;height:6px!important;bottom:7px!important;background:#c7a76a!important}
+.payment-brand-mark{flex:0 0 32px!important;width:32px!important;height:32px!important}
+.payment-brand-name{font-size:clamp(12px,1.15vw,16px)!important;line-height:1!important}
+.payment-brand[data-brand="privatbank"] .payment-brand-mark::after{font-size:20px!important}
+.payment-brand[data-brand="paypal"] .payment-brand-mark::before,.payment-brand[data-brand="paypal"] .payment-brand-mark::after{font-size:27px!important}
+.payment-brand[data-brand="payoneer"] .payment-brand-mark{border-width:5px!important}
+.payment-brand[data-brand="skrill"] .payment-brand-mark::before,.payment-brand[data-brand="skrill"] .payment-brand-mark::after{width:18px!important;height:18px!important}
+.payment-brand[data-brand="usdt"] .payment-brand-mark::before{font-size:21px!important}
+.payment-brand[data-brand="usdt"] .payment-brand-mark::after{width:23px!important;height:8px!important;top:13px!important}
+.contact-icon-row{display:grid!important;grid-template-columns:repeat(6,minmax(44px,1fr))!important;gap:10px!important;align-items:center!important;justify-content:stretch!important}
+.contact-icon-link{width:100%!important;min-width:0!important;height:58px!important;border-radius:999px!important;display:grid!important;place-items:center!important;background:linear-gradient(180deg,#fff 0%,#f8f5ee 100%)!important;border:1px solid rgba(184,137,74,.24)!important;box-shadow:0 7px 16px rgba(13,27,42,.05)!important;color:#173a5e!important;transition:transform .18s ease,box-shadow .18s ease,border-color .18s ease!important}
+.contact-icon-link:hover{transform:translateY(-2px)!important;border-color:rgba(184,137,74,.5)!important;box-shadow:0 10px 22px rgba(13,27,42,.085)!important}
+.contact-icon-art{width:26px!important;height:26px!important;color:#173a5e!important}
+.contact-icon-art svg{width:100%!important;height:100%!important;display:block!important;color:inherit!important}
+.contact-icon-label{bottom:-20px!important;color:#6e7278!important}
+.shipping-ribbon{margin:14px 0 22px!important;padding:0!important;border:0!important;background:transparent!important}
+.shipping-link{min-height:58px!important;padding:10px 16px!important;border-radius:17px!important;background:linear-gradient(180deg,#fffdf9 0%,#fbf8f1 100%)!important;border:1px solid rgba(184,137,74,.26)!important;box-shadow:0 8px 20px rgba(13,27,42,.035)!important}
+.shipping-mini{color:#173a5e!important}
+.shipping-mini svg{color:#173a5e!important}
+.shipping-arrow{color:#b8894a!important;font-size:20px!important}
+.site-footer{margin-top:4px!important;border-top:1px solid rgba(184,137,74,.22)!important;background:#f7f4ed!important}
+.site-footer-inner{justify-content:center!important;gap:6px!important}
+.site-footer-brand{font-weight:650!important}
+@media(max-width:1050px){.footer-panels{grid-template-columns:1fr!important}.contacts-panel{min-height:0}.contact-icon-row{grid-template-columns:repeat(6,minmax(52px,1fr))!important}.payment-brand-name{font-size:15px!important}}
+@media(max-width:700px){.payment-panel,.contacts-panel{padding:17px 14px!important;border-radius:18px!important}.vj-footer-panel-head{margin-bottom:13px}.payment-list{display:flex!important;gap:8px!important;overflow-x:auto!important;padding:1px 1px 6px!important;scroll-snap-type:x proximity}.payment-list::-webkit-scrollbar{display:none}.payment-brand{flex:0 0 128px!important;min-height:70px!important;padding:10px 8px 16px!important;scroll-snap-align:start}.payment-brand-name{font-size:13px!important}.payment-brand-mark{flex-basis:29px!important;width:29px!important;height:29px!important}.contact-icon-row{grid-template-columns:repeat(6,1fr)!important;gap:7px!important}.contact-icon-link{height:50px!important}.contact-icon-art{width:23px!important;height:23px!important}.shipping-link{gap:10px!important;padding:10px 12px!important}.shipping-mini{font-size:11px!important}.shipping-mini svg{width:20px!important;height:20px!important}}
+@media(max-width:430px){.footer-panels{gap:10px!important;margin-bottom:18px!important}.contact-icon-row{grid-template-columns:repeat(3,1fr)!important;gap:9px!important}.contact-icon-link{height:52px!important}.payment-brand{flex-basis:122px!important}.vj-footer-panel-title{font-size:21px!important}.vj-footer-panel-subtitle{font-size:13px!important}.shipping-link{overflow-x:auto!important;justify-content:flex-start!important}.shipping-mini{flex:0 0 auto!important}}
