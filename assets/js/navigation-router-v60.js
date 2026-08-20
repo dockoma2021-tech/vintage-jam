@@ -4,7 +4,8 @@
   const data = window.VINTAGE_JAM_DATA;
   if (!data || !Array.isArray(data.categories) || !Array.isArray(data.products)) return;
 
-  const restricted = new Set(['knives', 'daggers']);
+  const restricted = new Set(['daggers']);
+  const informational = new Set(['knives']);
   let internalCategoryClick = false;
 
   const titleMatches = (category, text) => {
@@ -74,11 +75,16 @@
       if (id) button.dataset.categoryId = id;
       if (restricted.has(id)) button.dataset.vjRestricted = '1';
       else delete button.dataset.vjRestricted;
+      if (informational.has(id)) button.dataset.vjInformational = '1';
+      else delete button.dataset.vjInformational;
     });
 
     document.querySelectorAll('.showcase-stack .showcase-card').forEach(card => {
-      if (restricted.has(card.dataset.categoryId)) card.dataset.vjRestricted = '1';
+      const id = card.dataset.categoryId;
+      if (restricted.has(id)) card.dataset.vjRestricted = '1';
       else delete card.dataset.vjRestricted;
+      if (informational.has(id)) card.dataset.vjInformational = '1';
+      else delete card.dataset.vjInformational;
     });
   };
 
@@ -92,6 +98,45 @@
       const category = card.querySelector('.product-category')?.textContent?.trim();
       card.hidden = restrictedTitles.has(category);
     });
+  };
+
+  const markInformationalUi = () => {
+    const lang = document.documentElement.lang === 'en' ? 'en' : 'uk';
+    const archiveLabel = lang === 'en' ? 'Archive · information only' : 'Архів · інформаційний перегляд';
+    const heroText = lang === 'en'
+      ? 'Archive and reference materials about collectible knives. Not offered for sale on this site.'
+      : 'Архівні та довідкові матеріали про колекційні ножі. Продаж через сайт не пропонується.';
+    const heroEyebrow = lang === 'en' ? 'Archive' : 'Архів';
+    const heroAction = lang === 'en' ? 'View archive' : 'Переглянути архів';
+    const informationalTitles = new Set();
+
+    data.categories.filter(category => informational.has(category.id)).forEach(category => {
+      if (category.title?.uk) informationalTitles.add(String(category.title.uk).trim());
+      if (category.title?.en) informationalTitles.add(String(category.title.en).trim());
+    });
+
+    document.querySelectorAll('.product-card').forEach(card => {
+      const category = card.querySelector('.product-category')?.textContent?.trim();
+      const isInformational = informationalTitles.has(category);
+      if (!isInformational) {
+        delete card.dataset.vjInformational;
+        return;
+      }
+      card.dataset.vjInformational = '1';
+      const price = card.querySelector('.product-price');
+      if (price && price.textContent !== archiveLabel) price.textContent = archiveLabel;
+    });
+
+    const hero = document.querySelector('.showcase-card[data-category-id="knives"]');
+    if (hero) {
+      hero.dataset.vjInformational = '1';
+      const eyebrow = hero.querySelector('.showcase-card-eyebrow');
+      const paragraph = hero.querySelector('.showcase-card-copy p');
+      const action = hero.querySelector('.showcase-action');
+      if (eyebrow && eyebrow.textContent !== heroEyebrow) eyebrow.textContent = heroEyebrow;
+      if (paragraph && paragraph.textContent !== heroText) paragraph.textContent = heroText;
+      if (action && action.textContent !== heroAction) action.textContent = heroAction;
+    }
   };
 
   document.addEventListener('click', event => {
@@ -136,23 +181,33 @@
   window.addEventListener('DOMContentLoaded', () => {
     markCategoryUi();
     hideRestrictedProducts();
+    markInformationalUi();
     requestAnimationFrame(() => applyRouteFromUrl({ replace: true }));
 
     const categories = document.getElementById('categories');
     if (categories) new MutationObserver(() => {
       markCategoryUi();
       hideRestrictedProducts();
+      markInformationalUi();
     }).observe(categories, { childList: true, subtree: true });
 
-    const catalog = document.getElementById('catalogProducts');
-    if (catalog) new MutationObserver(hideRestrictedProducts).observe(catalog, { childList: true, subtree: true });
+    document.querySelectorAll('.product-grid').forEach(grid => {
+      new MutationObserver(() => {
+        hideRestrictedProducts();
+        markInformationalUi();
+      }).observe(grid, { childList: true, subtree: true });
+    });
 
     const stack = document.querySelector('.showcase-stack');
-    if (stack) new MutationObserver(markCategoryUi).observe(stack, { childList: true, subtree: true });
+    if (stack) new MutationObserver(() => {
+      markCategoryUi();
+      markInformationalUi();
+    }).observe(stack, { childList: true, subtree: true });
 
     document.getElementById('languageButton')?.addEventListener('click', () => requestAnimationFrame(() => {
       markCategoryUi();
       hideRestrictedProducts();
+      markInformationalUi();
     }));
   });
 
