@@ -10,15 +10,7 @@
 
   const byId = id => document.getElementById(id);
 
-  const applyInformationalMode = () => {
-    const english = document.documentElement.lang === 'en';
-    const notice = english
-      ? 'Archive category · information only · not offered for sale on this site.'
-      : 'Архівна категорія · інформаційний перегляд · продаж через сайт не пропонується.';
-
-    const price = byId('productPrice');
-    if (price && price.textContent !== notice) price.textContent = notice;
-
+  const applyKnivesDisplayGuard = () => {
     const contactButton = byId('contactButton');
     if (contactButton) contactButton.hidden = true;
 
@@ -35,9 +27,12 @@
     if (deliveryCard) deliveryCard.hidden = true;
 
     const content = byId('productContent');
-    if (content) content.dataset.vjInformational = '1';
+    if (content) {
+      delete content.dataset.vjInformational;
+      content.dataset.vjKnivesDisplayGuard = '1';
+    }
   };
 
-  applyInformationalMode();
-  byId('languageButton')?.addEventListener('click', () => requestAnimationFrame(applyInformationalMode));
+  applyKnivesDisplayGuard();
+  byId('languageButton')?.addEventListener('click', () => requestAnimationFrame(applyKnivesDisplayGuard));
 })();
