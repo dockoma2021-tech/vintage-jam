@@ -1,6 +1,6 @@
 window.VINTAGE_JAM_DATA = {
   "version": "3.3.0",
-  "generatedAt": "2026-08-28T10:21:48.217Z",
+  "generatedAt": "2026-08-28T11:02:16.766Z",
   "site": {
     "name": "Vintage Jam",
     "defaultLanguage": "uk"
@@ -1274,6 +1274,85 @@ window.VINTAGE_JAM_DATA = {
       "story": {
         "uk": "",
         "en": ""
+      },
+      "documents": []
+    },
+    {
+      "id": "vj-000016",
+      "publication_status": "published",
+      "sale_status": "available",
+      "date_added": "2026-08-28",
+      "category": "paintings",
+      "title": {
+        "uk": "Ю. Ніколаєнка «Квітуче дерево»",
+        "en": "Oil Painting \"Blooming Tree\" by Y. Nikolayenko"
+      },
+      "short_description": {
+        "uk": "Авторський весняний пейзаж олією на полотні, створений у 1978 році. Написаний у пастозній манері з зображенням квітучого дерева.",
+        "en": "Original spring landscape in oil on canvas, created in 1978. Painted in an impasto technique depicting a blooming tree."
+      },
+      "description": {
+        "uk": "Картина «Квітуче дерево» являє собою натурний весняний пейзаж, виконаний масляними фарбами на полотні. Композиція побудована навколо великого квітучого дерева на передньому плані, за яким проглядається сільський будинок під червоним дахом та блакитне небо.\n\n\n\nРобота відрізняється вираженою фактурою мазка, рельєфним накладенням фарби та яскравою колористичною гамою. Натягнута на оригінальний дерев'яний подрамник.\n\n\n\nПолотно збереглося в гарному стані із природними слідами часу на звороті. Картина має авторський підпис у нижньому куті й готова до оформлення в багет.",
+        "en": "The painting \"Blooming Tree\" is a plein air spring landscape executed in oil on canvas. The composition centers on a large flowering tree in the foreground, with a red-roofed village house and blue sky in the background.\n\n\n\nThe work features a rich impasto texture, layered paint application, and a vibrant color palette. It is stretched on its original wooden stretcher.\n\n\n\nThe canvas is well-preserved with natural signs of age on the reverse. The painting is signed by the artist in the lower corner and is ready for framing."
+      },
+      "price": {
+        "type": "request",
+        "value": null,
+        "currency": "UAH"
+      },
+      "media": {
+        "images": [
+          "images/products/vj-000016/01.webp",
+          "images/products/vj-000016/02.webp",
+          "images/products/vj-000016/03.webp",
+          "images/products/vj-000016/04.webp",
+          "images/products/vj-000016/05.webp",
+          "images/products/vj-000016/06.webp",
+          "images/products/vj-000016/07.webp",
+          "images/products/vj-000016/08.webp",
+          "images/products/vj-000016/09.webp"
+        ],
+        "youtube": "",
+        "shorts": ""
+      },
+      "attributes": {
+        "condition": {
+          "uk": "Гарний колекційний стан, без видимих втрат фарбового шару",
+          "en": "Good collectible condition, no visible paint loss"
+        },
+        "technique": {
+          "uk": "Масляний живопис, імпасто",
+          "en": "Oil painting, impasto"
+        },
+        "completeness": {
+          "uk": "Полотно на подрамнику, без рами",
+          "en": "Canvas on stretcher, unframed"
+        },
+        "markings": {
+          "uk": "Авторський підпис та дата «78» у лівому нижньому куті",
+          "en": "Artist signature and date '78' in lower left corner"
+        },
+        "artist": {
+          "uk": "Юрій Ніколаєнко",
+          "en": "Yuriy Nikolayenko"
+        },
+        "year": "1978",
+        "country": {
+          "uk": "Україна",
+          "en": "Ukraine"
+        },
+        "material": {
+          "uk": "Полотно, олія",
+          "en": "Oil on canvas"
+        },
+        "dimensions": {
+          "uk": "Висота 50 см; ширина 41 см",
+          "en": "Height 50 cm; width 41 cm"
+        }
+      },
+      "story": {
+        "uk": "Створена художником у 1978 році як натурний весняний етюд.",
+        "en": "Created by the artist in 1978 as a plein air spring study."
       },
       "documents": []
     }
