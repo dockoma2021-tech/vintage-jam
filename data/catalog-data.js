@@ -1,6 +1,6 @@
 window.VINTAGE_JAM_DATA = {
   "version": "3.3.0",
-  "generatedAt": "2026-08-28T08:55:18.316Z",
+  "generatedAt": "2026-08-28T10:21:48.217Z",
   "site": {
     "name": "Vintage Jam",
     "defaultLanguage": "uk"
@@ -1196,6 +1196,84 @@ window.VINTAGE_JAM_DATA = {
       "story": {
         "uk": "Серія NCC (New Construction Center) розроблялася компанією Rado у 1970-х роках із застосуванням інноваційних для свого часу принципів герметизації корпусу. Конкретний екземпляр має підтверджену документальну історію: згідно з гарантійним талоном, він був проданий 18 травня 1974 року.",
         "en": "The NCC (New Construction Center) line was introduced by Rado in the 1970s, showcasing innovative case sealing technologies. This specific timepiece carries documented heritage, with the included warranty document confirming its sale on May 18, 1974."
+      },
+      "documents": []
+    },
+    {
+      "id": "vj-000015",
+      "publication_status": "published",
+      "sale_status": "available",
+      "date_added": "2026-08-28",
+      "category": "watches",
+      "title": {
+        "uk": "Камінний годинник з бронзи",
+        "en": "Italian Bronze Mantel Clock"
+      },
+      "short_description": {
+        "uk": "Вінтажний камінний годинник у масивному бронзовому корпусі з ажурним орнаментом. Оснащений механізмом на 12 каменях із запасом ходу на 7–8 днів.",
+        "en": "Vintage mantel clock in a solid bronze cast case with openwork ornament. Equipped with a 12-jewel mechanical movement with a 7–8 day power reserve."
+      },
+      "description": {
+        "uk": "Вишуканий настільний годинник виконаний із бронзового литва в класичному стилі рококо. Корпус прикрашений деталізованим рослинним орнаментом, маскароном та фігурним вазоном у верхній частині. Циферблат має накладні керамічні картриджі з римськими цифрами.\n\n\n\nПредмет має виражений декоративний характер і призначений для прикрашання камінних полиць, комодів або робочих столів. Конструкція корпусу передбачає задню захисну кришку з ажурною решіткою для доступу до механізму.\n\n\n\nГодинник перебуває в збереженому вінтажному стані з природною патиною на поверхні металлу. Механізм повністю обслужений і готовий до експлуатації.",
+        "en": "An elegant tabletop clock crafted from cast bronze in a classic Rococo style. The case features detailed floral ornamentation, a mascaron, and a decorative urn finial. The dial includes applied ceramic tiles with Roman numerals.\n\n\n\nDesigned as a prominent decorative piece, it is suitable for mantels, sideboards, or desks. The construction includes a hinged rear grate cover providing access to the movement.\n\n\n\nThe clock is in preserved vintage condition with a natural metal patina. The movement has been fully serviced and is ready for use."
+      },
+      "price": {
+        "type": "fixed",
+        "value": 27000,
+        "currency": "UAH"
+      },
+      "media": {
+        "images": [
+          "images/products/vj-000015/01.webp",
+          "images/products/vj-000015/02.webp",
+          "images/products/vj-000015/03.webp",
+          "images/products/vj-000015/04.webp",
+          "images/products/vj-000015/05.webp",
+          "images/products/vj-000015/06.webp",
+          "images/products/vj-000015/07.webp",
+          "images/products/vj-000015/08.webp",
+          "images/products/vj-000015/09.webp"
+        ],
+        "youtube": "",
+        "shorts": ""
+      },
+      "attributes": {
+        "condition": {
+          "uk": "Вінтажний стан, збережена патина, повністю обслужений",
+          "en": "Vintage condition, preserved patina, fully serviced"
+        },
+        "weight": {
+          "uk": "3,7 кг",
+          "en": "3.7 kg"
+        },
+        "mechanism": {
+          "uk": "Механічний, 12 каменів, запас ходу 7-8 днів",
+          "en": "Mechanical, 12 jewels, 7-8 days power reserve"
+        },
+        "completeness": {
+          "uk": "Годинник у зборі, без окремого ключа на фото",
+          "en": "Clock assembly, key not pictured"
+        },
+        "brand": {
+          "uk": "Не встановлено",
+          "en": "Not identified"
+        },
+        "country": {
+          "uk": "Італія",
+          "en": "Italy"
+        },
+        "material": {
+          "uk": "Бронза, кераміка",
+          "en": "Bronze, ceramic"
+        },
+        "dimensions": {
+          "uk": "Висота 39 см; ширина 22 см; глибина 10 см",
+          "en": "Height 39 cm; width 22 cm; depth 10 cm"
+        }
+      },
+      "story": {
+        "uk": "",
+        "en": ""
       },
       "documents": []
     }
