@@ -1,6 +1,6 @@
 window.VINTAGE_JAM_DATA = {
   "version": "3.3.0",
-  "generatedAt": "2026-08-21T09:25:51.559Z",
+  "generatedAt": "2026-08-28T08:55:18.316Z",
   "site": {
     "name": "Vintage Jam",
     "defaultLanguage": "uk"
@@ -1112,6 +1112,90 @@ window.VINTAGE_JAM_DATA = {
       "story": {
         "uk": "На звороті полотна збережено авторський напис олівцем із датуванням 1980 роком, що відносить роботу до пізньорадянського періоду одеського образотворчого мистецтва.",
         "en": "On the reverse of the canvas, the artist's pencil inscription dated 1980 is preserved, attributing the work to the late Soviet period of Odesa fine art."
+      },
+      "documents": []
+    },
+    {
+      "id": "vj-000014",
+      "publication_status": "published",
+      "sale_status": "available",
+      "date_added": "2026-08-28",
+      "category": "watches",
+      "title": {
+        "uk": "Наручний годинник Rado NCC 101 Ref 11944",
+        "en": "Rado NCC 101 Ref 11944 Automatic Vintage Watch"
+      },
+      "short_description": {
+        "uk": "Швіцарський винтажний механічний годинник з автопідзаводом у масивному сталевому корпусі. Оснащений подвійним календарем та збережений у комплекті з коробкою і паспортом.",
+        "en": "Swiss vintage automatic mechanical watch in a solid stainless steel case. Features a day-date complication and comes with original box and documents."
+      },
+      "description": {
+        "uk": "Модель Rado NCC 101 випускалася у 1970-х роках і відрізняється впізнаваним геометричним дизайном корпусу із системою Water Sealed. Годинник оснащений циферблатом із синьою акцентною смугою, подвійним віконцем дати та дня тижня, а також обертовим символом якоря. Механізм із автоматичним підзаводом забезпечує стабільну роботу. Предмет представлений на фірмовому браслеті NSA. Годинник перебуває у збереженому робочому стані з природною патиною часу.",
+        "en": "The Rado NCC 101 model was produced in the 1970s, featuring a distinctive geometric case design with the Water Sealed system. The dial includes a blue accent stripe, a day-date window at 3 o'clock, and the signature rotating anchor icon. Driven by a 25-jewel automatic movement, the timepiece is mounted on an authentic NSA steel bracelet. It exhibits natural vintage patina while remaining in running condition."
+      },
+      "price": {
+        "type": "fixed",
+        "value": 13500,
+        "currency": "UAH"
+      },
+      "media": {
+        "images": [
+          "images/products/vj-000014/01.webp",
+          "images/products/vj-000014/02.webp",
+          "images/products/vj-000014/03.webp",
+          "images/products/vj-000014/04.webp",
+          "images/products/vj-000014/05.webp",
+          "images/products/vj-000014/06.webp",
+          "images/products/vj-000014/07.webp",
+          "images/products/vj-000014/08.webp",
+          "images/products/vj-000014/09.webp",
+          "images/products/vj-000014/10.webp"
+        ],
+        "youtube": "",
+        "shorts": ""
+      },
+      "attributes": {
+        "condition": {
+          "uk": "Годинник на ходу. Наявні сліди експлуатації, патина на циферблаті, подряпини на склі та корпусі. Заводна головка та засувка браслета замінені.",
+          "en": "Running condition. Shows signs of wear, dial patina, scratches on glass and case. Replacement crown and bracelet clasp."
+        },
+        "completeness": {
+          "uk": "Годинник, браслет NSA, оригінальна коробка Rado, гарантійний паспорт",
+          "en": "Watch, NSA bracelet, original Rado box, warranty document"
+        },
+        "functionality": {
+          "uk": "На ходу, календар цифр перемикається",
+          "en": "Running, date calendar operates"
+        },
+        "mechanism": {
+          "uk": "Механіка з автопідзаводом, калібр ETA 2789 (25 каменів)",
+          "en": "Automatic mechanical, ETA 2789 caliber (25 jewels)"
+        },
+        "serial_number": {
+          "uk": "No 1383534 (згідно з паспортом)",
+          "en": "No 1383534 (as per warranty booklet)"
+        },
+        "brand": {
+          "uk": "Rado",
+          "en": "Rado"
+        },
+        "model": {
+          "uk": "NCC 101 (Ref. 11944)",
+          "en": "NCC 101 (Ref. 11944)"
+        },
+        "year": "1974",
+        "country": {
+          "uk": "Швейцарія",
+          "en": "Switzerland"
+        },
+        "material": {
+          "uk": "Нержавіюча сталь",
+          "en": "Stainless steel"
+        }
+      },
+      "story": {
+        "uk": "Серія NCC (New Construction Center) розроблялася компанією Rado у 1970-х роках із застосуванням інноваційних для свого часу принципів герметизації корпусу. Конкретний екземпляр має підтверджену документальну історію: згідно з гарантійним талоном, він був проданий 18 травня 1974 року.",
+        "en": "The NCC (New Construction Center) line was introduced by Rado in the 1970s, showcasing innovative case sealing technologies. This specific timepiece carries documented heritage, with the included warranty document confirming its sale on May 18, 1974."
       },
       "documents": []
     }
