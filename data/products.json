@@ -922,24 +922,24 @@
   {
     "id": "vj-000014",
     "publication_status": "published",
-    "sale_status": "available",
-    "date_added": "2026-08-28",
-    "category": "watches",
+    "sale_status": "sold",
+    "date_added": "2026-08-31",
+    "category": "knives",
     "title": {
-      "uk": "Наручний годинник Rado NCC 101 Ref 11944",
-      "en": "Rado NCC 101 Ref 11944 Automatic Vintage Watch"
+      "uk": "Кортик офіцерський швейцарський M1943 Elsener Schwyz",
+      "en": "Swiss Officer Dagger M1943 Elsener Schwyz Victoria"
     },
     "short_description": {
-      "uk": "Швіцарський винтажний механічний годинник з автопідзаводом у масивному сталевому корпусі. Оснащений подвійним календарем та збережений у комплекті з коробкою і паспортом.",
-      "en": "Swiss vintage automatic mechanical watch in a solid stainless steel case. Features a day-date complication and comes with original box and documents."
+      "uk": "Оригінальний швейцарський армійський кортик зразка 1943 року виробництва мануфактури Elsener Schwyz Victoria у повному комплекті з темляком.",
+      "en": "Original Swiss army officer dagger Model 1943 manufactured by Elsener Schwyz Victoria, complete with original scabbard and lanyard."
     },
     "description": {
-      "uk": "Модель Rado NCC 101 випускалася у 1970-х роках і відрізняється впізнаваним геометричним дизайном корпусу із системою Water Sealed. Годинник оснащений циферблатом із синьою акцентною смугою, подвійним віконцем дати та дня тижня, а також обертовим символом якоря. Механізм із автоматичним підзаводом забезпечує стабільну роботу. Предмет представлений на фірмовому браслеті NSA. Годинник перебуває у збереженому робочому стані з природною патиною часу.",
-      "en": "The Rado NCC 101 model was produced in the 1970s, featuring a distinctive geometric case design with the Water Sealed system. The dial includes a blue accent stripe, a day-date window at 3 o'clock, and the signature rotating anchor icon. Driven by a 25-jewel automatic movement, the timepiece is mounted on an authentic NSA steel bracelet. It exhibits natural vintage patina while remaining in running condition."
+      "uk": "Парадний офіцерський кортик швейцарської армії образця 1943 року. Двосічний клинок ромбічного перерізу виготовлений зі сталі із дзеркальним поліруванням. На рикассо нанесено чітке клеймо виготовлювача та індивідуальний серійний номер.\n\n\n\nРукоять виконана з гладкими дерев'яними накладками, зафіксованими заклепками, та оснащена металевою хрестовиною. Кортик комплектується оригінальними металевими ножнами з чорним покриттям, шкіряним підвісним петлевим елементом, металевою кліпсою та штатним тканинним темляком.\n\n\n\nПредмет перебуває у гарному збереженому стані з незначними природними слідами часу на поверхні ножнів.",
+      "en": "Parade officer dagger of the Swiss Armed Forces, Model 1943. The double-edged blade with a diamond cross-section is made of polished steel. The ricasso features a crisp maker's mark and an individual serial number.\n\n\n\nThe hilt features smooth wooden grip scales secured with rivets and a metal crossguard. The dagger comes with its original black metal scabbard, leather suspension loop, metal clip, and standard fabric lanyard.\n\n\n\nThe item is in good preserved condition with minor natural signs of age on the scabbard surface."
     },
     "price": {
-      "type": "fixed",
-      "value": 13500,
+      "type": "request",
+      "value": null,
       "currency": "UAH"
     },
     "media": {
@@ -960,203 +960,42 @@
     },
     "attributes": {
       "condition": {
-        "uk": "Годинник на ходу. Наявні сліди експлуатації, патина на циферблаті, подряпини на склі та корпусі. Заводна головка та засувка браслета замінені.",
-        "en": "Running condition. Shows signs of wear, dial patina, scratches on glass and case. Replacement crown and bracelet clasp."
+        "uk": "Відмінний колекційний стан, незначні потертості на ножнах",
+        "en": "Excellent collectible condition, minor scuffs on the scabbard"
       },
       "completeness": {
-        "uk": "Годинник, браслет NSA, оригінальна коробка Rado, гарантійний паспорт",
-        "en": "Watch, NSA bracelet, original Rado box, warranty document"
+        "uk": "Повний комплект (кортик, ножні, підвіс, темляк)",
+        "en": "Full set (dagger, scabbard, suspension hanger, lanyard)"
       },
-      "functionality": {
-        "uk": "На ходу, календар цифр перемикається",
-        "en": "Running, date calendar operates"
-      },
-      "mechanism": {
-        "uk": "Механіка з автопідзаводом, калібр ETA 2789 (25 каменів)",
-        "en": "Automatic mechanical, ETA 2789 caliber (25 jewels)"
+      "markings": {
+        "uk": "Клеймо ELSENER SCHWYZ VICTORIA",
+        "en": "Stamped ELSENER SCHWYZ VICTORIA"
       },
       "serial_number": {
-        "uk": "No 1383534 (згідно з паспортом)",
-        "en": "No 1383534 (as per warranty booklet)"
+        "uk": "199604",
+        "en": "199604"
       },
       "brand": {
-        "uk": "Rado",
-        "en": "Rado"
+        "uk": "Elsener Schwyz Victoria",
+        "en": "Elsener Schwyz Victoria"
       },
       "model": {
-        "uk": "NCC 101 (Ref. 11944)",
-        "en": "NCC 101 (Ref. 11944)"
+        "uk": "M1943 (Schweizer Offiziersdolch M1943)",
+        "en": "M1943 (Schweizer Offiziersdolch M1943)"
       },
-      "year": "1974",
+      "year": "1943–1960",
       "country": {
         "uk": "Швейцарія",
         "en": "Switzerland"
       },
       "material": {
-        "uk": "Нержавіюча сталь",
-        "en": "Stainless steel"
+        "uk": "Сталь, дерево, хромований метал, шкіра, тканина",
+        "en": "Steel, wood, chromed metal, leather, fabric"
       }
     },
     "story": {
-      "uk": "Серія NCC (New Construction Center) розроблялася компанією Rado у 1970-х роках із застосуванням інноваційних для свого часу принципів герметизації корпусу. Конкретний екземпляр має підтверджену документальну історію: згідно з гарантійним талоном, він був проданий 18 травня 1974 року.",
-      "en": "The NCC (New Construction Center) line was introduced by Rado in the 1970s, showcasing innovative case sealing technologies. This specific timepiece carries documented heritage, with the included warranty document confirming its sale on May 18, 1974."
-    },
-    "documents": []
-  },
-  {
-    "id": "vj-000015",
-    "publication_status": "published",
-    "sale_status": "available",
-    "date_added": "2026-08-28",
-    "category": "watches",
-    "title": {
-      "uk": "Камінний годинник з бронзи",
-      "en": "Italian Bronze Mantel Clock"
-    },
-    "short_description": {
-      "uk": "Вінтажний камінний годинник у масивному бронзовому корпусі з ажурним орнаментом. Оснащений механізмом на 12 каменях із запасом ходу на 7–8 днів.",
-      "en": "Vintage mantel clock in a solid bronze cast case with openwork ornament. Equipped with a 12-jewel mechanical movement with a 7–8 day power reserve."
-    },
-    "description": {
-      "uk": "Вишуканий настільний годинник виконаний із бронзового литва в класичному стилі рококо. Корпус прикрашений деталізованим рослинним орнаментом, маскароном та фігурним вазоном у верхній частині. Циферблат має накладні керамічні картриджі з римськими цифрами.\n\n\n\nПредмет має виражений декоративний характер і призначений для прикрашання камінних полиць, комодів або робочих столів. Конструкція корпусу передбачає задню захисну кришку з ажурною решіткою для доступу до механізму.\n\n\n\nГодинник перебуває в збереженому вінтажному стані з природною патиною на поверхні металлу. Механізм повністю обслужений і готовий до експлуатації.",
-      "en": "An elegant tabletop clock crafted from cast bronze in a classic Rococo style. The case features detailed floral ornamentation, a mascaron, and a decorative urn finial. The dial includes applied ceramic tiles with Roman numerals.\n\n\n\nDesigned as a prominent decorative piece, it is suitable for mantels, sideboards, or desks. The construction includes a hinged rear grate cover providing access to the movement.\n\n\n\nThe clock is in preserved vintage condition with a natural metal patina. The movement has been fully serviced and is ready for use."
-    },
-    "price": {
-      "type": "fixed",
-      "value": 27000,
-      "currency": "UAH"
-    },
-    "media": {
-      "images": [
-        "images/products/vj-000015/01.webp",
-        "images/products/vj-000015/02.webp",
-        "images/products/vj-000015/03.webp",
-        "images/products/vj-000015/04.webp",
-        "images/products/vj-000015/05.webp",
-        "images/products/vj-000015/06.webp",
-        "images/products/vj-000015/07.webp",
-        "images/products/vj-000015/08.webp",
-        "images/products/vj-000015/09.webp"
-      ],
-      "youtube": "",
-      "shorts": ""
-    },
-    "attributes": {
-      "condition": {
-        "uk": "Вінтажний стан, збережена патина, повністю обслужений",
-        "en": "Vintage condition, preserved patina, fully serviced"
-      },
-      "weight": {
-        "uk": "3,7 кг",
-        "en": "3.7 kg"
-      },
-      "mechanism": {
-        "uk": "Механічний, 12 каменів, запас ходу 7-8 днів",
-        "en": "Mechanical, 12 jewels, 7-8 days power reserve"
-      },
-      "completeness": {
-        "uk": "Годинник у зборі, без окремого ключа на фото",
-        "en": "Clock assembly, key not pictured"
-      },
-      "brand": {
-        "uk": "Не встановлено",
-        "en": "Not identified"
-      },
-      "country": {
-        "uk": "Італія",
-        "en": "Italy"
-      },
-      "material": {
-        "uk": "Бронза, кераміка",
-        "en": "Bronze, ceramic"
-      },
-      "dimensions": {
-        "uk": "Висота 39 см; ширина 22 см; глибина 10 см",
-        "en": "Height 39 cm; width 22 cm; depth 10 cm"
-      }
-    },
-    "story": {
-      "uk": "",
-      "en": ""
-    },
-    "documents": []
-  },
-  {
-    "id": "vj-000016",
-    "publication_status": "published",
-    "sale_status": "available",
-    "date_added": "2026-08-28",
-    "category": "paintings",
-    "title": {
-      "uk": "Ю. Ніколаєнка «Квітуче дерево»",
-      "en": "Oil Painting \"Blooming Tree\" by Y. Nikolayenko"
-    },
-    "short_description": {
-      "uk": "Авторський весняний пейзаж олією на полотні, створений у 1978 році. Написаний у пастозній манері з зображенням квітучого дерева.",
-      "en": "Original spring landscape in oil on canvas, created in 1978. Painted in an impasto technique depicting a blooming tree."
-    },
-    "description": {
-      "uk": "Картина «Квітуче дерево» являє собою натурний весняний пейзаж, виконаний масляними фарбами на полотні. Композиція побудована навколо великого квітучого дерева на передньому плані, за яким проглядається сільський будинок під червоним дахом та блакитне небо.\n\n\n\nРобота відрізняється вираженою фактурою мазка, рельєфним накладенням фарби та яскравою колористичною гамою. Натягнута на оригінальний дерев'яний подрамник.\n\n\n\nПолотно збереглося в гарному стані із природними слідами часу на звороті. Картина має авторський підпис у нижньому куті й готова до оформлення в багет.",
-      "en": "The painting \"Blooming Tree\" is a plein air spring landscape executed in oil on canvas. The composition centers on a large flowering tree in the foreground, with a red-roofed village house and blue sky in the background.\n\n\n\nThe work features a rich impasto texture, layered paint application, and a vibrant color palette. It is stretched on its original wooden stretcher.\n\n\n\nThe canvas is well-preserved with natural signs of age on the reverse. The painting is signed by the artist in the lower corner and is ready for framing."
-    },
-    "price": {
-      "type": "request",
-      "value": null,
-      "currency": "UAH"
-    },
-    "media": {
-      "images": [
-        "images/products/vj-000016/01.webp",
-        "images/products/vj-000016/02.webp",
-        "images/products/vj-000016/03.webp",
-        "images/products/vj-000016/04.webp",
-        "images/products/vj-000016/05.webp",
-        "images/products/vj-000016/06.webp",
-        "images/products/vj-000016/07.webp",
-        "images/products/vj-000016/08.webp",
-        "images/products/vj-000016/09.webp"
-      ],
-      "youtube": "",
-      "shorts": ""
-    },
-    "attributes": {
-      "condition": {
-        "uk": "Гарний колекційний стан, без видимих втрат фарбового шару",
-        "en": "Good collectible condition, no visible paint loss"
-      },
-      "technique": {
-        "uk": "Масляний живопис, імпасто",
-        "en": "Oil painting, impasto"
-      },
-      "completeness": {
-        "uk": "Полотно на подрамнику, без рами",
-        "en": "Canvas on stretcher, unframed"
-      },
-      "markings": {
-        "uk": "Авторський підпис та дата «78» у лівому нижньому куті",
-        "en": "Artist signature and date '78' in lower left corner"
-      },
-      "artist": {
-        "uk": "Юрій Ніколаєнко",
-        "en": "Yuriy Nikolayenko"
-      },
-      "year": "1978",
-      "country": {
-        "uk": "Україна",
-        "en": "Ukraine"
-      },
-      "material": {
-        "uk": "Полотно, олія",
-        "en": "Oil on canvas"
-      },
-      "dimensions": {
-        "uk": "Висота 50 см; ширина 41 см",
-        "en": "Height 50 cm; width 41 cm"
-      }
-    },
-    "story": {
-      "uk": "Створена художником у 1978 році як натурний весняний етюд.",
-      "en": "Created by the artist in 1978 as a plein air spring study."
+      "uk": "Офіцерський кортик M1943 був введений у швейцарській армії в 1943 році як елемент парадної форми офіцерів та вищих унтер-офіцерів. Основним постачальником цієї зброї виступала фабрика Elsener Schwyz (зараз відома як Victorinox). Кожен екземпляр отримував власний обліковий серійний номер.",
+      "en": "The Officer Dagger M1943 was introduced in the Swiss Armed Forces in 1943 as part of the dress uniform for officers and senior NCOs. The primary manufacturer for these daggers was the Elsener Schwyz factory (currently known as Victorinox). Each dagger was stamped with an individual registration serial number."
     },
     "documents": []
   }
