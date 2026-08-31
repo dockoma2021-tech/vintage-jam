@@ -975,10 +975,6 @@
         "uk": "199604",
         "en": "199604"
       },
-      "brand": {
-        "uk": "Elsener Schwyz Victoria",
-        "en": "Elsener Schwyz Victoria"
-      },
       "model": {
         "uk": "M1943 (Schweizer Offiziersdolch M1943)",
         "en": "M1943 (Schweizer Offiziersdolch M1943)"
@@ -991,6 +987,10 @@
       "material": {
         "uk": "Сталь, дерево, хромований метал, шкіра, тканина",
         "en": "Steel, wood, chromed metal, leather, fabric"
+      },
+      "brand": {
+        "uk": "Elsener Schwyz Victoria",
+        "en": "Elsener Schwyz Victoria"
       }
     },
     "story": {
