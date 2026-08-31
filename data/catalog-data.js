@@ -1,6 +1,6 @@
 window.VINTAGE_JAM_DATA = {
   "version": "3.3.0",
-  "generatedAt": "2026-08-31T13:31:21.473Z",
+  "generatedAt": "2026-08-31T21:50:02.623Z",
   "site": {
     "name": "Vintage Jam",
     "defaultLanguage": "uk"
@@ -1171,10 +1171,6 @@ window.VINTAGE_JAM_DATA = {
           "uk": "199604",
           "en": "199604"
         },
-        "brand": {
-          "uk": "Elsener Schwyz Victoria",
-          "en": "Elsener Schwyz Victoria"
-        },
         "model": {
           "uk": "M1943 (Schweizer Offiziersdolch M1943)",
           "en": "M1943 (Schweizer Offiziersdolch M1943)"
@@ -1187,6 +1183,10 @@ window.VINTAGE_JAM_DATA = {
         "material": {
           "uk": "Сталь, дерево, хромований метал, шкіра, тканина",
           "en": "Steel, wood, chromed metal, leather, fabric"
+        },
+        "brand": {
+          "uk": "Elsener Schwyz Victoria",
+          "en": "Elsener Schwyz Victoria"
         }
       },
       "story": {
