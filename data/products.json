@@ -1245,5 +1245,86 @@
       "en": "Model 1945 daggers served as a mandatory part of the parade uniform for Soviet Navy officers. During the late 1940s and 1950s, the Zlatoust manufacturing facilities were the primary producers of these sidearms, with each piece undergoing quality control and receiving a serial number."
     },
     "documents": []
+  },
+  {
+    "id": "vj-000018",
+    "publication_status": "published",
+    "sale_status": "available",
+    "date_added": "2026-09-10",
+    "category": "knives",
+    "title": {
+      "uk": "Авторський ніж «Фантазія на Танто» ручної роботи",
+      "en": "Handmade Custom Tanto Dagger Knife"
+    },
+    "short_description": {
+      "uk": "Авторський клинок ручної роботи геометрії танто із масивним обухом 5.2 мм.",
+      "en": "Custom handmade tanto style blade featuring a solid 5.2 mm spine."
+    },
+    "description": {
+      "uk": "Ексклюзивний ніж ручної роботи українського майстра, виконаний за мотивами традиційних японських клинків танто. Клинок виготовлений із нержавіючої сталі марки 40Х13, має чіткі грані, поздовжній дол та поліроване покриття.\n\n\n\nКонструкція рукояті поєднує латунні елементи (гарду-цубу, больстер та навершя) зі світлою основою, декорованою спіральною витою латунною жилою. Ніж характеризується високою міцністю завдяки масивному обуху товщиною понад 5 мм.\n\n\n\nВиріб перебуває у відмінному стані й стане чудовим доповненням колекції авторської холодної зброї.",
+      "en": "An exclusive custom knife crafted by a Ukrainian artisan, inspired by traditional Japanese tanto blades. The blade is forged from 40X13 stainless steel, featuring sharp lines, a fuller, and a polished finish.\n\n\n\nThe hilt construction blends brass elements (guard, bolster, and pommel) with a light-colored body embellished with a twisted brass wire wrap. The knife boasts exceptional durability owing to its substantial spine exceeding 5 mm in thickness.\n\n\n\nThe item is in excellent condition, serving as a fine addition to any custom blade collection."
+    },
+    "price": {
+      "type": "fixed",
+      "value": 8400,
+      "currency": "UAH"
+    },
+    "media": {
+      "images": [
+        "images/products/vj-000018/01.webp",
+        "images/products/vj-000018/02.webp",
+        "images/products/vj-000018/03.webp",
+        "images/products/vj-000018/04.webp",
+        "images/products/vj-000018/05.webp",
+        "images/products/vj-000018/06.webp",
+        "images/products/vj-000018/07.webp",
+        "images/products/vj-000018/08.webp"
+      ],
+      "youtube": "",
+      "shorts": ""
+    },
+    "attributes": {
+      "condition": {
+        "uk": "Новий / колекційний стан",
+        "en": "New / collectible condition"
+      },
+      "technique": {
+        "uk": "Слесарна обробка, ручне складання та полірування",
+        "en": "Grinding, manual assembly, and polishing"
+      },
+      "features": {
+        "uk": "Обух 5.27 мм, дол на клинку, вита латунна жила на рукояті",
+        "en": "5.27 mm spine, blade fuller, twisted brass wire on hilt"
+      },
+      "completeness": {
+        "uk": "Ніж без ножен",
+        "en": "Knife without sheath"
+      },
+      "brand": {
+        "uk": "Майстер з України",
+        "en": "Ukrainian Artisan"
+      },
+      "model": {
+        "uk": "Фантазія на Танто",
+        "en": "Tanto Fantasy Custom"
+      },
+      "country": {
+        "uk": "Україна",
+        "en": "Ukraine"
+      },
+      "material": {
+        "uk": "Сталь 40Х13, латунь, кістка/композит",
+        "en": "40X13 steel, brass, bone/composite"
+      },
+      "dimensions": {
+        "uk": "Загальна довжина близько 42 см; товщина обуха 5.2 мм",
+        "en": "Total length approx. 42 cm; spine thickness 5.2 mm"
+      }
+    },
+    "story": {
+      "uk": "Сучасні українські майстри-зброярі нерідко звертаються до східних традицій виготовлення клинків, створюючи авторські варіації на тему традиційних танто й вакізаші. Поєднання радянських та сучасних марок нержавіючих сталей із художньою обробкою кольорових металів дозволяє створювати унікальні декоративно-утилітарні вироби.",
+      "en": "Contemporary Ukrainian bladesmiths frequently draw inspiration from Eastern edged weapon traditions, producing custom variations of classical tanto and wakizashi blades. Combining stainless steel alloys with artistic non-ferrous metalwork allows for the creation of unique custom cutlery pieces."
+    },
+    "documents": []
   }
 ]
