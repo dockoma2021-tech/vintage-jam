@@ -1,6 +1,6 @@
 window.VINTAGE_JAM_DATA = {
   "version": "3.3.0",
-  "generatedAt": "2026-09-10T20:33:10.923Z",
+  "generatedAt": "2026-09-10T20:33:37.199Z",
   "site": {
     "name": "Vintage Jam",
     "defaultLanguage": "uk"
@@ -1363,7 +1363,7 @@ window.VINTAGE_JAM_DATA = {
       "publication_status": "published",
       "sale_status": "available",
       "date_added": "2026-09-10",
-      "category": "",
+      "category": "knives",
       "title": {
         "uk": "Кортик ВМФ СРСР ЗиК 1953 року",
         "en": "Soviet Navy Officer Dagger ZiK 1953"
@@ -1418,10 +1418,6 @@ window.VINTAGE_JAM_DATA = {
           "uk": "Кнопка-фіксатор у робочому стані",
           "en": "Lock button in working condition"
         },
-        "brand": {
-          "uk": "Златоустівський інструментальний комбінат (ЗиК)",
-          "en": "Zlatoust Tool Plant (ZiK)"
-        },
         "model": {
           "uk": "Зразок 1945 року",
           "en": "Model 1945"
@@ -1434,6 +1430,10 @@ window.VINTAGE_JAM_DATA = {
         "material": {
           "uk": "Сталь, латунь, шкіра, пластмаса",
           "en": "Steel, brass, leather, plastic"
+        },
+        "brand": {
+          "uk": "Златоустівський інструментальний комбінат (ЗиК)",
+          "en": "Zlatoust Tool Plant (ZiK)"
         }
       },
       "story": {
