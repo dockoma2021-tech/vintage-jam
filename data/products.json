@@ -998,5 +998,84 @@
       "en": "The Officer Dagger M1943 was introduced in the Swiss Armed Forces in 1943 as part of the dress uniform for officers and senior NCOs. The primary manufacturer for these daggers was the Elsener Schwyz factory (currently known as Victorinox). Each dagger was stamped with an individual registration serial number."
     },
     "documents": []
+  },
+  {
+    "id": "vj-000015",
+    "publication_status": "published",
+    "sale_status": "available",
+    "date_added": "2026-09-10",
+    "category": "paintings",
+    "title": {
+      "uk": "Картина пастеллю «Натюрморт з розами» (підпис О. Шовкуненко)",
+      "en": "Pastel Painting \"Still Life with Roses\" (signed A. Shovkunenko)"
+    },
+    "short_description": {
+      "uk": "Графічний натюрморт із зображенням букета жовтих і рожевих троянд у вазі, виконаний пастеллю на папері та оформлений у раму зі склом.",
+      "en": "A graphic still life featuring a bouquet of yellow and pink roses in a vase, created with pastels on paper and framed under glass."
+    },
+    "description": {
+      "uk": "Картина є виразним натюрмортом у ніжній блакитно-жовтій гамі. Композиція побудована навколо великого букета троянд у високій судинi на тлі інтер'єрного задника.\n\n\n\nРобота виконана м'якою пастеллю на цупкому папері. Оформлена в декоративну раму із золоченим багетом, світлим паспарту та захисним склом. Справа внизу розташований підпис «А. Шовкуненко».\n\n\n\nРобота зберегла яскравість та насиченість пігменту, папір без видимих деформацій, рама має незначні вікові сліди зберігання.",
+      "en": "The artwork is an expressive still life executed in a soft blue and yellow color palette. The composition centers on a lush bouquet of roses arranged in a tall vase against an interior background.\n\n\n\nCreated with soft pastels on heavy paper, the piece is housed in a decorative gilded frame with a light mat board and protective glass. The signature \"A. Shovkunenko\" is located in the lower right corner.\n\n\n\nThe pastel pigments retain their vibrancy, the paper shows no visible warping, and the frame exhibits minor signs of age."
+    },
+    "price": {
+      "type": "request",
+      "value": null,
+      "currency": "UAH"
+    },
+    "media": {
+      "images": [
+        "images/products/vj-000015/01.webp",
+        "images/products/vj-000015/02.webp",
+        "images/products/vj-000015/03.webp",
+        "images/products/vj-000015/04.webp",
+        "images/products/vj-000015/05.webp",
+        "images/products/vj-000015/06.webp",
+        "images/products/vj-000015/07.webp",
+        "images/products/vj-000015/08.webp",
+        "images/products/vj-000015/09.webp",
+        "images/products/vj-000015/10.webp"
+      ],
+      "youtube": "",
+      "shorts": ""
+    },
+    "attributes": {
+      "condition": {
+        "uk": "Добре збережена графика, без деформацій паперу та втрат пігменту; рама з незначними слідами часу",
+        "en": "Well-preserved graphic work, no paper deformation or pigment loss; frame shows minor signs of age"
+      },
+      "technique": {
+        "uk": "Пастель",
+        "en": "Pastel"
+      },
+      "completeness": {
+        "uk": "Картина в багетній рамі з паспарту під склом",
+        "en": "Framed artwork with mat board under glass"
+      },
+      "markings": {
+        "uk": "Авторський підпис у правому нижньому кутку: «А. Шовкуненко»",
+        "en": "Artist signature in the lower right corner: 'A. Shovkunenko'"
+      },
+      "artist": {
+        "uk": "О. О. Шовкуненко",
+        "en": "A. A. Shovkunenko"
+      },
+      "country": {
+        "uk": "СРСР",
+        "en": "USSR"
+      },
+      "material": {
+        "uk": "Папір, пастель",
+        "en": "Paper, pastel"
+      },
+      "dimensions": {
+        "uk": "Висота 59 см; ширина 48 см (без рами)",
+        "en": "Height 59 cm; width 48 cm (unframed)"
+      }
+    },
+    "story": {
+      "uk": "Олексій Олексійович Шовкуненко (1884–1974) — видатний український живописець, народний художник СРСР, майстер пейзажу та натюрморту.",
+      "en": "Oleksiy Oleksiyovych Shovkunenko (1884–1974) was a prominent Ukrainian painter, People's Artist of the USSR, and a master of landscape and still life genres."
+    },
+    "documents": []
   }
 ]
