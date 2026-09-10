@@ -1,6 +1,6 @@
 window.VINTAGE_JAM_DATA = {
   "version": "3.3.0",
-  "generatedAt": "2026-09-10T20:20:37.474Z",
+  "generatedAt": "2026-09-10T20:33:10.923Z",
   "site": {
     "name": "Vintage Jam",
     "defaultLanguage": "uk"
@@ -1343,6 +1343,90 @@ window.VINTAGE_JAM_DATA = {
           "en": "Model 1945"
         },
         "year": "1952",
+        "country": {
+          "uk": "СРСР",
+          "en": "USSR"
+        },
+        "material": {
+          "uk": "Сталь, латунь, шкіра, пластмаса",
+          "en": "Steel, brass, leather, plastic"
+        }
+      },
+      "story": {
+        "uk": "Кортики зразка 1945 року слугували обов'язковим елементом парадного однострою офіцерів ВМФ СРСР. Наприкінці 1940-х та у 1950-х роках основними виробниками цієї холодної зброї виступали майстерні Златоуста, де кожен екземпляр проходив суворий технічний контроль та отримував індивідуальний номер.",
+        "en": "Model 1945 daggers served as a mandatory part of the parade uniform for Soviet Navy officers. During the late 1940s and 1950s, the Zlatoust manufacturing facilities were the primary producers of these sidearms, with each piece undergoing quality control and receiving a serial number."
+      },
+      "documents": []
+    },
+    {
+      "id": "vj-000017",
+      "publication_status": "published",
+      "sale_status": "available",
+      "date_added": "2026-09-10",
+      "category": "",
+      "title": {
+        "uk": "Кортик ВМФ СРСР ЗиК 1953 року",
+        "en": "Soviet Navy Officer Dagger ZiK 1953"
+      },
+      "short_description": {
+        "uk": "Оригінальний радянський офіцерський морський кортик випуску 1953 року з індивідуальним номером.",
+        "en": "Original Soviet navy officer dagger produced in 1953 with an individual serial number."
+      },
+      "description": {
+        "uk": "Зразок радянської парадної холодної зброї для офіцерського складу Військово-морського флоту СРСР. Клинок сталевий, ромбічного перетину, з подвійним заточуванням та дзеркальним поліруванням. На п'яті розташовані клеймо Златоустівського інструментального комбінату та серійний номер.\n\n\n\nРуків'я оснащене функціональним кнопковим фіксатором. Латунні елементи гарди та навершя прикрашені державним гербом СРСР. Дерев'яні піхви обтягнуті чорною шкірою та доповнені позолоченими латунними обоймицями з традиційними морськими символами.\n\n\n\nПредмет збережено в оригінальному стані з легкими природними слідами часу на металевих деталях.",
+        "en": "An authentic Soviet naval officer dress dagger. The steel blade features a diamond cross-section with double edging and a polished finish. The ricasso bears the Zlatoust Tool Plant stamp alongside a unique serial number.\n\n\n\nThe hilt incorporates a functional button lock mechanism. The brass guard and pommel are decorated with the state emblem of the USSR. The wooden scabbard is covered in black leather and fitted with brass mounts showing traditional nautical motifs.\n\n\n\nPreserved in original condition with light natural patina on the metallic components."
+      },
+      "price": {
+        "type": "fixed",
+        "value": 19000,
+        "currency": "UAH"
+      },
+      "media": {
+        "images": [
+          "images/products/vj-000017/01.webp",
+          "images/products/vj-000017/02.webp",
+          "images/products/vj-000017/03.webp",
+          "images/products/vj-000017/04.webp",
+          "images/products/vj-000017/05.webp",
+          "images/products/vj-000017/06.webp",
+          "images/products/vj-000017/07.webp",
+          "images/products/vj-000017/08.webp",
+          "images/products/vj-000017/09.webp",
+          "images/products/vj-000017/10.webp"
+        ],
+        "youtube": "",
+        "shorts": ""
+      },
+      "attributes": {
+        "condition": {
+          "uk": "Колекційний стан, легка природна патина на латунних деталях",
+          "en": "Collectible condition, light natural patina on brass parts"
+        },
+        "serial_number": {
+          "uk": "N21903",
+          "en": "N21903"
+        },
+        "markings": {
+          "uk": "Клеймо ЗиК 1953 на п'яті клинка",
+          "en": "ZiK 1953 stamp on blade ricasso"
+        },
+        "completeness": {
+          "uk": "Кортик та оригінальні піхви",
+          "en": "Dagger and original scabbard"
+        },
+        "functionality": {
+          "uk": "Кнопка-фіксатор у робочому стані",
+          "en": "Lock button in working condition"
+        },
+        "brand": {
+          "uk": "Златоустівський інструментальний комбінат (ЗиК)",
+          "en": "Zlatoust Tool Plant (ZiK)"
+        },
+        "model": {
+          "uk": "Зразок 1945 року",
+          "en": "Model 1945"
+        },
+        "year": "1953",
         "country": {
           "uk": "СРСР",
           "en": "USSR"
