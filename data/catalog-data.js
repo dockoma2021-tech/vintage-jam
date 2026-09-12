@@ -1,6 +1,6 @@
 window.VINTAGE_JAM_DATA = {
   "version": "3.3.0",
-  "generatedAt": "2026-09-12T19:21:04.354Z",
+  "generatedAt": "2026-09-12T19:35:42.123Z",
   "site": {
     "name": "Vintage Jam",
     "defaultLanguage": "uk"
@@ -1543,7 +1543,7 @@ window.VINTAGE_JAM_DATA = {
       },
       "price": {
         "type": "fixed",
-        "value": 30000,
+        "value": 27000,
         "currency": "UAH"
       },
       "media": {
