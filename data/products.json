@@ -1480,5 +1480,79 @@
       "en": "The item was created during the heyday of the Russian Empire in 1883, when silverware manufacture and individual workshops actively produced such status accessories with traditional motifs."
     },
     "documents": []
+  },
+  {
+    "id": "vj-000021",
+    "publication_status": "published",
+    "sale_status": "available",
+    "date_added": "2026-09-15",
+    "category": "paintings",
+    "title": {
+      "uk": "Картина Шовкуненко А.А. Вечерній промінь",
+      "en": "Painting Shovkunenko A.A. Evening Ray"
+    },
+    "short_description": {
+      "uk": "Камерна акварель та пастель авторства Олексія Шовкуненка 1930-х років в оформленні та під склом.",
+      "en": "Chamber watercolor and pastel by Oleksiy Shovkunenko from the 1930s framed under glass."
+    },
+    "description": {
+      "uk": "Твір виконано у змішаній техніці на папері з використанням акварелі та пастелі. Робота передає м'яке світлоповітряне середовище та побудована на тонких тональних переходах.\\n\\nНа зворотному боці оформлення наявний авторський надпис із зазначенням автора, назви, техніки та датування. Предмет оформлений у паспарту та багетну раму під скло.\\n\\nСтан вінтажний, без видимих серйозних пошкодженьнесучої основи, є природні сліди часу.",
+      "en": "The artwork is executed in a mixed technique on paper using watercolor and pastel. The piece conveys a soft light-air environment and is built on subtle tonal transitions.\\n\\nOn the reverse side of the framing, there is an author's inscription indicating the author, title, technique, and dating. The item is framed in a mat and a baguette frame under glass.\\n\\nVintage condition with natural signs of age and no visible critical damage to the paper base."
+    },
+    "price": {
+      "type": "request",
+      "value": null,
+      "currency": "UAH"
+    },
+    "media": {
+      "images": [
+        "images/products/vj-000021/01.webp",
+        "images/products/vj-000021/02.webp",
+        "images/products/vj-000021/03.webp",
+        "images/products/vj-000021/04.webp",
+        "images/products/vj-000021/05.webp",
+        "images/products/vj-000021/06.webp",
+        "images/products/vj-000021/07.webp",
+        "images/products/vj-000021/08.webp"
+      ],
+      "youtube": "",
+      "shorts": ""
+    },
+    "attributes": {
+      "condition": {
+        "uk": "Вінтажний стан, збережено під склом",
+        "en": "Vintage condition, preserved under glass"
+      },
+      "technique": {
+        "uk": "Акварель, пастель на папері",
+        "en": "Watercolor, pastel on paper"
+      },
+      "markings": {
+        "uk": "Авторський надпис на звороті",
+        "en": "Author's inscription on the reverse"
+      },
+      "artist": {
+        "uk": "Шовкуненко О.О.",
+        "en": "Oleksiy Shovkunenko"
+      },
+      "year": "1930",
+      "country": {
+        "uk": "СРСР",
+        "en": "USSR"
+      },
+      "material": {
+        "uk": "Папір, акварель, пастель",
+        "en": "Paper, watercolor, pastel"
+      },
+      "dimensions": {
+        "uk": "23,5 x 41 см",
+        "en": "23.5 x 41 cm"
+      }
+    },
+    "story": {
+      "uk": "Документовані відомості про автора та період підтверджені рукописною авторською атрибуцією на зворотному боці виробу.",
+      "en": "Documented information about the author and period is confirmed by the handwritten author's attribution on the reverse side of the item."
+    },
+    "documents": []
   }
 ]
