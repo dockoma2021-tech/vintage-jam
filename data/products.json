@@ -1554,5 +1554,85 @@
       "en": "Documented information about the author and period is confirmed by the handwritten author's attribution on the reverse side of the item."
     },
     "documents": []
+  },
+  {
+    "id": "vj-000022",
+    "publication_status": "published",
+    "sale_status": "available",
+    "date_added": "2026-09-16",
+    "category": "knives",
+    "title": {
+      "uk": "Швейцарський армійський кинжал Victorinox",
+      "en": "Swiss Army Dagger Victorinox Elsener Schwyz"
+    },
+    "short_description": {
+      "uk": "Оригінальний офіцерський кинжал швейцарської армії виробництва Elsener Schwyz з ножнами та темляком.",
+      "en": "Original Swiss army officer dagger by Elsener Schwyz complete with scabbard and lanyard."
+    },
+    "description": {
+      "uk": "Швейцарський армійський кинжал офіцерського типу створений для носіння з парадною формою. Виріб має прямий сталевий клинок ромбичного перетину та дерев'яну рукоять на трьох заклепках. На п'яті клинка вибито фірмове маркування виробника та серійний номер. Комплектується чорними шкіряними ножнами з металевим прибором та автентичним темляком.",
+      "en": "Swiss army officer dagger designed for parade uniform wear. The item features a straight steel diamond-section blade and a wooden handle secured with three rivets. The blade ricasso bears the manufacturer's hallmark and serial number. It comes complete with black leather scabbard featuring metal mountings and an authentic lanyard."
+    },
+    "price": {
+      "type": "fixed",
+      "value": 24750,
+      "currency": "UAH"
+    },
+    "media": {
+      "images": [
+        "images/products/vj-000022/01.webp",
+        "images/products/vj-000022/02.webp",
+        "images/products/vj-000022/03.webp",
+        "images/products/vj-000022/04.webp",
+        "images/products/vj-000022/05.webp",
+        "images/products/vj-000022/06.webp",
+        "images/products/vj-000022/07.webp",
+        "images/products/vj-000022/08.webp",
+        "images/products/vj-000022/09.webp",
+        "images/products/vj-000022/10.webp"
+      ],
+      "youtube": "https://www.youtube.com/shorts/OpRY-8tLWyM",
+      "shorts": ""
+    },
+    "attributes": {
+      "condition": {
+        "uk": "Добрий вінтажний стан, легкі сліди експлуатації",
+        "en": "Good vintage condition with minor signs of use"
+      },
+      "technique": {
+        "uk": "Ковка, штампування, хромування",
+        "en": "Forging, stamping, chrome plating"
+      },
+      "completeness": {
+        "uk": "Кинжал, ножні, підвіс, темляк",
+        "en": "Dagger, scabbard, hanger, lanyard"
+      },
+      "markings": {
+        "uk": "Клеймо Elsener Schwyz Victoria, серійний номер 154663",
+        "en": "Elsener Schwyz Victoria hallmark, serial number 154663"
+      },
+      "brand": {
+        "uk": "Elsener Schwyz / Victorinox",
+        "en": "Elsener Schwyz / Victorinox"
+      },
+      "model": {
+        "uk": "Офіцерський кинжал зразка 1943 року",
+        "en": "Officer Dagger Model 1943"
+      },
+      "year": "1954",
+      "country": {
+        "uk": "Швейцарія",
+        "en": "Switzerland"
+      },
+      "material": {
+        "uk": "Сталь, дерево, шкіра",
+        "en": "Steel, wood, leather"
+      }
+    },
+    "story": {
+      "uk": "Швейцарські армійські кинжали вручалися офіцерам при отриманні звання та виготовлялися обмеженими партіями за суворими державними стандартами.",
+      "en": "Swiss army daggers were awarded to officers upon promotion and produced in limited batches under strict government standards."
+    },
+    "documents": []
   }
 ]
