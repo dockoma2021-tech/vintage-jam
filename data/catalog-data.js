@@ -1,6 +1,6 @@
 window.VINTAGE_JAM_DATA = {
   "version": "3.3.0",
-  "generatedAt": "2026-09-16T14:25:34.307Z",
+  "generatedAt": "2026-09-16T14:33:31.089Z",
   "site": {
     "name": "Vintage Jam",
     "defaultLanguage": "uk"
