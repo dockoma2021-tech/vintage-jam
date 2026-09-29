@@ -1,6 +1,6 @@
 window.VINTAGE_JAM_DATA = {
   "version": "3.3.0",
-  "generatedAt": "2026-09-29T07:48:47.943Z",
+  "generatedAt": "2026-09-29T07:52:00.850Z",
   "site": {
     "name": "Vintage Jam",
     "defaultLanguage": "uk"
@@ -1872,8 +1872,8 @@ window.VINTAGE_JAM_DATA = {
       },
       "attributes": {
         "condition": {
-          "uk": "Збережений стан зі слідами використання та зберігання; локальні потертості, плями та неоднорідність поверхні клинка",
-          "en": "Preserved condition with signs of use and storage; local wear, staining and unevenness to the blade finish"
+          "uk": "Ідеальний стан збереження — справжня окраса колекції",
+          "en": "Impeccably preserved — a pristine collector’s piece"
         },
         "technique": {
           "uk": "Ручне комбіноване виготовлення; декоративна механічна обробка клинка; за даними власника — хімічне травлення складом на основі діоксиду селену",
