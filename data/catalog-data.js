@@ -1,6 +1,6 @@
 window.VINTAGE_JAM_DATA = {
   "version": "3.3.0",
-  "generatedAt": "2026-09-29T07:45:43.968Z",
+  "generatedAt": "2026-09-29T07:48:47.943Z",
   "site": {
     "name": "Vintage Jam",
     "defaultLanguage": "uk"
@@ -1895,10 +1895,6 @@ window.VINTAGE_JAM_DATA = {
           "uk": "Сильно вигнутий клинок, комбіноване руків’я, металеве плетіння, три декоративні кам’яні вставки та ножни з натурального рогу",
           "en": "Strongly curved blade, composite handle, woven metal decoration, three decorative stone inserts and a natural horn sheath"
         },
-        "brand": {
-          "uk": "Михаил Антоненко",
-          "en": "Mikhail Antonenko"
-        },
         "model": {
           "uk": "Кіготь Мантікори",
           "en": "Manticore’s Claw"
@@ -1914,6 +1910,10 @@ window.VINTAGE_JAM_DATA = {
         "dimensions": {
           "uk": "Ніж близько 28 см; клинок близько 16 см; у ножнах близько 32–33 см",
           "en": "Knife approx. 28 cm; blade approx. 16 cm; overall in sheath approx. 32–33 cm"
+        },
+        "brand": {
+          "uk": "Михаил Антоненко",
+          "en": "Mikhail Antonenko"
         }
       },
       "story": {
