@@ -1634,5 +1634,96 @@
       "en": "Swiss army daggers were awarded to officers upon promotion and produced in limited batches under strict government standards."
     },
     "documents": []
+  },
+  {
+    "id": "vj-000023",
+    "publication_status": "published",
+    "sale_status": "available",
+    "date_added": "2026-09-29",
+    "category": "knives",
+    "title": {
+      "uk": "Авторський ніж Михаила Антоненко «Кіготь Мантікори»",
+      "en": "Mikhail Antonenko “Manticore’s Claw” Handmade Knife"
+    },
+    "short_description": {
+      "uk": "Авторська робота київського майстра Михаила Антоненко з виразно вигнутим клинком і роговими ножнами. Назва «Коготь Мантикоры» підкреслює хижу пластику форми.",
+      "en": "A custom knife by Kyiv craftsman Mikhail Antonenko with a strongly curved blade and natural horn sheath. Its name, “Manticore’s Claw,” reflects the predatory shape of the design."
+    },
+    "description": {
+      "uk": "«Коготь Мантикоры» — авторський ніж Михаила Антоненко, побудований навколо образу масивного хижого когтя. Виразно вигнутий однолезовий клинок формує головний силует роботи та поєднується зі складним багатокомпонентним руків’ям. У конструкції використані органічні матеріали, дерево, металеве плетіння та три декоративні кам’яні кабошони. Клинок оформлений поздовжніми вибірками та темною травленою поверхнею. Ножни з природно вигнутого рогу продовжують загальну лінію композиції. На предметі присутні природні сліди використання та зберігання.",
+      "en": "“Manticore’s Claw” is a custom knife by Mikhail Antonenko, designed around the visual image of a massive predatory claw. The strongly curved single-edged blade defines the silhouette and is paired with a complex multi-component handle. The construction combines organic materials, wood, woven metal decoration and three polished stone cabochons. The blade features longitudinal grooves and a dark etched finish. A naturally curved horn sheath extends the overall flowing composition. The item shows normal signs of use and storage."
+    },
+    "price": {
+      "type": "fixed",
+      "value": 24750,
+      "currency": "UAH"
+    },
+    "media": {
+      "images": [
+        "images/products/vj-000023/01.webp",
+        "images/products/vj-000023/02.webp",
+        "images/products/vj-000023/03.webp",
+        "images/products/vj-000023/04.webp",
+        "images/products/vj-000023/05.webp",
+        "images/products/vj-000023/06.webp",
+        "images/products/vj-000023/07.webp",
+        "images/products/vj-000023/08.webp",
+        "images/products/vj-000023/09.webp",
+        "images/products/vj-000023/10.webp"
+      ],
+      "youtube": "https://youtube.com/shorts/3ppwEXbkYfU?feature=share",
+      "shorts": ""
+    },
+    "attributes": {
+      "condition": {
+        "uk": "Збережений стан зі слідами використання та зберігання; локальні потертості, плями та неоднорідність поверхні клинка",
+        "en": "Preserved condition with signs of use and storage; local wear, staining and unevenness to the blade finish"
+      },
+      "technique": {
+        "uk": "Ручне комбіноване виготовлення; декоративна механічна обробка клинка; за даними власника — хімічне травлення складом на основі діоксиду селену",
+        "en": "Handmade composite construction; decorative mechanical blade finishing; according to the owner, chemically etched using a selenium-dioxide-based compound"
+      },
+      "completeness": {
+        "uk": "Ніж та індивідуальні ножни",
+        "en": "Knife with individually made sheath"
+      },
+      "markings": {
+        "uk": "Маркування на фотографіях не виявлено",
+        "en": "No markings observed in the supplied photographs"
+      },
+      "hallmarks": {
+        "uk": "Клейма на фотографіях не виявлено",
+        "en": "No hallmarks observed in the supplied photographs"
+      },
+      "features": {
+        "uk": "Сильно вигнутий клинок, комбіноване руків’я, металеве плетіння, три декоративні кам’яні вставки та ножни з натурального рогу",
+        "en": "Strongly curved blade, composite handle, woven metal decoration, three decorative stone inserts and a natural horn sheath"
+      },
+      "brand": {
+        "uk": "Михаил Антоненко",
+        "en": "Mikhail Antonenko"
+      },
+      "model": {
+        "uk": "Кіготь Мантікори",
+        "en": "Manticore’s Claw"
+      },
+      "country": {
+        "uk": "Україна, Київ",
+        "en": "Ukraine, Kyiv"
+      },
+      "material": {
+        "uk": "Сталь У12Б, кістка, натуральний ріг, дерево, метал, кам’яні вставки",
+        "en": "Steel, bone, natural horn, wood, metal, stone inserts"
+      },
+      "dimensions": {
+        "uk": "Ніж близько 28 см; клинок близько 16 см; у ножнах близько 32–33 см",
+        "en": "Knife approx. 28 cm; blade approx. 16 cm; overall in sheath approx. 32–33 cm"
+      }
+    },
+    "story": {
+      "uk": "«Коготь Мантикоры» — авторська робота київського майстра Михаила Антоненко. Назва пов’язана з виразно вигнутою формою клинка, що нагадує великий кіготь міфічної мантикори. Інших підтверджених відомостей про дату виготовлення або історію побутування наразі немає.",
+      "en": "“Manticore’s Claw” is a custom work by Kyiv craftsman Mikhail Antonenko. The name refers to the pronounced curvature of the blade, which evokes the claw of the mythical manticore. No further verified information is currently available regarding the date of manufacture or provenance."
+    },
+    "documents": []
   }
 ]
