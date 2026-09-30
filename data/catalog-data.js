@@ -1,6 +1,6 @@
 window.VINTAGE_JAM_DATA = {
   "version": "3.3.0",
-  "generatedAt": "2026-09-29T15:49:08.765Z",
+  "generatedAt": "2026-09-30T18:19:44.352Z",
   "site": {
     "name": "Vintage Jam",
     "defaultLanguage": "uk"
@@ -2002,6 +2002,85 @@ window.VINTAGE_JAM_DATA = {
       "story": {
         "uk": "Авторський витвір майстра Михайла Антоненка, виконаний за індивідуальним задумом із використанням булатної сталі У12Д та натуральних матеріалів.",
         "en": "Custom artwork created by craftsman Mykhailo Antonenko, individually designed using U12D steel and natural materials."
+      },
+      "documents": []
+    },
+    {
+      "id": "vj-000025",
+      "publication_status": "published",
+      "sale_status": "available",
+      "date_added": "2026-09-30",
+      "category": "knives",
+      "title": {
+        "uk": "Авторський ніж Михайла Антоненко «Ріг Керинеї»",
+        "en": "Handmade Knife \"Horn of Ceryneia\" by Mykhailo Antonenko"
+      },
+      "short_description": {
+        "uk": "Ексклюзивний авторський ніж з рукояттю та ножнами з натурального рогу оленя, оздоблений кабошонами нефриту та агату.",
+        "en": "Exclusive handmade knife with a handle and sheath made of natural deer antler, inlaid with jade and agate cabochons."
+      },
+      "description": {
+        "uk": "Авторський декоративно-колекційний ніж «Ріг Керинеї», створений майстром Михайлом Антоненком. Клинок виконаний зі сталі 6ХВ2С і має кинджальну форму з чітким центральним ребром. Рукоять та піхви виготовлені з натурального рогу оленя із збереженням природної фактури. Конструкція доповнена оковкою та прикрашена інкрустацією зеленими кабошонами. Виріб збережений у відмінному станi без дефектів.",
+        "en": "Custom collectible knife \"Horn of Ceryneia\" created by craftsman Mykhailo Antonenko. The blade is made of 6KhV2S steel and features a dagger profile with a distinct central ridge. The handle and sheath are crafted from natural deer antler, preserving its organic texture. The construction is complemented by a bolster and inlaid with green cabochons. The item is in excellent condition with no defects."
+      },
+      "price": {
+        "type": "fixed",
+        "value": 11250,
+        "currency": "UAH"
+      },
+      "media": {
+        "images": [
+          "images/products/vj-000025/01.webp",
+          "images/products/vj-000025/02.webp",
+          "images/products/vj-000025/03.webp",
+          "images/products/vj-000025/04.webp",
+          "images/products/vj-000025/05.webp",
+          "images/products/vj-000025/06.webp",
+          "images/products/vj-000025/07.webp",
+          "images/products/vj-000025/08.webp",
+          "images/products/vj-000025/09.webp",
+          "images/products/vj-000025/10.webp"
+        ],
+        "youtube": "https://youtube.com/shorts/JmdCfAKM5k0?feature=share",
+        "shorts": ""
+      },
+      "attributes": {
+        "condition": {
+          "uk": "Відмінний колекційний стан, без пошкоджень",
+          "en": "Excellent collectible condition, undamaged"
+        },
+        "completeness": {
+          "uk": "Ніж, ножни",
+          "en": "Knife, sheath"
+        },
+        "technique": {
+          "uk": "Слесарне оброблення клинка, різьблення по рогу, інкрустація",
+          "en": "Blade grinding, antler carving, inlay"
+        },
+        "brand": {
+          "uk": "Михайло Антоненко",
+          "en": "Mykhailo Antonenko"
+        },
+        "model": {
+          "uk": "Ріг Керинеї",
+          "en": "Horn of Ceryneia"
+        },
+        "country": {
+          "uk": "Україна",
+          "en": "Ukraine"
+        },
+        "material": {
+          "uk": "Сталь 6ХВ2С, рог оленя, нефрит, агат",
+          "en": "6KhV2S steel, deer antler, jade, agate"
+        },
+        "dimensions": {
+          "uk": "Загальна довжина з піхвами ~28 см",
+          "en": "Total length with sheath ~28 cm"
+        }
+      },
+      "story": {
+        "uk": "Назва виробу відсилає до давньогрецького міфу про Керинейську лань — чарівну істоту із золотими рогами, поймання якої стало одним із подвигів Геракла.",
+        "en": "The name of the piece refers to the ancient Greek myth of the Ceryneian Hind, a magical creature with golden antlers, the capture of which was one of the Labors of Hercules."
       },
       "documents": []
     }
