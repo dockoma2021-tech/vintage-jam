@@ -1887,5 +1887,92 @@
       "en": "The name of the piece refers to the ancient Greek myth of the Ceryneian Hind, a magical creature with golden antlers, the capture of which was one of the Labors of Hercules."
     },
     "documents": []
+  },
+  {
+    "id": "vj-000026",
+    "publication_status": "published",
+    "sale_status": "available",
+    "date_added": "2026-09-30",
+    "category": "knives",
+    "title": {
+      "uk": "Авторський кований ніж М. Антоненка «Сльоза Артеміди»",
+      "en": "Custom Forged Knife \"Tear of Artemis\" by M. Antonenko"
+    },
+    "short_description": {
+      "uk": "Колекційний ніж ручної роботи з клинком із кованої сталі 95Х18 та оздобленням із рогу оленя, малахіту й латуні",
+      "en": "Handmade collectible knife featuring a forged 95Cr18 steel blade adorned with stag antler, malachite, and brass"
+    },
+    "description": {
+      "uk": "Авторський ніж «Сльоза Артеміди» являє собою художню композицію з фіксованим клинком і суцільними піхвами. Клинок виготовлений із кованої сталі 95Х18 ручного кування та має авторське тавро на п'яті. Руків'я та піхви виконані зі справжнього рогу оленя, декоровані латунним дротом, акцентами з барбарису та кабошонами малахіту. Виріб перебуває у відмінному колекційному стані.",
+      "en": "The custom knife \"Tear of Artemis\" represents an artistic composition with a fixed blade and matching sheath. The blade is crafted from hand-forged 95Cr18 stainless steel and features the maker's mark. The handle and sheath are made from genuine stag antler, decorated with brass wire wrapping, barberry wood accents, and natural malachite cabochons. The item is in excellent collectible condition."
+    },
+    "price": {
+      "type": "fixed",
+      "value": 11250,
+      "currency": "UAH"
+    },
+    "media": {
+      "images": [
+        "images/products/vj-000026/01.webp",
+        "images/products/vj-000026/02.webp",
+        "images/products/vj-000026/03.webp",
+        "images/products/vj-000026/04.webp",
+        "images/products/vj-000026/05.webp",
+        "images/products/vj-000026/06.webp",
+        "images/products/vj-000026/07.webp",
+        "images/products/vj-000026/08.webp",
+        "images/products/vj-000026/09.webp",
+        "images/products/vj-000026/10.webp"
+      ],
+      "youtube": "",
+      "shorts": ""
+    },
+    "attributes": {
+      "technique": {
+        "uk": "Гаряче ручне кування клинка, художнє різьблення та складання з рогу, інкрустація",
+        "en": "Hot hand forging of the blade, artistic carving and assembly of antler, inlay"
+      },
+      "condition": {
+        "uk": "Відмінний колекційний стан без дефектів",
+        "en": "Excellent collectible condition with no defects"
+      },
+      "completeness": {
+        "uk": "Ніж, авторські піхви з рогу оленя",
+        "en": "Knife, custom stag antler sheath"
+      },
+      "markings": {
+        "uk": "Авторське тавро майстра на кованому клинку",
+        "en": "Maker's mark on the forged blade"
+      },
+      "features": {
+        "uk": "Плетіння латунним дротом, кабошони малахіту, накінечник з барбарису",
+        "en": "Brass wire wrapping, malachite cabochons, barberry wood tip"
+      },
+      "brand": {
+        "uk": "Михайло Антоненко",
+        "en": "Mykhailo Antonenko"
+      },
+      "model": {
+        "uk": "Сльоза Артеміди",
+        "en": "Tear of Artemis"
+      },
+      "country": {
+        "uk": "Україна",
+        "en": "Ukraine"
+      },
+      "material": {
+        "uk": "Кована сталь 95Х18, ріг оленя, малахіт, латунь, деревина барбарису",
+        "en": "Forged 95Cr18 steel, stag antler, malachite, brass, barberry wood"
+      },
+      "dimensions": {
+        "uk": "25см",
+        "en": "25cm"
+      }
+    },
+    "story": {
+      "uk": "Авторська робота майстра Михайла Антоненка. Виріб створений у єдиному екземплярі з використанням ручного кування сталі 95Х18 та ювелірної обробки природних матеріалів.",
+      "en": "Custom artwork crafted by Mykhailo Antonenko. One-of-a-kind knife created using hand-forged 95Cr18 steel and artistic processing of natural materials."
+    },
+    "documents": []
   }
 ]
