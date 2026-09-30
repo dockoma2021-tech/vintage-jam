@@ -1924,7 +1924,7 @@
         "images/products/vj-000026/09.webp",
         "images/products/vj-000026/10.webp"
       ],
-      "youtube": "",
+      "youtube": "https://youtube.com/shorts/CIIKEio3NXk?feature=share",
       "shorts": ""
     },
     "attributes": {
@@ -1948,10 +1948,6 @@
         "uk": "Плетіння латунним дротом, кабошони малахіту, накінечник з барбарису",
         "en": "Brass wire wrapping, malachite cabochons, barberry wood tip"
       },
-      "brand": {
-        "uk": "Михайло Антоненко",
-        "en": "Mykhailo Antonenko"
-      },
       "model": {
         "uk": "Сльоза Артеміди",
         "en": "Tear of Artemis"
@@ -1967,6 +1963,10 @@
       "dimensions": {
         "uk": "25см",
         "en": "25cm"
+      },
+      "brand": {
+        "uk": "Михайло Антоненко",
+        "en": "Mykhailo Antonenko"
       }
     },
     "story": {
