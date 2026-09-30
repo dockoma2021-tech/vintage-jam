@@ -1,6 +1,6 @@
 window.VINTAGE_JAM_DATA = {
   "version": "3.3.0",
-  "generatedAt": "2026-09-30T19:47:31.830Z",
+  "generatedAt": "2026-09-30T19:49:24.567Z",
   "site": {
     "name": "Vintage Jam",
     "defaultLanguage": "uk"
@@ -2120,7 +2120,7 @@ window.VINTAGE_JAM_DATA = {
           "images/products/vj-000026/09.webp",
           "images/products/vj-000026/10.webp"
         ],
-        "youtube": "",
+        "youtube": "https://youtube.com/shorts/CIIKEio3NXk?feature=share",
         "shorts": ""
       },
       "attributes": {
@@ -2144,10 +2144,6 @@ window.VINTAGE_JAM_DATA = {
           "uk": "Плетіння латунним дротом, кабошони малахіту, накінечник з барбарису",
           "en": "Brass wire wrapping, malachite cabochons, barberry wood tip"
         },
-        "brand": {
-          "uk": "Михайло Антоненко",
-          "en": "Mykhailo Antonenko"
-        },
         "model": {
           "uk": "Сльоза Артеміди",
           "en": "Tear of Artemis"
@@ -2163,6 +2159,10 @@ window.VINTAGE_JAM_DATA = {
         "dimensions": {
           "uk": "25см",
           "en": "25cm"
+        },
+        "brand": {
+          "uk": "Михайло Антоненко",
+          "en": "Mykhailo Antonenko"
         }
       },
       "story": {
