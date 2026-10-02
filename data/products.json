@@ -1127,10 +1127,6 @@
         "uk": "Навершие з сюжетом Новозавітна Трійця, 4 сюжетних клейма",
         "en": "Crest depicting New Testament Trinity, 4 scene panels"
       },
-      "brand": {
-        "uk": "Старообрядницькі ливарні майстерні",
-        "en": "Old Believer foundry workshops"
-      },
       "country": {
         "uk": "Российская Империя",
         "en": "Russian Empire"
@@ -1142,6 +1138,10 @@
       "dimensions": {
         "uk": "Висота 17,6 см; ширина 10,7 см",
         "en": "Height 17.6 cm; width 10.7 cm"
+      },
+      "brand": {
+        "uk": "Старообрядницькі ливарні майстерні",
+        "en": "Old Believer foundry workshops"
       }
     },
     "story": {
