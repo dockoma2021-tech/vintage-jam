@@ -1,6 +1,6 @@
 window.VINTAGE_JAM_DATA = {
   "version": "3.3.0",
-  "generatedAt": "2026-10-02T17:11:13.046Z",
+  "generatedAt": "2026-10-02T17:12:02.204Z",
   "site": {
     "name": "Vintage Jam",
     "defaultLanguage": "uk"
@@ -1323,10 +1323,6 @@ window.VINTAGE_JAM_DATA = {
           "uk": "Навершие з сюжетом Новозавітна Трійця, 4 сюжетних клейма",
           "en": "Crest depicting New Testament Trinity, 4 scene panels"
         },
-        "brand": {
-          "uk": "Старообрядницькі ливарні майстерні",
-          "en": "Old Believer foundry workshops"
-        },
         "country": {
           "uk": "Российская Империя",
           "en": "Russian Empire"
@@ -1338,6 +1334,10 @@ window.VINTAGE_JAM_DATA = {
         "dimensions": {
           "uk": "Висота 17,6 см; ширина 10,7 см",
           "en": "Height 17.6 cm; width 10.7 cm"
+        },
+        "brand": {
+          "uk": "Старообрядницькі ливарні майстерні",
+          "en": "Old Believer foundry workshops"
         }
       },
       "story": {
