@@ -1,6 +1,6 @@
 window.VINTAGE_JAM_DATA = {
   "version": "3.3.0",
-  "generatedAt": "2026-10-02T17:00:51.824Z",
+  "generatedAt": "2026-10-02T17:11:13.046Z",
   "site": {
     "name": "Vintage Jam",
     "defaultLanguage": "uk"
@@ -1261,6 +1261,88 @@ window.VINTAGE_JAM_DATA = {
       "story": {
         "uk": "Виріб створено в період розквіту Російської імперії в 1883 році, коли мануфактурне виробництво срібних виробів та індивідуальні майстерні активно виготовляли подібні статусні аксесуари з національними сюжетами.",
         "en": "The item was created during the heyday of the Russian Empire in 1883, when silverware manufacture and individual workshops actively produced such status accessories with traditional motifs."
+      },
+      "documents": []
+    },
+    {
+      "id": "vj-000021",
+      "publication_status": "published",
+      "sale_status": "available",
+      "date_added": "2026-10-02",
+      "category": "icons",
+      "title": {
+        "uk": "Створка складня «Праздники» з емалями",
+        "en": "Quadriptych Icon Leaf \"Feasts\" with Enamels"
+      },
+      "short_description": {
+        "uk": "Перша ліва створка чотирьохстворчатого старообрядницького складня із зображеннями Двонадесятих свят та багатоколірною виїмчастою емаллю.",
+        "en": "First leaf of a Old Believer copper fold-out quadriptych icon featuring Feasts scenes with multicolored champlevé enamel."
+      },
+      "description": {
+        "uk": "Предмет являє собою першу ліву створку чотирьохстворчатого складня «Великі Праздники», виконану в традиціях канонічного мідного литва. Створка має киотчасте навершие із сюжетом «Новозавітна Трійця» та чотири сюжетні клейма на основному полі.\n\n\n\nКомпозиція включає клейма свят: Благовіщення, Різдво Христове, Богоявлення та Вхід Господній до Єрусалиму. Площина прикрашена багатоколірною емаллю синього, блакитного та білого відтінків.\n\n\n\nВиріб перебуває в антикварному стані з природною патиною та частковими втратами емалевого покриття, що відповідають віку виробу. Ознак сучасної реставрації не виявлено.",
+        "en": "This item is the first left leaf of a four-panel \"Grand Feasts\" folding icon, crafted in the tradition of canonical copper casting. The leaf features a vaulted crest depicting the \"New Testament Trinity\" and four scene panels on the main body.\n\n\n\nThe composition includes panels depicting the Annunciation, Nativity of Christ, Theophany, and the Entry into Jerusalem. The surface is decorated with multicolored enamel in blue, light blue, and white tones.\n\n\n\nThe item is in antique condition with a natural patina and partial enamel losses consistent with its age. No signs of modern restoration were detected."
+      },
+      "price": {
+        "type": "fixed",
+        "value": 5000,
+        "currency": "UAH"
+      },
+      "media": {
+        "images": [
+          "images/products/vj-000021/01.webp",
+          "images/products/vj-000021/02.webp",
+          "images/products/vj-000021/03.webp",
+          "images/products/vj-000021/04.webp",
+          "images/products/vj-000021/05.webp",
+          "images/products/vj-000021/06.webp",
+          "images/products/vj-000021/07.webp",
+          "images/products/vj-000021/08.webp",
+          "images/products/vj-000021/09.webp"
+        ],
+        "youtube": "",
+        "shorts": ""
+      },
+      "attributes": {
+        "condition": {
+          "uk": "Антикварний стан, наявна патина, сліди окислення, часткові утрати емалі",
+          "en": "Antique condition, natural patina, trace oxidation, partial enamel loss"
+        },
+        "weight": {
+          "uk": "301.7 г",
+          "en": "301.7 g"
+        },
+        "completeness": {
+          "uk": "Неповна комплектність (одна створка складня)",
+          "en": "Incomplete set (single leaf of a quadriptych)"
+        },
+        "technique": {
+          "uk": "Литво, виїмчаста емаль",
+          "en": "Casting, champlevé enamel"
+        },
+        "features": {
+          "uk": "Навершие з сюжетом Новозавітна Трійця, 4 сюжетних клейма",
+          "en": "Crest depicting New Testament Trinity, 4 scene panels"
+        },
+        "brand": {
+          "uk": "Старообрядницькі ливарні майстерні",
+          "en": "Old Believer foundry workshops"
+        },
+        "country": {
+          "uk": "Российская Империя",
+          "en": "Russian Empire"
+        },
+        "material": {
+          "uk": "Мідний сплав, емаль",
+          "en": "Copper alloy, enamel"
+        },
+        "dimensions": {
+          "uk": "Висота 17,6 см; ширина 10,7 см",
+          "en": "Height 17.6 cm; width 10.7 cm"
+        }
+      },
+      "story": {
+        "uk": "Складні «Великі Праздники» посідали чільне місце в старообрядницькому мідному литві XIX століття. Вони створювалися як портативні иконостаси для домашньої молитви та подорожей. Перша створка традиційно розпочинала іконографічний цикл Двонадесятих свят з подій Благовіщення та Різдва.",
+        "en": "\"Grand Feasts\" folding icons held a prominent place in 19th-century Old Believer copper casting. They served as portable iconostases for private devotion and travel. The first leaf traditionally opened the iconographic cycle of the Great Feasts with the Annunciation and Nativity."
       },
       "documents": []
     }
