@@ -1422,5 +1422,87 @@
       "en": "Custom artwork created by craftsman Mykhailo Antonenko, individually designed using U12D steel and natural materials."
     },
     "documents": []
+  },
+  {
+    "id": "vj-000025",
+    "publication_status": "published",
+    "sale_status": "available",
+    "date_added": "2026-10-07",
+    "category": "silver",
+    "title": {
+      "uk": "Авторський кулон «Сон Ассоль»",
+      "en": "“Assol's Dream” Artisan Pendant"
+    },
+    "short_description": {
+      "uk": "Художня підвіска з об'ємною різьбленою композицією та контрастним перламутровим оформленням зворотного боку.",
+      "en": "An artistic pendant combining a sculptural carved composition with a contrasting mother-of-pearl reverse."
+    },
+    "description": {
+      "uk": "Виразна овальна підвіска, композиція якої побудована на контрасті теплого бурштину, холодного блиску металу та райдужної поверхні перламутру. Центральний рельєф створює об'ємний сюжетний акцент, а ритмічне декоративне обрамлення та ажурне вушко завершують композицію. Назва «Сон Ассоль» є художньою назвою цієї роботи.",
+      "en": "An expressive oval pendant built around the contrast of warm amber, cool silver tones and the iridescent surface of mother-of-pearl. The raised central carving creates a sculptural focal point, while the rhythmic border and openwork bail complete the composition. “Assol's Dream” is the artistic title given to this piece."
+    },
+    "price": {
+      "type": "fixed",
+      "value": 9800,
+      "currency": "UAH"
+    },
+    "media": {
+      "images": [
+        "images/products/vj-000025/01.webp",
+        "images/products/vj-000025/02.webp",
+        "images/products/vj-000025/03.webp",
+        "images/products/vj-000025/04.webp",
+        "images/products/vj-000025/05.webp",
+        "images/products/vj-000025/06.webp",
+        "images/products/vj-000025/07.webp",
+        "images/products/vj-000025/08.webp",
+        "images/products/vj-000025/09.webp"
+      ],
+      "youtube": "",
+      "shorts": ""
+    },
+    "attributes": {
+      "ua": {
+        "вага": "15,2 г",
+        "тип": "кулон / підвіска",
+        "виконання": "авторська робота",
+        "конструкція": "овальна підвіска з декоративним срібним обрамленням та ажурним вушком",
+        "зворотний_бік": "перламутрова вставка",
+        "стан": "добрий стан збереження; природне потемніння срібної поверхні"
+      },
+      "en": {
+        "weight": "15.2 g",
+        "type": "pendant",
+        "execution": "artisan-made",
+        "construction": "oval pendant with decorative silver border and openwork bail",
+        "reverse": "mother-of-pearl insert",
+        "condition": "good overall condition; natural surface tarnish to the silver"
+      },
+      "brand": {
+        "uk": "Український майстер",
+        "en": "Ukrainian artisan"
+      },
+      "model": {
+        "uk": "«Сон Ассоль»",
+        "en": "“Assol's Dream”"
+      },
+      "country": {
+        "uk": "Україна",
+        "en": "Ukraine"
+      },
+      "material": {
+        "uk": "Срібло 925 проби, бурштин, перламутр",
+        "en": "Sterling silver 925, amber, mother-of-pearl"
+      },
+      "dimensions": {
+        "uk": "Орієнтовно 63 × 35 мм; овальна частина близько 47 × 35 мм",
+        "en": "Approx. 63 × 35 mm overall; oval section approx. 47 × 35 mm"
+      }
+    },
+    "story": {
+      "uk": "Назва «Сон Ассоль» створена як літературна алюзія на образ Ассоль із повісті-феєрії Олександра Гріна «Пурпурові вітрила». Вона передає образ сну, очікування та морської поетики, але не є твердженням про задум майстра або первісну назву твору.",
+      "en": "The title “Assol's Dream” is a literary allusion to Assol, the heroine of Alexander Grin's Scarlet Sails. It evokes sleep, anticipation and maritime imagery, but does not claim to represent the artisan's original title or intended subject."
+    },
+    "documents": []
   }
 ]
