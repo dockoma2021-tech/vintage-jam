@@ -1149,5 +1149,104 @@
       "en": "\"Grand Feasts\" folding icons held a prominent place in 19th-century Old Believer copper casting. They served as portable iconostases for private devotion and travel. The first leaf traditionally opened the iconographic cycle of the Great Feasts with the Annunciation and Nativity."
     },
     "documents": []
+  },
+  {
+    "id": "vj-000022",
+    "publication_status": "published",
+    "sale_status": "available",
+    "date_added": "2026-10-07",
+    "category": "silver",
+    "title": {
+      "uk": "Авторська каблучка «Дар Геліоса» з королівським пейзажним бурштином",
+      "en": "“Gift of Helios” Artisan Silver Ring with Royal Landscape Amber"
+    },
+    "short_description": {
+      "uk": "Авторська каблучка «Дар Геліоса» з великою жовто-медовою бурштиновою вставкою та ажурною оправою. Вага 15,2 г.",
+      "en": "“Gift of Helios” artisan ring with a large yellow-honey amber insert and an ornate openwork setting. Weight 15.2 g."
+    },
+    "description": {
+      "uk": "«Дар Геліоса» — авторська каблучка з великим видовженим кабошоном жовто-медового кольору. Назва роботи пов’язана з образом Геліоса — сонячного божества давньогрецької міфології — та золотистим світінням вставки на просвіт. Кабошон має виразний молочно-хмарний пейзажний рисунок. Оправа висока, ажурна, з витим декоративним дротом та філігранними елементами. Виріб виконаний в Україні зі срібла 925 проби, вставка — королівський пейзажний бурштин.",
+      "en": "“Gift of Helios” is an artisan ring featuring a large elongated yellow-honey cabochon. Its name refers to Helios, the solar deity of ancient Greek mythology, and to the golden glow visible when light passes through the insert. The cabochon displays a pronounced milky, cloud-like landscape pattern. The tall openwork setting features twisted decorative wire and filigree-style details. The piece was made in Ukraine from 925 silver and is set with royal landscape amber."
+    },
+    "price": {
+      "type": "fixed",
+      "value": 13500,
+      "currency": "UAH"
+    },
+    "media": {
+      "images": [
+        "images/products/vj-000022/01.webp",
+        "images/products/vj-000022/02.webp",
+        "images/products/vj-000022/03.webp",
+        "images/products/vj-000022/04.webp",
+        "images/products/vj-000022/05.webp",
+        "images/products/vj-000022/06.webp",
+        "images/products/vj-000022/07.webp",
+        "images/products/vj-000022/08.webp",
+        "images/products/vj-000022/09.webp",
+        "images/products/vj-000022/10.webp"
+      ],
+      "youtube": "https://www.youtube.com/shorts/x9AHyDcNjyI",
+      "shorts": ""
+    },
+    "attributes": {
+      "ua": {
+        "назва_роботи": "Дар Геліоса",
+        "тип": "каблучка",
+        "вага": "15,2 г",
+        "внутрішній_діаметр": "приблизно 19,5–20 мм",
+        "розмір_EU": "61–62",
+        "розмір_US": "приблизно 9.5–10",
+        "лицьова_частина": "орієнтовно 52–54 мм",
+        "вставка": "королівський пейзажний бурштин, за інформацією власника",
+        "метал": "срібло 925, за інформацією власника",
+        "країна": "Україна, за інформацією власника",
+        "виконання": "авторська робота",
+        "декор": "ажурне оформлення, витий декоративний дріт, філігранні елементи",
+        "колір_вставки": "жовто-медовий з молочно-кремовим пейзажним рисунком",
+        "стан": "добра візуальна збереженість"
+      },
+      "en": {
+        "work_name": "Gift of Helios",
+        "type": "ring",
+        "weight": "15.2 g",
+        "inner_diameter": "approx. 19.5–20 mm",
+        "EU_size": "61–62",
+        "US_size": "approx. 9.5–10",
+        "face_length": "approx. 52–54 mm",
+        "insert": "royal landscape amber, according to the owner",
+        "metal": "925 silver, according to the owner",
+        "country": "Ukraine, according to the owner",
+        "execution": "artisan work",
+        "decoration": "openwork setting, twisted decorative wire and filigree-style elements",
+        "insert_colour": "yellow-honey with a milky cream landscape pattern",
+        "condition": "good visual condition"
+      },
+      "brand": {
+        "uk": "Авторська робота",
+        "en": "Artisan work"
+      },
+      "model": {
+        "uk": "«Дар Геліоса»",
+        "en": "“Gift of Helios”"
+      },
+      "country": {
+        "uk": "Україна",
+        "en": "Ukraine"
+      },
+      "material": {
+        "uk": "Срібло 925, королівський пейзажний бурштин",
+        "en": "925 silver, royal landscape amber"
+      },
+      "dimensions": {
+        "uk": "≈ 19,5–20 мм внутрішній діаметр / EU 61–62 / US ≈ 9.5–10",
+        "en": "Approx. 19.5–20 mm inner diameter / EU 61–62 / US approx. 9.5–10"
+      }
+    },
+    "story": {
+      "uk": "Назва «Дар Геліоса» створена для цієї авторської роботи та відсилає до Геліоса — сонячного божества давньогрецької міфології. Образ побудований навколо золотистого кольору та внутрішнього світіння бурштинової вставки.",
+      "en": "The name “Gift of Helios” was created for this artisan piece and refers to Helios, the solar deity of ancient Greek mythology. The concept is built around the golden colour and internal glow of the amber insert."
+    },
+    "documents": []
   }
 ]
