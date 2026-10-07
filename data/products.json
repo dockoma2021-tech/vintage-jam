@@ -1248,5 +1248,96 @@
       "en": "The name “Gift of Helios” was created for this artisan piece and refers to Helios, the solar deity of ancient Greek mythology. The concept is built around the golden colour and internal glow of the amber insert."
     },
     "documents": []
+  },
+  {
+    "id": "vj-000023",
+    "publication_status": "published",
+    "sale_status": "available",
+    "date_added": "2026-10-07",
+    "category": "silver",
+    "title": {
+      "uk": "Авторська каблучка «Роза Беатриче»",
+      "en": "“Beatrice’s Rose” Artisan Silver Ring"
+    },
+    "short_description": {
+      "uk": "Авторська каблучка українського майстра зі срібла 925 проби з ручним різьбленням по персиковій кісточці. Центральний мотив — об’ємна троянда. Вага 13,5 г.",
+      "en": "An artisan ring by a Ukrainian craftsman, made of 925 silver and featuring hand-carved peach stone with a dimensional rose motif. Weight: 13.5 g."
+    },
+    "description": {
+      "uk": "Каблучка «Роза Беатриче» виконана зі срібла 925 проби. Центральна вставка з персикової кісточки має ручне рельєфне різьблення у вигляді розквітлої троянди з листям. Срібна оправа оформлена ажурною філігранню, витим дротом і декоративними сферичними елементами. Вага — 13,5 г. Розмір — орієнтовно 19,5–20 / EU 61–62 / US 9.5–10.",
+      "en": "“Beatrice’s Rose” is an artisan 925 silver ring created by a Ukrainian craftsman. Its central peach-stone insert is hand-carved in relief with a blooming rose and leaves. The silver setting features openwork filigree, twisted wire and small spherical decorative elements. Weight: 13.5 g. Approximate ring size: 19.5–20 mm inner diameter / EU 61–62 / US 9.5–10."
+    },
+    "price": {
+      "type": "fixed",
+      "value": 12000,
+      "currency": "UAH"
+    },
+    "media": {
+      "images": [
+        "images/products/vj-000023/01.webp",
+        "images/products/vj-000023/02.webp",
+        "images/products/vj-000023/03.webp",
+        "images/products/vj-000023/04.webp",
+        "images/products/vj-000023/05.webp",
+        "images/products/vj-000023/06.webp",
+        "images/products/vj-000023/07.webp",
+        "images/products/vj-000023/08.webp",
+        "images/products/vj-000023/09.webp",
+        "images/products/vj-000023/10.webp"
+      ],
+      "youtube": "",
+      "shorts": ""
+    },
+    "attributes": {
+      "ua": {
+        "тип": "авторська каблучка",
+        "матеріал": "срібло 925",
+        "вставка": "персикова кісточка",
+        "техніка": "ручне рельєфне різьблення, філігранний декор",
+        "сюжет": "троянда",
+        "вага": "13,5 г",
+        "розмір": "орієнтовно 19,5–20",
+        "eu": "61–62",
+        "us": "9.5–10",
+        "країна": "Україна"
+      },
+      "en": {
+        "type": "artisan ring",
+        "material": "925 silver",
+        "insert": "peach stone",
+        "technique": "hand relief carving, filigree decoration",
+        "motif": "rose",
+        "weight": "13.5 g",
+        "size": "approximately 19.5–20 mm inner diameter",
+        "eu": "61–62",
+        "us": "9.5–10",
+        "country": "Ukraine"
+      },
+      "brand": {
+        "uk": "Український майстер",
+        "en": "Ukrainian artisan"
+      },
+      "model": {
+        "uk": "«Роза Беатриче»",
+        "en": "“Beatrice’s Rose”"
+      },
+      "country": {
+        "uk": "Україна",
+        "en": "Ukraine"
+      },
+      "material": {
+        "uk": "Срібло 925, персикова кісточка",
+        "en": "925 silver, peach stone"
+      },
+      "dimensions": {
+        "uk": "Розмір каблучки ≈ 19,5–20; EU 61–62; US 9.5–10; лицьова частина орієнтовно 30 × 25 мм",
+        "en": "Ring size approx. 19.5–20 mm inner diameter; EU 61–62; US 9.5–10; face approx. 30 × 25 mm"
+      }
+    },
+    "story": {
+      "uk": "Художня назва «Роза Беатриче» відсилає до образу Беатріче, пов’язаного з поетичним світом Данте. Центральна троянда стала композиційною основою назви роботи.",
+      "en": "The artistic title “Beatrice’s Rose” refers to Beatrice, the celebrated figure associated with Dante’s poetic world. The carved rose at the centre of the ring forms the visual basis of the work’s name."
+    },
+    "documents": []
   }
 ]
