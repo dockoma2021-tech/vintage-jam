@@ -1,6 +1,6 @@
 window.VINTAGE_JAM_DATA = {
   "version": "3.3.0",
-  "generatedAt": "2026-10-07T21:38:11.887Z",
+  "generatedAt": "2026-10-07T22:06:13.718Z",
   "site": {
     "name": "Vintage Jam",
     "defaultLanguage": "uk"
@@ -1481,7 +1481,7 @@ window.VINTAGE_JAM_DATA = {
           "images/products/vj-000023/09.webp",
           "images/products/vj-000023/10.webp"
         ],
-        "youtube": "",
+        "youtube": "https://youtube.com/shorts/VTMUbKbKV6Q?feature=share",
         "shorts": ""
       },
       "attributes": {
@@ -1509,10 +1509,6 @@ window.VINTAGE_JAM_DATA = {
           "us": "9.5–10",
           "country": "Ukraine"
         },
-        "brand": {
-          "uk": "Український майстер",
-          "en": "Ukrainian artisan"
-        },
         "model": {
           "uk": "«Роза Беатриче»",
           "en": "“Beatrice’s Rose”"
@@ -1528,6 +1524,10 @@ window.VINTAGE_JAM_DATA = {
         "dimensions": {
           "uk": "Розмір каблучки ≈ 19,5–20; EU 61–62; US 9.5–10; лицьова частина орієнтовно 30 × 25 мм",
           "en": "Ring size approx. 19.5–20 mm inner diameter; EU 61–62; US 9.5–10; face approx. 30 × 25 mm"
+        },
+        "brand": {
+          "uk": "Український майстер",
+          "en": "Ukrainian artisan"
         }
       },
       "story": {
