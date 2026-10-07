@@ -1339,5 +1339,88 @@
       "en": "The artistic title “Beatrice’s Rose” refers to Beatrice, the celebrated figure associated with Dante’s poetic world. The carved rose at the centre of the ring forms the visual basis of the work’s name."
     },
     "documents": []
+  },
+  {
+    "id": "vj-000024",
+    "publication_status": "published",
+    "sale_status": "available",
+    "date_added": "2026-10-07",
+    "category": "knives",
+    "title": {
+      "uk": "Авторський ніж Михайла Антоненко «Орф з Аїда»",
+      "en": "Custom Knife \"Orph from Hades\" by Mykhailo Antonenko"
+    },
+    "short_description": {
+      "uk": "Колекційний подвійний ніж авторської роботи з клинками зі сталі У12Д, роговою рукояттю та вставками з напівдорогоцінного каміння.",
+      "en": "Collectible custom double knife featuring U12D steel blades, antler handle, and semi-precious gemstone inlays."
+    },
+    "description": {
+      "uk": "Ексклюзивний авторський ніж «Орф з Аїда» роботи майстра Михайла Антоненка. Виріб виконано у складній подвійній компоновці: на одній роговій основі встановлено два клинки різної конфігурації (стилетного та серпоподібного типу). Клинки виковані зі сталі У12Д булатного типу.\n\n\n\nРукоять виготовлена з природного рогу оленя та доповнена латунними больстерами. Особливу естетику виробу надає інкрустація кабошонами з натурального каміння: малахіту, агату та тигрового ока.\n\n\n\nПредмет перебуває у колекційному стані з природними слідами патинування на металевих частинах. Ножни в комплекті відсутні.",
+      "en": "Exclusive custom knife \"Orph from Hades\" crafted by Mykhailo Antonenko. The piece features a unique double-blade configuration mounted on a natural antler base, incorporating both a stiletto-type blade and a curved sickle-type blade forged from U12D damask-type steel.\n\n\n\nThe handle is made of deer antler, fitted with brass bolsters and inlaid with natural gemstone cabochons including malachite, agate, and tiger's eye.\n\n\n\nThe item is in collectible condition showing natural patina on the steel components. Sheath is not included."
+    },
+    "price": {
+      "type": "fixed",
+      "value": 15750,
+      "currency": "UAH"
+    },
+    "media": {
+      "images": [
+        "images/products/vj-000024/01.webp",
+        "images/products/vj-000024/02.webp",
+        "images/products/vj-000024/03.webp",
+        "images/products/vj-000024/04.webp",
+        "images/products/vj-000024/05.webp",
+        "images/products/vj-000024/06.webp",
+        "images/products/vj-000024/07.webp",
+        "images/products/vj-000024/08.webp",
+        "images/products/vj-000024/09.webp",
+        "images/products/vj-000024/10.webp"
+      ],
+      "youtube": "https://www.youtube.com/shorts/gYdzusUSsi0",
+      "shorts": ""
+    },
+    "attributes": {
+      "condition": {
+        "uk": "Задовільний колекційний стан, присутня природна патина та потемніння металу",
+        "en": "Good collectible condition with natural patina and darkening on metal"
+      },
+      "blade_steel": {
+        "uk": "У12Д (булатного типу)",
+        "en": "U12D (damask/wootz type)"
+      },
+      "gemstones": {
+        "uk": "Малахіт, агат, тигрове око",
+        "en": "Malachite, agate, tiger's eye"
+      },
+      "completeness": {
+        "uk": "Ніж без ножен",
+        "en": "Knife without sheath"
+      },
+      "brand": {
+        "uk": "Михайло Антоненко",
+        "en": "Mykhailo Antonenko"
+      },
+      "model": {
+        "uk": "Орф з Аїда",
+        "en": "Orph from Hades"
+      },
+      "country": {
+        "uk": "Україна",
+        "en": "Ukraine"
+      },
+      "material": {
+        "uk": "Сталь У12Д, рог оленя, латунь, малахіт, агат, тигрове око",
+        "en": "U12D steel, deer antler, brass, malachite, agate, tiger's eye"
+      },
+      "dimensions": {
+        "uk": "Загальна довжина близько 35 см",
+        "en": "Total length approx. 35 cm"
+      }
+    },
+    "story": {
+      "uk": "Авторський витвір майстра Михайла Антоненка, виконаний за індивідуальним задумом із використанням булатної сталі У12Д та натуральних матеріалів.",
+      "en": "Custom artwork created by craftsman Mykhailo Antonenko, individually designed using U12D steel and natural materials."
+    },
+    "documents": []
   }
 ]
