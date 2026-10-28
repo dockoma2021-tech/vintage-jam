@@ -1,6 +1,6 @@
 window.VINTAGE_JAM_DATA = {
   "version": "3.3.0",
-  "generatedAt": "2026-10-07T22:06:13.718Z",
+  "generatedAt": "2026-10-28T18:55:35.603Z",
   "site": {
     "name": "Vintage Jam",
     "defaultLanguage": "uk"
@@ -1698,6 +1698,81 @@ window.VINTAGE_JAM_DATA = {
       "story": {
         "uk": "Назва «Сон Ассоль» створена як літературна алюзія на образ Ассоль із повісті-феєрії Олександра Гріна «Пурпурові вітрила». Вона передає образ сну, очікування та морської поетики, але не є твердженням про задум майстра або первісну назву твору.",
         "en": "The title “Assol's Dream” is a literary allusion to Assol, the heroine of Alexander Grin's Scarlet Sails. It evokes sleep, anticipation and maritime imagery, but does not claim to represent the artisan's original title or intended subject."
+      },
+      "documents": []
+    },
+    {
+      "id": "vj-000026",
+      "publication_status": "published",
+      "sale_status": "available",
+      "date_added": "2026-10-28",
+      "category": "knives",
+      "title": {
+        "uk": "Авторський ніж Кузниця Сварога, дамаск, різьба по кості",
+        "en": "Custom Damascus Knife Svarog Forge Walrus Bone Carving"
+      },
+      "short_description": {
+        "uk": "Ексклюзивний авторський ніж з дамаського металу з художньою різьбою по кості моржа.",
+        "en": "Exclusive custom Damascus knife with artistic walrus bone carving."
+      },
+      "description": {
+        "uk": "Авторський предмет ручної роботи поєднує в собі художню ковку дамаської сталі від майстерні «Кузниця СВАРОГА» та витончену різьбу по натуральній кості моржа. На ножнах та рукояті вирізьблені сюжетні композиції на мисливську тематику. Виріб укомплектований дерев'яною підставкою для демонстрування. Конструкція вирізняється високою якістю виконання та деталізованим опрацюванням кожного елемента.",
+        "en": "An exclusive handmade custom piece combining Damascus steel forging by Svarog Forge with delicate natural walrus bone carving. Scabbard and handle feature detailed hunting-themed relief scenes. The item comes with a wooden display stand. The craftsmanship stands out for high precision and detailed execution of each sculptural element."
+      },
+      "price": {
+        "type": "fixed",
+        "value": 25575,
+        "currency": "UAH"
+      },
+      "media": {
+        "images": [
+          "images/products/vj-000026/01.webp",
+          "images/products/vj-000026/02.webp",
+          "images/products/vj-000026/03.webp",
+          "images/products/vj-000026/04.webp",
+          "images/products/vj-000026/05.webp",
+          "images/products/vj-000026/06.webp",
+          "images/products/vj-000026/07.webp",
+          "images/products/vj-000026/08.webp",
+          "images/products/vj-000026/09.webp",
+          "images/products/vj-000026/10.webp"
+        ],
+        "youtube": "https://www.youtube.com/shorts/kmZ1EE_uB44",
+        "shorts": ""
+      },
+      "attributes": {
+        "weight": {
+          "uk": "407 г",
+          "en": "407 g"
+        },
+        "technique": {
+          "uk": "Художня ковка, різьба по кості",
+          "en": "Artistic forging, bone carving"
+        },
+        "completeness": {
+          "uk": "Ніж, ножні, підставка",
+          "en": "Knife, scabbard, stand"
+        },
+        "markings": {
+          "uk": "Наявне клеймо майстра на клинку",
+          "en": "Maker's mark on the blade"
+        },
+        "brand": {
+          "uk": "Кузниця Сварога",
+          "en": "Svarog Forge"
+        },
+        "material": {
+          "uk": "Дамаск, кістка моржа",
+          "en": "Damascus steel, walrus bone"
+        },
+        "dimensions": {
+          "uk": "Товщина клинка 4.74 мм",
+          "en": "Blade thickness 4.74 mm"
+        }
+      },
+      "story": {
+        "uk": "",
+        "en": ""
       },
       "documents": []
     }
