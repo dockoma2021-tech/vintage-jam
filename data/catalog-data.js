@@ -1,6 +1,6 @@
 window.VINTAGE_JAM_DATA = {
   "version": "3.3.0",
-  "generatedAt": "2026-11-04T18:01:50.241Z",
+  "generatedAt": "2026-11-04T18:02:25.713Z",
   "site": {
     "name": "Vintage Jam",
     "defaultLanguage": "uk"
@@ -576,7 +576,7 @@ window.VINTAGE_JAM_DATA = {
     {
       "id": "vj-000007",
       "publication_status": "published",
-      "sale_status": "sold",
+      "sale_status": "available",
       "date_added": "2026-08-05",
       "category": "knives",
       "title": {
@@ -592,8 +592,8 @@ window.VINTAGE_JAM_DATA = {
         "en": "Classic automatic knife crafted in the traditional style of Italian stiletto makers. The design features a push-button blade release, a safety lock to prevent accidental deployment, and a tilting bolster. The blade has a characteristic slender profile with a marked ricasso.\n\n\n\nThe handle is built on brass liners with textured stag horn scales secured by rivets. The metal components display a natural luster with light vintage aging. All elements retain their original surface condition without modern repolishing."
       },
       "price": {
-        "type": "fixed",
-        "value": 8100,
+        "type": "request",
+        "value": null,
         "currency": "UAH"
       },
       "media": {
