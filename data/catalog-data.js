@@ -1,6 +1,6 @@
 window.VINTAGE_JAM_DATA = {
   "version": "3.3.0",
-  "generatedAt": "2026-11-04T18:02:53.718Z",
+  "generatedAt": "2026-11-04T18:03:53.484Z",
   "site": {
     "name": "Vintage Jam",
     "defaultLanguage": "uk"
@@ -1704,7 +1704,7 @@ window.VINTAGE_JAM_DATA = {
     {
       "id": "vj-000026",
       "publication_status": "published",
-      "sale_status": "available",
+      "sale_status": "reserved",
       "date_added": "2026-10-28",
       "category": "knives",
       "title": {
