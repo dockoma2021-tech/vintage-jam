@@ -1,6 +1,6 @@
 window.VINTAGE_JAM_DATA = {
   "version": "3.3.0",
-  "generatedAt": "2026-11-04T18:01:08.821Z",
+  "generatedAt": "2026-11-04T18:01:50.241Z",
   "site": {
     "name": "Vintage Jam",
     "defaultLanguage": "uk"
@@ -325,7 +325,7 @@ window.VINTAGE_JAM_DATA = {
     {
       "id": "vj-000003",
       "publication_status": "published",
-      "sale_status": "sold",
+      "sale_status": "available",
       "date_added": "2026-07-31",
       "category": "knives",
       "title": {
@@ -341,8 +341,8 @@ window.VINTAGE_JAM_DATA = {
         "en": "High-tech folding knife District 9 Marauder. The Modified Tanto blade is made of high-performance M390 powder steel with a fuller and Stonewash finish. The handle is crafted from titanium alloy with complex CNC milling, equipped with a Frame-Lock mechanism with a safety stop, pocket clip, and glass breaker. Manufactured in 2023."
       },
       "price": {
-        "type": "fixed",
-        "value": 16500,
+        "type": "request",
+        "value": null,
         "currency": "UAH"
       },
       "media": {
