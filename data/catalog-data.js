@@ -1,6 +1,6 @@
 window.VINTAGE_JAM_DATA = {
   "version": "3.3.0",
-  "generatedAt": "2026-10-28T18:55:35.603Z",
+  "generatedAt": "2026-11-04T18:01:08.821Z",
   "site": {
     "name": "Vintage Jam",
     "defaultLanguage": "uk"
@@ -1720,8 +1720,8 @@ window.VINTAGE_JAM_DATA = {
         "en": "An exclusive handmade custom piece combining Damascus steel forging by Svarog Forge with delicate natural walrus bone carving. Scabbard and handle feature detailed hunting-themed relief scenes. The item comes with a wooden display stand. The craftsmanship stands out for high precision and detailed execution of each sculptural element."
       },
       "price": {
-        "type": "fixed",
-        "value": 25575,
+        "type": "request",
+        "value": null,
         "currency": "UAH"
       },
       "media": {
@@ -1757,10 +1757,6 @@ window.VINTAGE_JAM_DATA = {
           "uk": "Наявне клеймо майстра на клинку",
           "en": "Maker's mark on the blade"
         },
-        "brand": {
-          "uk": "Кузниця Сварога",
-          "en": "Svarog Forge"
-        },
         "material": {
           "uk": "Дамаск, кістка моржа",
           "en": "Damascus steel, walrus bone"
@@ -1768,6 +1764,10 @@ window.VINTAGE_JAM_DATA = {
         "dimensions": {
           "uk": "Товщина клинка 4.74 мм",
           "en": "Blade thickness 4.74 mm"
+        },
+        "brand": {
+          "uk": "Кузниця Сварога",
+          "en": "Svarog Forge"
         }
       },
       "story": {
