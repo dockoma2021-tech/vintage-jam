@@ -1,6 +1,6 @@
 window.VINTAGE_JAM_DATA = {
   "version": "3.3.0",
-  "generatedAt": "2026-11-04T18:02:25.713Z",
+  "generatedAt": "2026-11-04T18:02:53.718Z",
   "site": {
     "name": "Vintage Jam",
     "defaultLanguage": "uk"
@@ -710,8 +710,8 @@ window.VINTAGE_JAM_DATA = {
     },
     {
       "id": "vj-000009",
-      "publication_status": "draft",
-      "sale_status": "sold",
+      "publication_status": "published",
+      "sale_status": "reserved",
       "date_added": "2026-08-05",
       "category": "knives",
       "title": {
@@ -727,8 +727,8 @@ window.VINTAGE_JAM_DATA = {
         "en": "Automatic folding knife crafted in the traditional mid-20th-century Italian stiletto style. The slender stiletto blade is made of stainless steel and equipped with a button-release mechanism. The handle features natural stag horn scales secured with brass pins and fitted with metal bolsters. The spine of the handle bears an engraved name. The piece retains its original vintage condition with natural patina."
       },
       "price": {
-        "type": "fixed",
-        "value": 13500,
+        "type": "request",
+        "value": null,
         "currency": "UAH"
       },
       "media": {
