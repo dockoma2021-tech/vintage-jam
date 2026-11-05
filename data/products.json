@@ -1579,5 +1579,84 @@
       "en": ""
     },
     "documents": []
+  },
+  {
+    "id": "vj-000027",
+    "publication_status": "published",
+    "sale_status": "available",
+    "date_added": "2026-11-05",
+    "category": "knives",
+    "title": {
+      "uk": "Авторський ніж дамаск, срібло 925, ріг сайгака",
+      "en": "Custom Damascus knife, 925 silver, Saiga horn"
+    },
+    "short_description": {
+      "uk": "Художній авторський ніж ручної роботи з кованого дамаску, срібною гардою у вигляді змій та руків'ям з рогу сайгака.",
+      "en": "Custom handmade art knife featuring forged Damascus steel, snake-shaped 925 silver guard, and Saiga horn handle."
+    },
+    "description": {
+      "uk": "Ексклюзивний авторський ніж поєднує традиції ковальського мистецтва та ювелірної справи. Клинок виконаний із високоякісного кованого дамаску зі складним візерунком та плавним вигином.\n\n\n\nГарда відлита зі срібла 925 проби у формі двох переплетених змій із ретельно опрацьованою лускою. Руків'я створене з натурального рогу сайгака із характерними кільцевими виступами та теплою природною текстурою.\n\n\n\nПредмет перебуває у відмінному колекційному стані, без дефектів. Чудовий вибір для поціновувачів унікальної холодної зброї.",
+      "en": "An exclusive custom art knife combining blacksmithing traditions and jewelry craftsmanship. The blade is forged from high-grade Damascus steel with an intricate pattern and elegant curve.\n\n\n\nThe guard is cast in 925 sterling silver shaped as two intertwined snakes with detailed scale texturing. The handle is crafted from natural Saiga antelope horn featuring characteristic ridged rings and a warm organic texture.\n\n\n\nThe item is in excellent collector's condition without defects. A magnificent piece for connoisseurs of unique edged weapons."
+    },
+    "price": {
+      "type": "fixed",
+      "value": 25300,
+      "currency": "UAH"
+    },
+    "media": {
+      "images": [
+        "images/products/vj-000027/01.webp",
+        "images/products/vj-000027/02.webp",
+        "images/products/vj-000027/03.webp",
+        "images/products/vj-000027/04.webp",
+        "images/products/vj-000027/05.webp",
+        "images/products/vj-000027/06.webp",
+        "images/products/vj-000027/07.webp",
+        "images/products/vj-000027/08.webp",
+        "images/products/vj-000027/09.webp",
+        "images/products/vj-000027/10.webp"
+      ],
+      "youtube": "https://youtube.com/shorts/c7rSDvgjtq0?si=oaKlZeUVYzc26zvy",
+      "shorts": ""
+    },
+    "attributes": {
+      "condition": {
+        "uk": "Колекційний стан, без слідів використання",
+        "en": "Collector condition, no signs of use"
+      },
+      "technique": {
+        "uk": "Ручне ковкування, художнє лиття, різьблення",
+        "en": "Hand forging, art casting, carving"
+      },
+      "completeness": {
+        "uk": "Ніж (без ножен)",
+        "en": "Knife (without sheath)"
+      },
+      "hallmarks": {
+        "uk": "Клеймо проби 925 на гарді",
+        "en": "925 hallmark on the guard"
+      },
+      "features": {
+        "uk": "Гарда у формі двох змій, руків'я з рогу сайгака",
+        "en": "Guard shaped as two snakes, Saiga horn handle"
+      },
+      "country": {
+        "uk": "Україна",
+        "en": "Ukraine"
+      },
+      "material": {
+        "uk": "Дамаська сталь, срібло 925 проби, ріг сайгака",
+        "en": "Damascus steel, 925 sterling silver, Saiga horn"
+      },
+      "dimensions": {
+        "uk": "Загальна довжина 44 см; товщина обуха 3,56 мм",
+        "en": "Total length 44 cm; spine thickness 3.56 mm"
+      }
+    },
+    "story": {
+      "uk": "",
+      "en": ""
+    },
+    "documents": []
   }
 ]
