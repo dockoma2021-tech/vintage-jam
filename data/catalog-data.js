@@ -1,6 +1,6 @@
 window.VINTAGE_JAM_DATA = {
   "version": "3.3.0",
-  "generatedAt": "2026-11-05T12:43:38.199Z",
+  "generatedAt": "2026-11-07T19:32:37.469Z",
   "site": {
     "name": "Vintage Jam",
     "defaultLanguage": "uk"
@@ -1847,6 +1847,82 @@ window.VINTAGE_JAM_DATA = {
         "dimensions": {
           "uk": "Загальна довжина 44 см; товщина обуха 3,56 мм",
           "en": "Total length 44 cm; spine thickness 3.56 mm"
+        }
+      },
+      "story": {
+        "uk": "",
+        "en": ""
+      },
+      "documents": []
+    },
+    {
+      "id": "vj-000028",
+      "publication_status": "published",
+      "sale_status": "available",
+      "date_added": "2026-11-07",
+      "category": "knives",
+      "title": {
+        "uk": "Кастомний ніж ручної роботи сталь 8Х6НФТ",
+        "en": "Custom Handmade Knife 8X6NFT Steel"
+      },
+      "short_description": {
+        "uk": "Авторський кастомний ніж ручної роботи з клинком зі сталі 8Х6НФТ та фірмовими шкіряними ножнами.",
+        "en": "Custom handmade knife with 8X6NFT steel blade and branded leather sheath."
+      },
+      "description": {
+        "uk": "Ексклюзивний кастомний ніж виконаний майстром з ретельно підібраних матеріалів. Клинок з вуглецевої сталі 8Х6НФТ має увігнуті спуски та дзеркальне полірування. Руків'я оздоблене художнім бронзовим литтям із кельтськими мотивами та червоним деревом, що забезпечує надійний хват.    До комплекту входять міцні шкіряні ножні ручної роботи з тисненням та обробкою італійською хімією. Виріб у відмінному колекційному стані.",
+        "en": "An exclusive custom handmade knife crafted by a master from carefully selected materials. The 8X6NFT carbon steel blade features hollow grinds and mirror polish. The handle is decorated with artistic bronze casting with Celtic motifs and red wood, ensuring a secure grip.    The set includes durable handmade leather sheath with embossing and Italian chemical finish. The item is in excellent collectible condition."
+      },
+      "price": {
+        "type": "fixed",
+        "value": 5000,
+        "currency": "UAH"
+      },
+      "media": {
+        "images": [
+          "images/products/vj-000028/01.webp",
+          "images/products/vj-000028/02.webp",
+          "images/products/vj-000028/03.webp",
+          "images/products/vj-000028/04.webp",
+          "images/products/vj-000028/05.webp",
+          "images/products/vj-000028/06.webp",
+          "images/products/vj-000028/07.webp",
+          "images/products/vj-000028/08.webp",
+          "images/products/vj-000028/09.webp",
+          "images/products/vj-000028/10.webp"
+        ],
+        "youtube": "https://youtube.com/shorts/jhNgblgDX08?si=wS_-mRgaHpQyYa-m",
+        "shorts": ""
+      },
+      "attributes": {
+        "condition": {
+          "uk": "Колекційний стан, без пошкоджень",
+          "en": "Collectible condition, no damage"
+        },
+        "technique": {
+          "uk": "Ручна робота, художнє лиття, тиснення",
+          "en": "Handmade, artistic casting, embossing"
+        },
+        "set": {
+          "uk": "Ніж, шкіряні ножні",
+          "en": "Knife, leather sheath"
+        },
+        "features": {
+          "uk": "Увігнуті спуски, кут заточки 35-36°, кельтський орнамент",
+          "en": "Hollow grinds, sharpening angle 35-36°, Celtic ornament"
+        },
+        "brand": {
+          "uk": "Майстер Олександр",
+          "en": "Master Oleksandr"
+        },
+        "year": "2026",
+        "material": {
+          "uk": "Сталь 8Х6НФТ, червоне дерево, бронза, шкіра",
+          "en": "8X6NFT steel, red wood, bronze, leather"
+        },
+        "dimensions": {
+          "uk": "Товщина обуха 3 мм",
+          "en": "Spine thickness 3 mm"
         }
       },
       "story": {
