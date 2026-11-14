@@ -1734,5 +1734,71 @@
       "en": ""
     },
     "documents": []
+  },
+  {
+    "id": "vj-000029",
+    "publication_status": "published",
+    "sale_status": "available",
+    "date_added": "2026-11-14",
+    "category": "knives",
+    "title": {
+      "uk": "Авторський колекційний ніж із бакелітовою рукояттю",
+      "en": "Custom collectible knife with a Bakelite handle"
+    },
+    "short_description": {
+      "uk": "Ніж ручної роботи у стилі фінки, виготовлений майстром з Одеси. Має полірований клинок, бакелітову рукоять із синьо-білим візерунком і чорні піхви.",
+      "en": "A handmade Finnish-style knife made by a craftsman from Odesa. It has a polished blade, a blue and white patterned Bakelite handle, and a black sheath."
+    },
+    "description": {
+      "uk": "Авторський колекційний ніж поєднує полірований клинок із бакелітовою рукояттю. Її синьо-білий візерунок помітний з обох боків, а металеві гарда й навершя завершують оформлення. Клинок має виразний загострений профіль. До ножа додаються чорні прошиті піхви з орнаментом на лицьовому боці та прорізами для кріплення на звороті. На поверхні гарди помітні темні сліди. Ім’я майстра та рік виготовлення не встановлені.",
+      "en": "This custom collectible knife combines a polished blade with a Bakelite handle. Its blue and white pattern is visible on both sides, while the metal guard and pommel complete the design. The blade has a pronounced pointed profile. A black stitched sheath is included, with a pattern on the front and mounting slots on the back. Dark marks are visible on the guard. The maker’s name and year of manufacture are unidentified."
+    },
+    "price": {
+      "type": "fixed",
+      "value": 5000,
+      "currency": "UAH"
+    },
+    "media": {
+      "images": [
+        "images/products/vj-000029/01.webp",
+        "images/products/vj-000029/02.webp",
+        "images/products/vj-000029/03.webp",
+        "images/products/vj-000029/04.webp",
+        "images/products/vj-000029/05.webp",
+        "images/products/vj-000029/06.webp",
+        "images/products/vj-000029/07.webp",
+        "images/products/vj-000029/08.webp",
+        "images/products/vj-000029/09.webp"
+      ],
+      "youtube": "https://www.youtube.com/shorts/T0ccukQqR80",
+      "shorts": ""
+    },
+    "attributes": {
+      "condition": {
+        "uk": "На металевій гарді помітні темні сліди",
+        "en": "Dark marks are visible on the metal guard"
+      },
+      "set": {
+        "uk": "Ніж і чорні прошиті піхви",
+        "en": "Knife and black stitched sheath"
+      },
+      "country": {
+        "uk": "Україна",
+        "en": "Ukraine"
+      },
+      "material": {
+        "uk": "Сталь 440C; бакеліт",
+        "en": "440C steel; Bakelite"
+      },
+      "dimensions": {
+        "uk": "Загальна довжина 22 см; товщина біля обуха 4,67 мм",
+        "en": "Overall length 22 cm; spine thickness 4.67 mm"
+      }
+    },
+    "story": {
+      "uk": "Ніж виготовлений майстром з Одеси, Україна. Інших підтверджених відомостей про історію предмета немає.",
+      "en": "The knife was made by a craftsman from Odesa, Ukraine. No other verified information about the item’s history is available."
+    },
+    "documents": []
   }
 ]
